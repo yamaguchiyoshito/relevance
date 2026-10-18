@@ -63,6 +63,6 @@ python -m unittest discover -s tests -v
 
 ## ライセンス
 
-本文と挿絵（`chapters/`、`assets/illustrations/`、表紙を含む）は [クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0）](https://creativecommons.org/licenses/by/4.0/deed.ja) の下で提供する。出典として「山口義人『意味の関連性 ── RELEVANCE』」と、このリポジトリまたは公開ページのURLを示せば、複製・再配布・翻案・商用利用ができる。条文の全文は [LICENSE](LICENSE) にある。ビルド用のスクリプトと設定ファイルも同じライセンスの下で提供する。
+本文と挿絵（`chapters/`、`assets/illustrations/`、表紙を含む）は [クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0）](https://creativecommons.org/licenses/by/4.0/deed.ja) の下で提供する。出典として「yamaguchiyoshito『意味の関連性 ── RELEVANCE』」と、このリポジトリまたは公開ページのURLを示せば、複製・再配布・翻案・商用利用ができる。条文の全文は [LICENSE](LICENSE) にある。ビルド用のスクリプトと設定ファイルも同じライセンスの下で提供する。
 
 各回末尾の脚注で参照する文献は、それぞれの著作権者に帰属する。第10回で引いたケン・リュウの一節は要約であり、原文の転載ではない。
