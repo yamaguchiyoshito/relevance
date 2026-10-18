@@ -17,7 +17,7 @@ class RepositoryTests(unittest.TestCase):
     def test_entire_repository(self):
         result, errors = validate()
         self.assertEqual(errors, [])
-        self.assertEqual(result.chapters, 12)
+        self.assertEqual(result.chapters, 24)
         series = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
         self.assertEqual(result.svg_files, 1 + sum(len(c['figures']) for c in series['chapters']))
         self.assertGreater(result.footnotes, 20)
@@ -98,6 +98,12 @@ class RepositoryTests(unittest.TestCase):
         self.assertEqual(100 * 99 * 98 // 6, 161700)
         self.assertEqual(100 * 99 * 98, 970200)
 
+    def test_second_series_metadata(self):
+        data = json.loads((ROOT / 'series-2/series.json').read_text(encoding='utf-8'))
+        self.assertEqual([c['number'] for c in data['chapters']], list(range(1, 13)))
+        self.assertEqual(data['code'], 'RELATION')
+        self.assertTrue((ROOT / data['index']).exists())
+
     def test_chapter_ids_and_sources_are_unique(self):
         data = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
         self.assertEqual(len({c['slug'] for c in data['chapters']}), 12)
@@ -113,7 +119,7 @@ class RepositoryTests(unittest.TestCase):
             build(output)
             report = check(output)
             self.assertEqual(report['errors'], [])
-            self.assertEqual(report['chapter_pages'], 12)
+            self.assertEqual(report['chapter_pages'], 24)
             series = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
             self.assertEqual(report['chapter_images'], sum(len(c['figures']) for c in series['chapters']))
 

@@ -60,18 +60,21 @@ def check(site: Path) -> dict:
                 errors.append(f'{path.name}: missing anchor {url}')
     if not docs:
         errors.append('No generated HTML pages found')
-    chapters = [d for p, d in docs.items() if p.parent == site / 'chapters']
-    if len(chapters) != 12:
-        errors.append('Expected 12 chapter HTML pages')
-    series = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
-    expected_images = sum(len(c['figures']) for c in series['chapters'])
+    all_series = [json.loads((ROOT / f).read_text(encoding='utf-8')) for f in ['series.json', 'series-2/series.json']]
+    chapters = [d for p, d in docs.items() if p.parent.name == 'chapters']
+    expected_chapters = sum(len(s['chapters']) for s in all_series)
+    if len(chapters) != expected_chapters:
+        errors.append(f'Expected {expected_chapters} chapter HTML pages')
+    expected_images = sum(len(c['figures']) for s in all_series for c in s['chapters'])
     if sum(d.images for d in chapters) != expected_images:
         errors.append(f'Expected {expected_images} figures across chapter pages')
-    standalone = docs.get(site / 'complete.html')
-    if not standalone:
-        errors.append('Missing complete.html')
-    elif standalone.images != expected_images:
-        errors.append(f'Standalone reader must embed {expected_images} figures')
+    for s in all_series:
+        standalone = docs.get((site / Path(s['index']).parent / 'complete.html').resolve())
+        want = sum(len(c['figures']) for c in s['chapters'])
+        if not standalone:
+            errors.append(f'Missing complete.html for {s["id"]}')
+        elif standalone.images != want:
+            errors.append(f'Standalone reader for {s["id"]} must embed {want} figures')
     return dict(html_pages=len(docs), chapter_pages=len(chapters), chapter_images=sum(d.images for d in chapters), errors=errors)
 
 

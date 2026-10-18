@@ -1,4 +1,7 @@
 {
+  "id": "relevance",
+  "code": "RELEVANCE",
+  "index": "README.md",
   "title": "意味の関連性",
   "subtitle": "RELEVANCE ── 関連性に関する考察、全12回",
   "language": "ja",

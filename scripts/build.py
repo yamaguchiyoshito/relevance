@@ -13,6 +13,7 @@ import sys
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+SERIES_FILES = ['series.json', 'series-2/series.json']
 READER = 'markdown+footnotes+pipe_tables-tex_math_dollars'
 SITE_INDEX_END = '<!-- SITE-INDEX-END'
 
@@ -71,7 +72,19 @@ def render(text: str, prefix: str = '') -> str:
     return output
 
 
-def wrap_page(title: str, body: str, source: Path, series: dict, css: str) -> str:
+def load_series() -> list[dict]:
+    return [json.loads((ROOT / f).read_text(encoding='utf-8')) for f in SERIES_FILES]
+
+
+def series_of(source: Path, all_series: list[dict]) -> dict:
+    """The series a document belongs to; documents outside any series belong to the first."""
+    for s in all_series:
+        if source.as_posix() in {c['path'] for c in s['chapters']} | {s['index']}:
+            return s
+    return all_series[0]
+
+
+def wrap_page(title: str, body: str, source: Path, series: dict, css: str, all_series: list[dict] | None = None) -> str:
     depth = len(source.parent.parts)
     root_link = '../' * depth
     links = []
@@ -80,19 +93,24 @@ def wrap_page(title: str, body: str, source: Path, series: dict, css: str) -> st
         links.append(f'<a class="chapter-link{" current" if current else ""}" href="{root_link}{map_url(c["path"])}"' + (' aria-current="page"' if current else '') + f'><span>{c["number"]:02d}</span>{html.escape(c["title"])}</a>')
     series_title = html.escape(series['title'])
     tagline = html.escape(series['tagline'])
+    code = html.escape(series.get('code', 'RELEVANCE'))
+    index_link = root_link + map_url(series['index'])
+    other = ''.join(f'<a href="{root_link}{map_url(s["index"])}">{html.escape(s["title"])}</a>' for s in (all_series or []) if s is not series)
+    other_block = f'<div class="toc-drawer-other"><span>別の連載</span>{other}</div>' if other else ''
     return f'''<!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark"><title>{html.escape(title)} | {series_title}</title>
 <style>{css}</style></head><body>
 <a class="skip" href="#main">本文へ移動</a>
 <input type="checkbox" id="toc-state" class="toc-state" aria-label="目次を開く">
-<header class="topbar"><a href="{root_link}index.html" class="brand">{series_title}<span>RELEVANCE</span></a><div class="topbar-actions"><a href="{root_link}guides/READING.html">読み方</a><label class="toc-toggle" for="toc-state"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>目次</label></div></header>
+<header class="topbar"><a href="{index_link}" class="brand">{series_title}<span>{code}</span></a><div class="topbar-actions"><a href="{root_link}guides/READING.html">読み方</a><label class="toc-toggle" for="toc-state"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>目次</label></div></header>
 <label class="toc-backdrop" for="toc-state" aria-hidden="true"></label>
-<aside class="toc-drawer" aria-label="連載の目次"><div class="toc-drawer-head"><strong>全12回の連載</strong><label class="toc-close" for="toc-state" title="閉じる"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l10 10M15 5L5 15"/></svg></label></div><nav aria-label="連載の目次">{''.join(links)}</nav><div class="toc-drawer-foot"><p>{tagline}</p><a href="{root_link}references/bibliography.html">参考文献と確認範囲</a></div></aside>
-<div class="layout"><main id="main" tabindex="-1"><article>{body}</article><footer>全12回 / 第1版 — 本文はMarkdown、挿絵はSVG。外部通信なしで閲覧できる。<br>引用した理論と、本連載独自の解釈を区別して読む。</footer></main></div></body></html>'''
+<aside class="toc-drawer" aria-label="連載の目次"><div class="toc-drawer-head"><strong>全12回の連載</strong><label class="toc-close" for="toc-state" title="閉じる"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l10 10M15 5L5 15"/></svg></label></div><nav aria-label="連載の目次">{''.join(links)}</nav><div class="toc-drawer-foot"><p>{tagline}</p><a href="{root_link}references/bibliography.html">参考文献と確認範囲</a>{other_block}</div></aside>
+<div class="layout"><main id="main" tabindex="-1"><article>{body}</article><footer>{series_title} 全12回 — 本文はMarkdown、挿絵はSVG。外部通信なしで閲覧できる。<br>引用した理論と、本連載独自の解釈を区別して読む。</footer></main></div></body></html>'''
 
 
 def make_book(series: dict, css: str, dest: Path) -> None:
+    code = html.escape(series.get('code', 'RELEVANCE'))
     paths = {str((ROOT / c['path']).resolve()): f'#chapter-{c["number"]:02d}' for c in series['chapters']}
     pieces = []
     for c in series['chapters']:
@@ -117,7 +135,7 @@ def make_book(series: dict, css: str, dest: Path) -> None:
         body = re.sub(r'(href|src)="([^"]*)"', rewrite, body)
         pieces.append(f'<section class="book-chapter" id="chapter-{c["number"]:02d}">{body}</section>')
     toc = ''.join(f'<li><a href="#chapter-{c["number"]:02d}">第{c["number"]}回　{html.escape(c["title"])}</a></li>' for c in series['chapters'])
-    doc = f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(series['title'])} — 全12回</title><style>{css}\n.book{{max-width:860px;margin:auto;padding:32px 24px}}.book-chapter{{padding-top:55px;margin-top:65px;border-top:2px solid var(--line)}}@media print{{.book-chapter{{break-before:page}}}}</style></head><body><main class="book"><section id="book-contents"><p class="eyebrow">RELEVANCE — COMPLETE SERIES</p><h1>{html.escape(series['title'])}</h1><h2>{html.escape(series['subtitle'])}</h2><p>このファイルは外部通信なしで閲覧できる。挿絵は埋め込みSVGで表示する。</p><ol>{toc}</ol></section>{''.join(pieces)}</main></body></html>'''
+    doc = f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(series['title'])} — 全12回</title><style>{css}\n.book{{max-width:860px;margin:auto;padding:32px 24px}}.book-chapter{{padding-top:55px;margin-top:65px;border-top:2px solid var(--line)}}@media print{{.book-chapter{{break-before:page}}}}</style></head><body><main class="book"><section id="book-contents"><p class="eyebrow">{code} — COMPLETE SERIES</p><h1>{html.escape(series['title'])}</h1><h2>{html.escape(series['subtitle'])}</h2><p>このファイルは外部通信なしで閲覧できる。挿絵は埋め込みSVGで表示する。</p><ol>{toc}</ol></section>{''.join(pieces)}</main></body></html>'''
     dest.write_text(doc, encoding='utf-8')
 
 
@@ -126,9 +144,12 @@ def build(output: Path) -> dict:
     if output == ROOT or ROOT.is_relative_to(output):
         raise RuntimeError('出力先にはリポジトリ自身またはその親を指定できない。')
     output.mkdir(parents=True, exist_ok=True)
-    series = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
+    all_series = load_series()
     css = (ROOT / 'site-src/styles.css').read_text(encoding='utf-8')
-    documents = [ROOT / 'README.md', *(ROOT / c['path'] for c in series['chapters']), *sorted((ROOT / 'guides').glob('*.md')), ROOT / 'references/bibliography.md', ROOT / 'CHANGELOG.md']
+    documents = [ROOT / 'README.md', *sorted((ROOT / 'guides').glob('*.md')), ROOT / 'references/bibliography.md', ROOT / 'CHANGELOG.md']
+    for s in all_series:
+        documents += [ROOT / s['index'], *sorted((ROOT / s['index']).parent.glob('*.md')), *(ROOT / c['path'] for c in s['chapters'])]
+    documents = list(dict.fromkeys(documents))
     for p in documents:
         source = p.relative_to(ROOT)
         target = output / map_url(source.as_posix())
@@ -137,16 +158,17 @@ def build(output: Path) -> dict:
         if p.name == 'README.md':
             text = site_index_text(text)
         title = re.search(r'^# (.+)', text, re.M).group(1)
-        target.write_text(wrap_page(title, render(text), source, series, css), encoding='utf-8')
+        target.write_text(wrap_page(title, render(text), source, series_of(source, all_series), css, all_series), encoding='utf-8')
     shutil.rmtree(output / 'assets', ignore_errors=True)
     shutil.copytree(ROOT / 'assets', output / 'assets')
-    for p in [ROOT / 'series.json', ROOT / 'references/sources.json']:
+    for p in [*(ROOT / f for f in SERIES_FILES), ROOT / 'references/sources.json']:
         dest = output / p.relative_to(ROOT)
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(p, dest)
     (output / '.nojekyll').write_text('', encoding='utf-8')
-    make_book(series, css, output / 'complete.html')
-    result = dict(pages=len(documents), chapters=len(series['chapters']), svg_files=len(list((output / 'assets').rglob('*.svg'))), standalone='complete.html')
+    for s in all_series:
+        make_book(s, css, output / Path(s['index']).parent / 'complete.html')
+    result = dict(pages=len(documents), series=len(all_series), chapters=sum(len(s['chapters']) for s in all_series), svg_files=len(list((output / 'assets').rglob('*.svg'))), standalone=[str(Path(s['index']).parent / 'complete.html') for s in all_series])
     (output / 'build-report.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return result
 

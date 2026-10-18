@@ -7,7 +7,8 @@
 | パス | 責務 | 編集方法 |
 | --- | --- | --- |
 | `chapters/*.md` | 各回の本文、図の参照とキャプション、脚注、前後リンク | 直接編集する |
-| `series.json` | 全12回の順序、題名、副題、概要、各回の図の一覧（`figures`）と出典の対応 | 本文変更と同じPRで整合させる |
+| `series.json` | 第1クールの順序、題名、副題、概要、各回の図の一覧（`figures`）と出典の対応 | 本文変更と同じPRで整合させる |
+| `series-2/series.json`、`series-2/README.md`、`series-2/chapters/*.md` | 第2クールの正本、目次、本文 | 第1クールと同じ規則。図と出典は未着手なので `figures`・`sources` は空 |
 | `assets/illustrations/*.svg` | 本文から参照する独立した挿絵 | `draw_figures.py` を編集して再生成する |
 | `scripts/draw_figures.py` | 表紙と各回の図（計29点）を再現する図形コード | 原則としてこちらを編集する |
 | `references/sources.json` | 文献の書誌と今回の確認範囲 | 一次情報と確認状況を分けて更新する |
@@ -33,7 +34,7 @@ python scripts/build.py
 python scripts/check_html.py
 ```
 
-SVGを直接修正すると次の図再生成で上書きされる。長期保守する変更は `draw_figures.py` に反映する。全12回の枠組みは固定し、追加連載は別シリーズとして扱う。
+SVGを直接修正すると次の図再生成で上書きされる。長期保守する変更は `draw_figures.py` に反映する。各連載は全12回の枠組みを固定し、追加の連載は `series-N/` に自分の `series.json` と目次を持つ別シリーズとして加え、`scripts/build.py` の `SERIES_FILES` に登録する。
 
 ## 各回の型
 

@@ -1,0 +1,132 @@
+{
+  "id": "relation",
+  "code": "RELATION",
+  "title": "二者のあいだ",
+  "subtitle": "RELATION ── 二者のあいだに関する考察、全12回",
+  "language": "ja",
+  "version": "0.1.0",
+  "tagline": "個々の性能ではなく、あいだを設計する。",
+  "index": "series-2/README.md",
+  "chapters": [
+    {
+      "number": 1,
+      "slug": "relations-overlap",
+      "title": "「関係がある」は、いくつもの関係の重なりである",
+      "subtitle": "関係は一つに決めない。第2クールの見取り図と、共通例の導入",
+      "summary": "第1クールで「関係がある」と呼んでいたものは、性質の違う複数の関係型が重なった状態であり、関係は一つに決めない。",
+      "path": "series-2/chapters/01-relations-overlap.md",
+      "figures": [],
+      "sources": []
+    },
+    {
+      "number": 2,
+      "slug": "meaning-and-structure",
+      "title": "「何の関係か」と「どうつながるか」を分ける",
+      "subtitle": "方向・対称性・強度・時間変化という四つの軸",
+      "summary": "関係の意味（何によって結びつくか）と構造（方向・対称性・強度・時間変化）は別の軸である。",
+      "path": "series-2/chapters/02-meaning-and-structure.md",
+      "figures": [],
+      "sources": []
+    },
+    {
+      "number": 3,
+      "slug": "five-distinctions",
+      "title": "混同しやすい五つの区別",
+      "subtitle": "相関と因果、依存と因果、包含と構成、対立と対比、補完と依存",
+      "summary": "相関と因果、依存と因果、包含と構成、対立と対比、補完と依存は、取り違えると判断を誤る。",
+      "path": "series-2/chapters/03-five-distinctions.md",
+      "figures": [],
+      "sources": []
+    },
+    {
+      "number": 4,
+      "slug": "comparative-relations",
+      "title": "比較の関係 ── 相似・反対・逆転・双対・同型・類比",
+      "subtitle": "見比べることで、第三の認識が生まれる関係",
+      "summary": "比較の関係は、見比べることで転用・際立ち・前提の再検討という第三の認識を生む。",
+      "path": "series-2/chapters/04-comparative-relations.md",
+      "figures": [],
+      "sources": []
+    },
+    {
+      "number": 5,
+      "slug": "functional-relations",
+      "title": "機能の関係 ── 補完・代替・競合・依存・協調・分業",
+      "subtitle": "役割の関係は、目的と範囲と資源の枠で決まる",
+      "summary": "機能の関係は役割の分担の仕方であり、同じ二者が補完にも競合にもなるのは目的・範囲・資源の枠が違うからである。",
+      "path": "series-2/chapters/05-functional-relations.md",
+      "figures": [],
+      "sources": []
+    },
+    {
+      "number": 6,
+      "slug": "causal-and-temporal-relations",
+      "title": "因果と時間の関係 ── 原因・促進・抑制・フィードバック・循環",
+      "subtitle": "原因と結果の席は、入れ替わる",
+      "summary": "因果は時間の中でしか成立せず、フィードバックと循環によって原因と結果の席は入れ替わる。",
+      "path": "series-2/chapters/06-causal-and-temporal-relations.md",
+      "figures": [],
+      "sources": []
+    },
+    {
+      "number": 7,
+      "slug": "semantic-relations",
+      "title": "意味の関係 ── 連想・共起・比喩・象徴・含意・解釈競合",
+      "subtitle": "意味が似ていることと、意味的に関連していることは別である",
+      "summary": "意味が似ていることと意味的に関連していることは別で、意味的には遠いが構造的に似た組が転用の着想源になる。",
+      "path": "series-2/chapters/07-semantic-relations.md",
+      "figures": [],
+      "sources": []
+    },
+    {
+      "number": 8,
+      "slug": "relation-and-effect",
+      "title": "関係の種類と、関係が生むもの",
+      "subtitle": "種類と効能を混同しない",
+      "summary": "関係の種類と、関係から生まれる効能は別物であり、相似があっても転用が起きるとは限らない。",
+      "path": "series-2/chapters/08-relation-and-effect.md",
+      "figures": [],
+      "sources": []
+    },
+    {
+      "number": 9,
+      "slug": "conditions-of-effects",
+      "title": "効能は、いつ、どの条件で現れるか",
+      "subtitle": "閾値・遅延・累積・不可逆・外部性",
+      "summary": "効能には閾値・遅延・持続・可逆性があり、二者が優れていても関係の条件が崩れれば全体は悪化する。",
+      "path": "series-2/chapters/09-conditions-of-effects.md",
+      "figures": [],
+      "sources": []
+    },
+    {
+      "number": 10,
+      "slug": "counterfactual-value",
+      "title": "関係がなかったら ── 反実仮想としての価値",
+      "subtitle": "価値は、ない世界との差でしか測れない",
+      "summary": "関係の価値は関係がない世界との差であり、費用を引いて初めて正味の価値になる。評価とは反実仮想の比較である。",
+      "path": "series-2/chapters/10-counterfactual-value.md",
+      "figures": [],
+      "sources": []
+    },
+    {
+      "number": 11,
+      "slug": "relations-as-entities",
+      "title": "関係を知識にする ── Entityとしての関係",
+      "subtitle": "線そのものに、名前と性質を持たせる",
+      "summary": "関係そのものを定義・成立条件・効能・根拠を持つ知識として扱うと、関係を探し、比べ、再利用できる。",
+      "path": "series-2/chapters/11-relations-as-entities.md",
+      "figures": [],
+      "sources": []
+    },
+    {
+      "number": 12,
+      "slug": "designing-relations",
+      "title": "関係を設計する",
+      "subtitle": "個々の性能ではなく、あいだを設計の対象にする",
+      "summary": "個々の対象の性能ではなく、対象と対象のあいだを設計・改善の対象にする。",
+      "path": "series-2/chapters/12-designing-relations.md",
+      "figures": [],
+      "sources": []
+    }
+  ]
+}

@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 from urllib.parse import unquote, urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build import ROOT, parse_markdown  # noqa: E402
+from build import ROOT, SERIES_FILES, parse_markdown  # noqa: E402
 from bibliography import bibliography_text  # noqa: E402
 
 MIN_BODY_CHARS = 1500
@@ -78,16 +78,24 @@ def validate(root: Path = ROOT) -> tuple[Result, list[str]]:
     result = Result()
     errors: list[str] = []
     try:
-        series = json.loads((root / 'series.json').read_text(encoding='utf-8'))
+        all_series = [json.loads((root / f).read_text(encoding='utf-8')) for f in SERIES_FILES]
         sources = json.loads((root / 'references/sources.json').read_text(encoding='utf-8'))
     except (OSError, ValueError) as exc:
         return result, [str(exc)]
-    chapters = series.get('chapters', [])
-    if [c.get('number') for c in chapters] != list(range(1, 13)):
-        errors.append('series.json: expected exactly chapters 1..12 in order')
-    if len({c['path'] for c in chapters}) != 12 or len({c['slug'] for c in chapters}) != 12:
-        errors.append('series.json: chapter paths and slugs must be unique')
-    md_paths = [root / 'README.md', *(root / c['path'] for c in chapters), *sorted((root / 'guides').glob('*.md')), root / 'references/bibliography.md', root / 'CHANGELOG.md']
+    chapters = []
+    for sf, s in zip(SERIES_FILES, all_series):
+        cs = s.get('chapters', [])
+        if [c.get('number') for c in cs] != list(range(1, 13)):
+            errors.append(f'{sf}: expected exactly chapters 1..12 in order')
+        if len({c['path'] for c in cs}) != 12 or len({c['slug'] for c in cs}) != 12:
+            errors.append(f'{sf}: chapter paths and slugs must be unique')
+        if not (root / s['index']).exists():
+            errors.append(f'{sf}: index page {s["index"]} is missing')
+        chapters += cs
+    md_paths = [root / 'README.md', *sorted((root / 'guides').glob('*.md')), root / 'references/bibliography.md', root / 'CHANGELOG.md']
+    for s in all_series:
+        md_paths += [root / s['index'], *sorted((root / s['index']).parent.glob('*.md')), *(root / c['path'] for c in s['chapters'])]
+    md_paths = list(dict.fromkeys(md_paths))
     asts = {}
     anchors = {}
     for path in md_paths:
@@ -105,7 +113,7 @@ def validate(root: Path = ROOT) -> tuple[Result, list[str]]:
             continue
         asts[path.resolve()] = ast
         anchors[path.resolve()] = {n['c'][1][0] for n in walk(ast) if n.get('t') == 'Header'}
-        if path.parent == root / 'chapters':
+        if path.parent.name == 'chapters':
             result.manuscript_characters += len(text)
             result.footnotes += sum(n.get('t') == 'Note' for n in walk(ast))
     for c in chapters:
