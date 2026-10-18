@@ -40,7 +40,7 @@ python scripts/publish.py --owner yamaguchiyoshito --name relevance --visibility
 
 ## 公開前に決めること
 
-- **ライセンス。** 本文と図のライセンスは未設定である。`LICENSE` を追加し、READMEの記述を更新する。
+- **ライセンス。** 本文・図・スクリプトはCC BY 4.0（`LICENSE`）。ライセンスを変える場合はREADMEの記述も同時に更新する。
 - **引用の範囲。** 第10回のケン・リュウからの引用は要約であり原文の転載ではない。公開前に再確認する。
 - **参考文献の確認範囲。** `references/sources.json` の `checked` は書誌のみ確認の資料が多い。公開前に主要な出典を原文で照合する。
 
