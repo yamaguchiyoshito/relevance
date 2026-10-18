@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">仕組みを知るのではなく、振る舞いを逆再生する</title>
+<desc id="desc">LLMの「分かっているように見える」を手がかりに、意味とは何かへ戻る</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="560" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     01     図1-a</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">仕組みを知るのではなく、振る舞いを逆再生する</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">LLMの「分かっているように見える」を手がかりに、意味とは何かへ戻る</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="80" y="250" width="330" height="150" rx="14" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
+<text x="245.0" y="321.0" fill="#5a4fcf" font-size="30" text-anchor="middle" font-weight="700">LLM</text>
+<text x="245.0" y="353.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">確率的に尤もらしい次の語を選ぶ</text>
+<text x="455.0" y="282.0" fill="#232a33" font-size="19" text-anchor="start" font-weight="400">鳥が</text>
+<rect x="520" y="266" width="126" height="18" rx="4" fill="#5a4fcf" opacity="0.80"/>
+<text x="455.0" y="316.0" fill="#232a33" font-size="19" text-anchor="start" font-weight="400">飛ぶ</text>
+<rect x="520" y="300" width="100" height="18" rx="4" fill="#5a4fcf" opacity="0.71"/>
+<text x="455.0" y="350.0" fill="#232a33" font-size="19" text-anchor="start" font-weight="400">泳ぐ</text>
+<rect x="520" y="334" width="25" height="18" rx="4" fill="#5a4fcf" opacity="0.44"/>
+<text x="455.0" y="384.0" fill="#232a33" font-size="19" text-anchor="start" font-weight="400">鳴く</text>
+<rect x="520" y="368" width="61" height="18" rx="4" fill="#5a4fcf" opacity="0.57"/>
+<text x="590.0" y="415.0" fill="#5d6873" font-size="17" text-anchor="middle" font-weight="400">次の語の確率</text>
+<rect x="790" y="250" width="330" height="150" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="955.0" y="321.0" fill="#2f8f83" font-size="30" text-anchor="middle" font-weight="700">意味とはなにか</text>
+<text x="955.0" y="353.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">人間の側で起きていること</text>
+<line x1="700.0" y1="325.0" x2="785.0" y2="325.0" stroke="#2f8f83" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="742.0" y="305.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">見えるもの</text>
+<line x1="785.0" y1="365.0" x2="700.0" y2="365.0" stroke="#d0693a" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="742.0" y="392.0" fill="#d0693a" font-size="18" text-anchor="middle" font-weight="700">逆再生</text>
+<text x="600.0" y="480.0" fill="#232a33" font-size="19" text-anchor="middle" font-weight="400">知性があるように見える、という事実のほうから、意味の正体へ戻る</text>
+</g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">関連は仮説に過ぎない</title>
+<desc id="desc">見出すことと検証することは別の行為。検証を経て、二つの行き先に分かれる</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="560" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     06     図6-b</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">関連は仮説に過ぎない</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">見出すことと検証することは別の行為。検証を経て、二つの行き先に分かれる</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="430" y="215" width="340" height="80" rx="14" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
+<text x="600.0" y="251.0" fill="#5a4fcf" font-size="24" text-anchor="middle" font-weight="700">関係を見出す</text>
+<text x="600.0" y="283.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">＝ 仮説</text>
+<line x1="600.0" y1="300.0" x2="600.0" y2="350.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="640.0" y="332.0" fill="#5d6873" font-size="17" text-anchor="start" font-weight="400">行動による検証</text>
+<line x1="600.0" y1="352.0" x2="330.0" y2="400.0" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="600.0" y1="352.0" x2="870.0" y2="400.0" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="120" y="405" width="430" height="110" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="335.0" y="456.0" fill="#2f8f83" font-size="24" text-anchor="middle" font-weight="700">検証された</text>
+<text x="335.0" y="488.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">ゴボウの実 → 面ファスナー：何年もの試作を経て</text>
+<rect x="650" y="405" width="430" height="110" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="865.0" y="456.0" fill="#d0693a" font-size="24" text-anchor="middle" font-weight="700">検証で消えた</text>
+<text x="865.0" y="488.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">血液型 → 性格：信じられ、行動されたが、支持されず</text>
+</g>
+</svg>

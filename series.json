@@ -5,17 +5,195 @@
   "version": "1.0.0",
   "tagline": "関連は仮説であり、評価がそれを検証する。",
   "chapters": [
-    {"number": 1, "slug": "reverse-engineering-meaning", "title": "LLMを逆再生して「意味」を知る", "subtitle": "AI人文科学の宣言と、連載の見取り図", "summary": "知りたいのはLLMの仕組みではなく、その振る舞いを逆再生して浮かぶ「意味とは何か」である。", "path": "chapters/01-reverse-engineering-meaning.md", "figure": "assets/illustrations/01-reverse-engineering-meaning.svg", "sources": []},
-    {"number": 2, "slug": "similarity-is-not-a-line", "title": "「似ている」は線ではない", "subtitle": "同じ・違う・似ている、の食い違い", "summary": "三つの判定が食い違うのは、意味に明確な境界があると無意識に前提しているからだ。", "path": "chapters/02-similarity-is-not-a-line.md", "figure": "assets/illustrations/02-similarity-is-not-a-line.svg", "sources": []},
-    {"number": 3, "slug": "meaning-as-distribution", "title": "意味は点でも集合でもなく、分布である", "subtitle": "典型性の濃淡と、縁のない山", "summary": "意味は所属の白黒ではなく、典型性の濃淡である。", "path": "chapters/03-meaning-as-distribution.md", "figure": "assets/illustrations/03-meaning-as-distribution.svg", "sources": []},
-    {"number": 4, "slug": "anisotropic-meaning-space", "title": "意味空間は歪んでいる", "subtitle": "埋め込み空間の異方性", "summary": "「似ている」の誤判定は境界が曖昧だから起きるのではなく、空間そのものが歪んで圧縮されているから起きる。", "path": "chapters/04-anisotropic-meaning-space.md", "figure": "assets/illustrations/04-anisotropic-meaning-space.svg", "sources": ["ethayarajh", "mu-viswanath", "gao"]},
-    {"number": 5, "slug": "relation-as-distribution", "title": "関係もまた分布である ──「中にある」と「間にある」", "subtitle": "ズームの切り替え、双曲空間、家族的類似", "summary": "関係は二点を結ぶ線ではなく、それ自体が分布である。だから「間にある」と「中にある」は両立する。", "path": "chapters/05-relation-as-distribution.md", "figure": "assets/illustrations/05-relation-as-distribution.svg", "sources": ["nickel-kiela", "wittgenstein", "rosch"]},
-    {"number": 6, "slug": "ideas-as-finding-relations", "title": "アイデアとは、関係を見出すことである", "subtitle": "ヤングの定義と、関連は仮説に過ぎない", "summary": "関連は常に仮説に過ぎない。見出した瞬間に真実になるのではなく、行動による検証を待っている。", "path": "chapters/06-ideas-as-finding-relations.md", "figure": "assets/illustrations/06-ideas-as-finding-relations.svg", "sources": ["young", "de-mestral", "nawata"]},
-    {"number": 7, "slug": "two-hop-links", "title": "2ホップという回路 ── 関連の多重性", "subtitle": "共通の媒介が関係をつくる", "summary": "一見無関係なものの間にも、共通の媒介を経由した道筋が見出せる。これは人間もLLMもやっている。", "path": "chapters/07-two-hop-links.md", "figure": "assets/illustrations/07-two-hop-links.svg", "sources": ["page-brin", "jeh-widom", "edge-graphrag"]},
-    {"number": 8, "slug": "generation-cheap-evaluation-expensive", "title": "生成は安く、評価は高い", "subtitle": "創造性のボトルネックの所在", "summary": "創造性のボトルネックは組み合わせを作る側ではなく、組み合わせの価値を見抜く側にある。", "path": "chapters/08-generation-cheap-evaluation-expensive.md", "figure": "assets/illustrations/08-generation-cheap-evaluation-expensive.svg", "sources": ["kleon", "csikszentmihalyi"]},
-    {"number": 9, "slug": "retrieval-speed-and-a-b-or-c", "title": "取り出しの速さ、そして「A、B or C」", "subtitle": "言葉を先に置くこと、比喩という装置", "summary": "関連づける力とは、思いついてから取り出すまでの速さであり、整った言葉を待たず断片を先に置くことだ。", "path": "chapters/09-retrieval-speed-and-a-b-or-c.md", "figure": "assets/illustrations/09-retrieval-speed-and-a-b-or-c.svg", "sources": ["lakoff-johnson", "fauconnier-turner"]},
-    {"number": 10, "slug": "hallucination-and-creation", "title": "ハルシネーションと創作に境界はない", "subtitle": "生成と検証、記憶と幻覚", "summary": "創作と幻覚の差は生成プロセスの中にはない。後段の検証レイヤーの有無だけが両者を分ける。", "path": "chapters/10-hallucination-and-creation.md", "figure": "assets/illustrations/10-hallucination-and-creation.svg", "sources": ["liu", "loftus", "ji"]},
-    {"number": 11, "slug": "words-as-handles", "title": "言葉は意味のハンドルである", "subtitle": "体験と言葉、LLMと人間の非対称", "summary": "言葉は思考の対象ではなく、分布としての意味を掴んで動かす取っ手である。人間は取っ手経由で、LLMは言葉そのものを直接扱う。", "path": "chapters/11-words-as-handles.md", "figure": "assets/illustrations/11-words-as-handles.svg", "sources": ["gendlin", "harnad", "bender-koller"]},
-    {"number": 12, "slug": "relevance-as-hypothesis", "title": "関連は仮説であり、評価がそれを検証する", "subtitle": "全体の統合と、次の問い", "summary": "「関連性を見出す力」とは、分布としての意味の中にまだ言語化されていない道筋を見つけ、検証可能な仮説として言葉に固定する力である。", "path": "chapters/12-relevance-as-hypothesis.md", "figure": "assets/illustrations/12-relevance-as-hypothesis.svg", "sources": []}
+    {
+      "number": 1,
+      "slug": "reverse-engineering-meaning",
+      "title": "LLMを逆再生して「意味」を知る",
+      "subtitle": "AI人文科学の宣言と、連載の見取り図",
+      "summary": "知りたいのはLLMの仕組みではなく、その振る舞いを逆再生して浮かぶ「意味とは何か」である。",
+      "path": "chapters/01-reverse-engineering-meaning.md",
+      "sources": [],
+      "figures": [
+        "assets/illustrations/01-a-reverse-playback.svg",
+        "assets/illustrations/01-b-steam-engine.svg"
+      ]
+    },
+    {
+      "number": 2,
+      "slug": "similarity-is-not-a-line",
+      "title": "「似ている」は線ではない",
+      "subtitle": "同じ・違う・似ている、の食い違い",
+      "summary": "三つの判定が食い違うのは、意味に明確な境界があると無意識に前提しているからだ。",
+      "path": "chapters/02-similarity-is-not-a-line.md",
+      "sources": [],
+      "figures": [
+        "assets/illustrations/02-a-line-and-premises.svg",
+        "assets/illustrations/02-b-blue-green.svg"
+      ]
+    },
+    {
+      "number": 3,
+      "slug": "meaning-as-distribution",
+      "title": "意味は点でも集合でもなく、分布である",
+      "subtitle": "典型性の濃淡と、縁のない山",
+      "summary": "意味は所属の白黒ではなく、典型性の濃淡である。",
+      "path": "chapters/03-meaning-as-distribution.md",
+      "sources": [],
+      "figures": [
+        "assets/illustrations/03-a-three-models.svg",
+        "assets/illustrations/03-b-bird-mountain.svg",
+        "assets/illustrations/03-c-sharp-and-flat.svg"
+      ]
+    },
+    {
+      "number": 4,
+      "slug": "anisotropic-meaning-space",
+      "title": "意味空間は歪んでいる",
+      "subtitle": "埋め込み空間の異方性",
+      "summary": "「似ている」の誤判定は境界が曖昧だから起きるのではなく、空間そのものが歪んで圧縮されているから起きる。",
+      "path": "chapters/04-anisotropic-meaning-space.md",
+      "sources": [
+        "ethayarajh",
+        "mu-viswanath",
+        "gao"
+      ],
+      "figures": [
+        "assets/illustrations/04-a-crowd.svg",
+        "assets/illustrations/04-b-isotropy-anisotropy.svg"
+      ]
+    },
+    {
+      "number": 5,
+      "slug": "relation-as-distribution",
+      "title": "関係もまた分布である ──「中にある」と「間にある」",
+      "subtitle": "ズームの切り替え、双曲空間、家族的類似",
+      "summary": "関係は二点を結ぶ線ではなく、それ自体が分布である。だから「間にある」と「中にある」は両立する。",
+      "path": "chapters/05-relation-as-distribution.md",
+      "sources": [
+        "nickel-kiela",
+        "wittgenstein",
+        "rosch"
+      ],
+      "figures": [
+        "assets/illustrations/05-a-sea-and-summer.svg",
+        "assets/illustrations/05-b-osaka-kyoto-kansai.svg",
+        "assets/illustrations/05-c-flat-paper-vs-hyperbolic.svg",
+        "assets/illustrations/05-d-family-resemblance.svg"
+      ]
+    },
+    {
+      "number": 6,
+      "slug": "ideas-as-finding-relations",
+      "title": "アイデアとは、関係を見出すことである",
+      "subtitle": "ヤングの定義と、関連は仮説に過ぎない",
+      "summary": "関連は常に仮説に過ぎない。見出した瞬間に真実になるのではなく、行動による検証を待っている。",
+      "path": "chapters/06-ideas-as-finding-relations.md",
+      "sources": [
+        "young",
+        "de-mestral",
+        "nawata"
+      ],
+      "figures": [
+        "assets/illustrations/06-a-three-stages.svg",
+        "assets/illustrations/06-b-hypothesis-and-verification.svg"
+      ]
+    },
+    {
+      "number": 7,
+      "slug": "two-hop-links",
+      "title": "2ホップという回路 ── 関連の多重性",
+      "subtitle": "共通の媒介が関係をつくる",
+      "summary": "一見無関係なものの間にも、共通の媒介を経由した道筋が見出せる。これは人間もLLMもやっている。",
+      "path": "chapters/07-two-hop-links.md",
+      "sources": [
+        "page-brin",
+        "jeh-widom",
+        "edge-graphrag"
+      ],
+      "figures": [
+        "assets/illustrations/07-a-two-hop.svg",
+        "assets/illustrations/07-b-surroundings.svg"
+      ]
+    },
+    {
+      "number": 8,
+      "slug": "generation-cheap-evaluation-expensive",
+      "title": "生成は安く、評価は高い",
+      "subtitle": "創造性のボトルネックの所在",
+      "summary": "創造性のボトルネックは組み合わせを作る側ではなく、組み合わせの価値を見抜く側にある。",
+      "path": "chapters/08-generation-cheap-evaluation-expensive.md",
+      "sources": [
+        "kleon",
+        "csikszentmihalyi"
+      ],
+      "figures": [
+        "assets/illustrations/08-a-funnel.svg",
+        "assets/illustrations/08-b-steal-ratio.svg",
+        "assets/illustrations/08-c-copy-vs-select.svg"
+      ]
+    },
+    {
+      "number": 9,
+      "slug": "retrieval-speed-and-a-b-or-c",
+      "title": "取り出しの速さ、そして「A、B or C」",
+      "subtitle": "言葉を先に置くこと、比喩という装置",
+      "summary": "関連づける力とは、思いついてから取り出すまでの速さであり、整った言葉を待たず断片を先に置くことだ。",
+      "path": "chapters/09-retrieval-speed-and-a-b-or-c.md",
+      "sources": [
+        "lakoff-johnson",
+        "fauconnier-turner"
+      ],
+      "figures": [
+        "assets/illustrations/09-a-a-b-or-c.svg",
+        "assets/illustrations/09-b-metaphor-overlay.svg"
+      ]
+    },
+    {
+      "number": 10,
+      "slug": "hallucination-and-creation",
+      "title": "ハルシネーションと創作に境界はない",
+      "subtitle": "生成と検証、記憶と幻覚",
+      "summary": "創作と幻覚の差は生成プロセスの中にはない。後段の検証レイヤーの有無だけが両者を分ける。",
+      "path": "chapters/10-hallucination-and-creation.md",
+      "sources": [
+        "liu",
+        "loftus",
+        "ji"
+      ],
+      "figures": [
+        "assets/illustrations/10-a-same-mechanism.svg",
+        "assets/illustrations/10-b-memory.svg",
+        "assets/illustrations/10-c-evaluation-and-verification.svg"
+      ]
+    },
+    {
+      "number": 11,
+      "slug": "words-as-handles",
+      "title": "言葉は意味のハンドルである",
+      "subtitle": "体験と言葉、LLMと人間の非対称",
+      "summary": "言葉は思考の対象ではなく、分布としての意味を掴んで動かす取っ手である。人間は取っ手経由で、LLMは言葉そのものを直接扱う。",
+      "path": "chapters/11-words-as-handles.md",
+      "sources": [
+        "gendlin",
+        "harnad",
+        "bender-koller"
+      ],
+      "figures": [
+        "assets/illustrations/11-a-pot-and-handle.svg",
+        "assets/illustrations/11-b-human-vs-llm.svg"
+      ]
+    },
+    {
+      "number": 12,
+      "slug": "relevance-as-hypothesis",
+      "title": "関連は仮説であり、評価がそれを検証する",
+      "subtitle": "全体の統合と、次の問い",
+      "summary": "「関連性を見出す力」とは、分布としての意味の中にまだ言語化されていない道筋を見つけ、検証可能な仮説として言葉に固定する力である。",
+      "path": "chapters/12-relevance-as-hypothesis.md",
+      "sources": [],
+      "figures": [
+        "assets/illustrations/12-a-loop.svg"
+      ]
+    }
   ]
 }

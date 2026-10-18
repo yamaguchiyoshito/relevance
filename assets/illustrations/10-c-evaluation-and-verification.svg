@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc">
+<title id="title">評価と検証は、同じ位置にある同じ行為</title>
+<desc id="desc">後段の箱だけが違う。基準は「価値があるか」と「現実と一致するか」</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="610" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     10     図10-c</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">評価と検証は、同じ位置にある同じ行為</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">後段の箱だけが違う。基準は「価値があるか」と「現実と一致するか」</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="70" y="240" width="230" height="80" rx="14" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
+<text x="185.0" y="288.0" fill="#5a4fcf" font-size="22" text-anchor="middle" font-weight="700">生成</text>
+<line x1="305.0" y1="280.0" x2="360.0" y2="280.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="365" y="240" width="230" height="80" rx="12" fill="#ffffff" stroke="#d8d4c8" stroke-width="2"/>
+<text x="480.0" y="287.0" fill="#232a33" font-size="20" text-anchor="middle" font-weight="400">候補の組み合わせ</text>
+<line x1="600.0" y1="280.0" x2="655.0" y2="280.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="660" y="232" width="260" height="96" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<text x="790.0" y="276.0" fill="#d0693a" font-size="22" text-anchor="middle" font-weight="700">評価</text>
+<text x="790.0" y="308.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">価値があるか</text>
+<line x1="925.0" y1="280.0" x2="975.0" y2="280.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1060.0" y="270.0" fill="#2f8f83" font-size="19" text-anchor="middle" font-weight="700">採用</text>
+<text x="1060.0" y="300.0" fill="#d0693a" font-size="19" text-anchor="middle" font-weight="700">捨てる</text>
+<rect x="70" y="400" width="230" height="80" rx="14" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
+<text x="185.0" y="448.0" fill="#5a4fcf" font-size="22" text-anchor="middle" font-weight="700">生成</text>
+<line x1="305.0" y1="440.0" x2="360.0" y2="440.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="365" y="400" width="230" height="80" rx="12" fill="#ffffff" stroke="#d8d4c8" stroke-width="2"/>
+<text x="480.0" y="447.0" fill="#232a33" font-size="20" text-anchor="middle" font-weight="400">出力された一文</text>
+<line x1="600.0" y1="440.0" x2="655.0" y2="440.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="660" y="392" width="260" height="96" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<text x="790.0" y="436.0" fill="#d0693a" font-size="22" text-anchor="middle" font-weight="700">検証</text>
+<text x="790.0" y="468.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">現実と一致するか</text>
+<line x1="925.0" y1="440.0" x2="975.0" y2="440.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1060.0" y="430.0" fill="#2f8f83" font-size="19" text-anchor="middle" font-weight="700">事実</text>
+<text x="1060.0" y="460.0" fill="#d0693a" font-size="19" text-anchor="middle" font-weight="700">ハルシネーション</text>
+<text x="190.0" y="215.0" fill="#5a4fcf" font-size="17" text-anchor="start" font-weight="700">第8回：創造性</text>
+<text x="190.0" y="375.0" fill="#5a4fcf" font-size="17" text-anchor="start" font-weight="700">第10回：ハルシネーション</text>
+<rect x="650" y="222" width="280" height="282" rx="16" fill="none" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 7"/>
+<text x="790.0" y="540.0" fill="#d0693a" font-size="16" text-anchor="middle" font-weight="700">違うのは、この箱の中の基準だけ</text>
+<text x="50.0" y="582.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">生成は安い。評価も検証も、高い。</text>
+</g>
+</svg>

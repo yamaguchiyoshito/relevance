@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+<title id="title">A か B か、ではなく「A、B or C」</title>
+<desc id="desc">せめぎ合いの間隙からふいに現れる第三のものが、AとBの関係を読み替える</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><radialGradient id="g09a-1"><stop offset="0" stop-color="#5a4fcf" stop-opacity="0.55"/><stop offset="0.55" stop-color="#5a4fcf" stop-opacity="0.25"/><stop offset="1" stop-color="#5a4fcf" stop-opacity="0"/></radialGradient><radialGradient id="g09a-2"><stop offset="0" stop-color="#2f8f83" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2f8f83" stop-opacity="0.25"/><stop offset="1" stop-color="#2f8f83" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="640" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     09     図9-a</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">A か B か、ではなく「A、B or C」</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">せめぎ合いの間隙からふいに現れる第三のものが、AとBの関係を読み替える</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<circle cx="470.0" cy="440.0" r="150" fill="url(#g09a-1)"/>
+<circle cx="730.0" cy="440.0" r="150" fill="url(#g09a-2)"/>
+<text x="400.0" y="445.0" fill="#5a4fcf" font-size="32" text-anchor="middle" font-weight="700">紙</text>
+<text x="800.0" y="445.0" fill="#2f8f83" font-size="32" text-anchor="middle" font-weight="700">画面</text>
+<text x="400.0" y="480.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">目に優しい・手触り</text>
+<text x="800.0" y="480.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">何千冊・検索</text>
+<line x1="520.0" y1="440.0" x2="565.0" y2="440.0" stroke="#5a4fcf" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="680.0" y1="440.0" x2="635.0" y2="440.0" stroke="#2f8f83" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 600 400 L 600 300" fill="none" stroke="#d0693a" stroke-width="3" marker-end="url(#arrow)"/>
+<polygon points="600,215 610,250 647,255 617,278 625,315 600,297 575,315 583,278 553,255 590,250" fill="#d0693a" opacity="0.9"/>
+<text x="600.0" y="195.0" fill="#d0693a" font-size="22" text-anchor="middle" font-weight="700">or C：電子ペーパー</text>
+<text x="600.0" y="585.0" fill="#232a33" font-size="18" text-anchor="middle" font-weight="700">紙であり、画面である。矛盾がそのまま魅力になる</text>
+<text x="600.0" y="612.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">間隙は一瞬しか開かない。取り出しが遅いとCは消える</text>
+</g>
+</svg>

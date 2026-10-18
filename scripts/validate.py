@@ -121,10 +121,14 @@ def validate(root: Path = ROOT) -> tuple[Result, list[str]]:
             errors.append(f'{c["path"]}: article is too short for a complete essay')
         if text.count('<!-- NAV:') != 2:
             errors.append(f'{c["path"]}: top/bottom navigation missing')
-        if c['figure'].split('/')[-1] not in text:
-            errors.append(f'{c["path"]}: assigned figure is not referenced')
-        if not re.search(r'^\*図\d+：.+\*$', text, re.M):
-            errors.append(f'{c["path"]}: figure caption missing')
+        for fig in c['figures']:
+            if fig.split('/')[-1] not in text:
+                errors.append(f'{c["path"]}: assigned figure {fig} is not referenced')
+        captions = re.findall(r'^\*図(\d+)-(\d+)：.+\*$', text, re.M)
+        if [(int(a), int(b)) for a, b in captions] != [(c['number'], i) for i in range(1, len(c['figures']) + 1)]:
+            errors.append(f'{c["path"]}: figure captions must be 図{c["number"]}-1 .. 図{c["number"]}-{len(c["figures"])} in order')
+        if text.count('](../assets/illustrations/') != len(c['figures']):
+            errors.append(f'{c["path"]}: number of figure references differs from series.json')
         references = set(re.findall(r'^\[\^([^\]]+)\]:', text, re.M))
         uses = set(re.findall(r'\[\^([^\]]+)\](?!:)', text))
         if references != set(c['sources']):
@@ -169,11 +173,13 @@ def validate(root: Path = ROOT) -> tuple[Result, list[str]]:
     for svg in sorted((root / 'assets').rglob('*.svg')):
         result.svg_files += 1
         errors += svg_errors(svg)
-    if result.svg_files != 13:
-        errors.append('expected exactly 13 SVG illustrations (cover + 12 chapters)')
+    expected_svgs = 1 + sum(len(c['figures']) for c in chapters)
+    if result.svg_files != expected_svgs:
+        errors.append(f'expected exactly {expected_svgs} SVG illustrations (cover + chapter figures listed in series.json)')
     for c in chapters:
-        if not (root / c['figure']).exists():
-            errors.append(f'missing figure: {c["figure"]}')
+        for fig in c['figures']:
+            if not (root / fig).exists():
+                errors.append(f'missing figure: {fig}')
     for p in root.rglob('*'):
         if '_site' in p.parts or '.git' in p.parts:
             continue

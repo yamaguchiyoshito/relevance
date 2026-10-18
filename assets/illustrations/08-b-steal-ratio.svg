@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+<title id="title">何作品から、何パーセントずつ盗るか</title>
+<desc id="desc">源が増えるほど、元の作品は見えなくなる</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="440" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     08     図8-b</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">何作品から、何パーセントずつ盗るか</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">源が増えるほど、元の作品は見えなくなる</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<text x="110.0" y="245.0" fill="#d0693a" font-size="19" text-anchor="start" font-weight="700">1 作品から</text>
+<text x="110.0" y="275.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">100% → パクリ</text>
+<rect x="110.0" y="300" width="298.0" height="44" rx="3" fill="#d0693a" opacity="0.9"/>
+<text x="470.0" y="245.0" fill="#5a4fcf" font-size="19" text-anchor="start" font-weight="700">100 作品から 1% ずつ</text>
+<text x="470.0" y="275.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">ほぼオリジナル</text>
+<rect x="470.0" y="300" width="28.0" height="44" rx="3" fill="#5a4fcf" opacity="0.55"/>
+<rect x="500.0" y="300" width="28.0" height="44" rx="3" fill="#5a4fcf" opacity="0.55"/>
+<rect x="530.0" y="300" width="28.0" height="44" rx="3" fill="#5a4fcf" opacity="0.55"/>
+<rect x="560.0" y="300" width="28.0" height="44" rx="3" fill="#5a4fcf" opacity="0.55"/>
+<rect x="590.0" y="300" width="28.0" height="44" rx="3" fill="#5a4fcf" opacity="0.55"/>
+<rect x="620.0" y="300" width="28.0" height="44" rx="3" fill="#5a4fcf" opacity="0.55"/>
+<rect x="650.0" y="300" width="28.0" height="44" rx="3" fill="#5a4fcf" opacity="0.55"/>
+<rect x="680.0" y="300" width="28.0" height="44" rx="3" fill="#5a4fcf" opacity="0.55"/>
+<rect x="710.0" y="300" width="28.0" height="44" rx="3" fill="#5a4fcf" opacity="0.55"/>
+<rect x="740.0" y="300" width="28.0" height="44" rx="3" fill="#5a4fcf" opacity="0.55"/>
+<text x="830.0" y="245.0" fill="#2f8f83" font-size="19" text-anchor="start" font-weight="700">10000 作品から 0.01% ずつ</text>
+<text x="830.0" y="275.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">元が分からなくなる</text>
+<rect x="830.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="837.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="845.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="852.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="860.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="867.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="875.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="882.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="890.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="897.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="905.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="912.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="920.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="927.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="935.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="942.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="950.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="957.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="965.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="972.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="980.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="987.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="995.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1002.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1010.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1017.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1025.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1032.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1040.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1047.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1055.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1062.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1070.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1077.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1085.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1092.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1100.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1107.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1115.0" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+<rect x="1122.5" y="300" width="5.5" height="44" rx="3" fill="#2f8f83" opacity="0.55"/>
+</g>
+</svg>

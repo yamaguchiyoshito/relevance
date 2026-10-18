@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
 <title id="title">生成は安く、評価は高い</title>
 <desc id="desc">組み合わせは爆発するが、価値あるものは指数的に少ない</desc>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
-<rect width="1200" height="680" rx="20" fill="#f7f5ef"/>
+<rect width="1200" height="560" rx="20" fill="#f7f5ef"/>
 <g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
-<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     08</text>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     08     図8-a</text>
 <text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">生成は安く、評価は高い</text>
 <text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">組み合わせは爆発するが、価値あるものは指数的に少ない</text>
 <line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
@@ -383,14 +383,5 @@
 <circle cx="1000.0" cy="320.0" r="9" fill="#d0693a"/>
 <text x="960.0" y="420.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">見抜く目の解像度が</text>
 <text x="960.0" y="442.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">ボトルネック</text>
-<rect x="80" y="500" width="1040" height="110" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
-<text x="110.0" y="545.0" fill="#d0693a" font-size="18" text-anchor="start" font-weight="700">1 作品から</text>
-<text x="110.0" y="575.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">100% → パクリ</text>
-<text x="455.0" y="545.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">100 作品から 1% ずつ</text>
-<text x="455.0" y="575.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">ほぼオリジナル</text>
-<text x="800.0" y="545.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">10000 作品から 0.01% ずつ</text>
-<text x="800.0" y="575.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">元が分からなくなる</text>
-<text x="600.0" y="650.0" fill="#232a33" font-size="20" text-anchor="middle" font-weight="700">差は、盗んだ量ではなく、評価した量</text>
-<text x="50.0" y="652.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400"></text>
 </g>
 </svg>

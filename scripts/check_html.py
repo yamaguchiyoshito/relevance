@@ -63,13 +63,15 @@ def check(site: Path) -> dict:
     chapters = [d for p, d in docs.items() if p.parent == site / 'chapters']
     if len(chapters) != 12:
         errors.append('Expected 12 chapter HTML pages')
-    if sum(d.images for d in chapters) != 12:
-        errors.append('Expected exactly one figure per chapter page')
+    series = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
+    expected_images = sum(len(c['figures']) for c in series['chapters'])
+    if sum(d.images for d in chapters) != expected_images:
+        errors.append(f'Expected {expected_images} figures across chapter pages')
     standalone = docs.get(site / 'complete.html')
     if not standalone:
         errors.append('Missing complete.html')
-    elif standalone.images != 12:
-        errors.append('Standalone reader must embed 12 figures')
+    elif standalone.images != expected_images:
+        errors.append(f'Standalone reader must embed {expected_images} figures')
     return dict(html_pages=len(docs), chapter_pages=len(chapters), chapter_images=sum(d.images for d in chapters), errors=errors)
 
 

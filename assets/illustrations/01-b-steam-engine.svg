@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+<title id="title">先に動いていたものから、原理が読み取られる</title>
+<desc id="desc">理論より先に機関が動いていた。LLMについても同じ順序で考える</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="460" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     01     図1-b</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">先に動いていたものから、原理が読み取られる</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">理論より先に機関が動いていた。LLMについても同じ順序で考える</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="130" y="230" width="300" height="90" rx="14" fill="#ffffff" stroke="#5d6873" stroke-width="2"/>
+<text x="280.0" y="271.0" fill="#5d6873" font-size="24" text-anchor="middle" font-weight="700">蒸気機関</text>
+<text x="280.0" y="303.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">先に動いていた</text>
+<line x1="435.0" y1="275.0" x2="545.0" y2="275.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="490.0" y="262.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">後から</text>
+<rect x="550" y="230" width="300" height="90" rx="14" fill="#ffffff" stroke="#5d6873" stroke-width="2"/>
+<text x="700.0" y="271.0" fill="#5d6873" font-size="24" text-anchor="middle" font-weight="700">熱力学</text>
+<text x="700.0" y="303.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">原理が追いついた</text>
+<rect x="130" y="345" width="300" height="70" rx="14" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
+<text x="280.0" y="376.0" fill="#5a4fcf" font-size="22" text-anchor="middle" font-weight="700">LLM</text>
+<text x="280.0" y="408.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">人間らしく振る舞う</text>
+<line x1="435.0" y1="380.0" x2="545.0" y2="380.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
+<text x="490.0" y="368.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">これから</text>
+<rect x="550" y="345" width="300" height="70" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="700.0" y="376.0" fill="#2f8f83" font-size="22" text-anchor="middle" font-weight="700">意味・知性の説明</text>
+<text x="700.0" y="408.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">まだ追いついていない</text>
+<text x="1000.0" y="300.0" fill="#232a33" font-size="21" text-anchor="middle" font-weight="700">先行するモデルが</text>
+<text x="1000.0" y="330.0" fill="#232a33" font-size="21" text-anchor="middle" font-weight="700">本質を暗示する</text>
+</g>
+</svg>

@@ -138,7 +138,8 @@ def build(output: Path) -> dict:
             text = site_index_text(text)
         title = re.search(r'^# (.+)', text, re.M).group(1)
         target.write_text(wrap_page(title, render(text), source, series, css), encoding='utf-8')
-    shutil.copytree(ROOT / 'assets', output / 'assets', dirs_exist_ok=True)
+    shutil.rmtree(output / 'assets', ignore_errors=True)
+    shutil.copytree(ROOT / 'assets', output / 'assets')
     for p in [ROOT / 'series.json', ROOT / 'references/sources.json']:
         dest = output / p.relative_to(ROOT)
         dest.parent.mkdir(parents=True, exist_ok=True)

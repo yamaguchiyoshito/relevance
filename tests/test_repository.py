@@ -18,7 +18,8 @@ class RepositoryTests(unittest.TestCase):
         result, errors = validate()
         self.assertEqual(errors, [])
         self.assertEqual(result.chapters, 12)
-        self.assertEqual(result.svg_files, 13)
+        series = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
+        self.assertEqual(result.svg_files, 1 + sum(len(c['figures']) for c in series['chapters']))
         self.assertGreater(result.footnotes, 20)
 
     def test_footnotes_render_as_notes(self):
@@ -101,6 +102,9 @@ class RepositoryTests(unittest.TestCase):
         data = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
         self.assertEqual(len({c['slug'] for c in data['chapters']}), 12)
         for c in data['chapters']:
+            self.assertGreaterEqual(len(c['figures']), 1)
+            self.assertEqual(len(c['figures']), len(set(c['figures'])))
+        for c in data['chapters']:
             self.assertEqual(len(c['sources']), len(set(c['sources'])))
 
     def test_complete_reader_links_and_figures(self):
@@ -110,7 +114,8 @@ class RepositoryTests(unittest.TestCase):
             report = check(output)
             self.assertEqual(report['errors'], [])
             self.assertEqual(report['chapter_pages'], 12)
-            self.assertEqual(report['chapter_images'], 12)
+            series = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
+            self.assertEqual(report['chapter_images'], sum(len(c['figures']) for c in series['chapters']))
 
     def test_combined_footnote_ids_are_namespaced(self):
         text = 'A[^a].\n\n[^a]: A source.\n'

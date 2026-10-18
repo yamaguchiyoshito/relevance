@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+<title id="title">境界は明確か？</title>
+<desc id="desc">青から緑へ連続した帯のどこにも、境目は引けない</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><linearGradient id="g02b-bar" x1="0" x2="1"><stop offset="0" stop-color="#2b5fd9"/><stop offset="1" stop-color="#2fa36a"/></linearGradient></defs>
+<rect width="1200" height="460" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     02     図2-b</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">境界は明確か？</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">青から緑へ連続した帯のどこにも、境目は引けない</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="150" y="235" width="900" height="70" rx="12" fill="url(#g02b-bar)"/>
+<text x="150.0" y="340.0" fill="#2b5fd9" font-size="24" text-anchor="start" font-weight="700">青</text>
+<text x="1050.0" y="340.0" fill="#2fa36a" font-size="24" text-anchor="end" font-weight="700">緑</text>
+<line x1="330.0" y1="235.0" x2="330.0" y2="305.0" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="330.0" y="225.0" fill="#5d6873" font-size="18" text-anchor="middle" font-weight="400">？</text>
+<line x1="510.0" y1="235.0" x2="510.0" y2="305.0" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="510.0" y="225.0" fill="#5d6873" font-size="18" text-anchor="middle" font-weight="400">？</text>
+<line x1="690.0" y1="235.0" x2="690.0" y2="305.0" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="690.0" y="225.0" fill="#5d6873" font-size="18" text-anchor="middle" font-weight="400">？</text>
+<line x1="870.0" y1="235.0" x2="870.0" y2="305.0" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="870.0" y="225.0" fill="#5d6873" font-size="18" text-anchor="middle" font-weight="400">？</text>
+<text x="600.0" y="345.0" fill="#232a33" font-size="22" text-anchor="middle" font-weight="700">どこから緑？</text>
+<text x="600.0" y="395.0" fill="#232a33" font-size="19" text-anchor="middle" font-weight="400">言葉には輪郭があるが、言葉が指すものには輪郭がない</text>
+</g>
+</svg>
