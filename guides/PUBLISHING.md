@@ -4,7 +4,7 @@
 
 ## 現在の状態
 
-この作業環境ではローカルの `git init` と初期コミットまでを行い、GitHubへの新規作成・push・Pages配置は実施していない。以下は手元の認証済みGitHub CLIを用いて実行する手順である。
+2026年10月18日に `yamaguchiyoshito/relevance` を作成してpushし、公開リポジトリに切り替えたうえで、GitHub PagesをGitHub Actionsソースで有効化した。公開URLは https://yamaguchiyoshito.github.io/relevance/ である。以下は、別の場所へ同じ構成を立てる場合の手順である。
 
 Git、GitHub CLI、Python 3.11以降、Pandoc 3.xを準備する。GitHub CLIは[公式マニュアル](https://cli.github.com/manual/gh_repo_create)に従って導入・認証する。トークンを原稿・設定・コマンド引数へ貼り付けない。
 
@@ -46,7 +46,7 @@ python scripts/publish.py --owner yamaguchiyoshito --name relevance --visibility
 
 ## CI設定の保守
 
-検証ワークフローは `contents: read` のみとし、公開ジョブにのみ `pages: write` と `id-token: write` を与える。Pandocはローカル検証に使った3.7.0.2へ固定した。GitHub Actionsの主要バージョンは作成時点の公開情報に基づく。ワークフロー定義を同梱していることと、GitHub上でその実行が成功済みであることは区別する。この版のリモート実行は未実施である。
+検証ワークフローは `contents: read` のみとし、公開ジョブにのみ `pages: write` と `id-token: write` を与える。Pandocはローカル検証に使った3.7.0.2へ固定した。GitHub Actionsの主要バージョンは作成時点の公開情報に基づく。検証ワークフローとPages配置ワークフローは、2026年10月18日の初回pushと手動実行でGitHub上での成功を確認した。
 
 ## 途中で失敗した場合
 

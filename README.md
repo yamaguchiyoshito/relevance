@@ -37,7 +37,7 @@ LLMは言葉を扱う装置であり、確率的に尤もらしい次の言葉�
 
 ## ブラウザで読む（GitHub Pages）
 
-`main` ブランチへのpushで `.github/workflows/pages.yml` が `_site/` を生成し、GitHub Pagesへ配置する。有効にするにはリポジトリの Settings → Pages → Build and deployment で Source を **GitHub Actions** にする。手順の詳細は[公開手順](guides/PUBLISHING.md)にある。
+公開ページは https://yamaguchiyoshito.github.io/relevance/ にある。`main` ブランチへのpushで `.github/workflows/pages.yml` が `_site/` を生成し、GitHub Pagesへ配置する。有効にするにはリポジトリの Settings → Pages → Build and deployment で Source を **GitHub Actions** にする。手順の詳細は[公開手順](guides/PUBLISHING.md)にある。
 
 ローカルで再生成するにはPython 3.11以降とPandoc 3.xを使う。依存パッケージの追加インストールは不要である。
 
