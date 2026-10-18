@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">AIの生成 × 人間のレビュー（最終形）</title>
+<desc id="desc">四つの階層と、あいだに置く五つの設計案</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="720" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">RELATION     12     図12-a</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">AIの生成 × 人間のレビュー（最終形）</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">四つの階層と、あいだに置く五つの設計案</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="140" y="330" width="300" height="100" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="290.0" y="376.0" fill="#2f8f83" font-size="26" text-anchor="middle" font-weight="700">AIの生成</text>
+<text x="290.0" y="408.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">速さを受け持つ</text>
+<rect x="760" y="330" width="300" height="100" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<text x="910.0" y="376.0" fill="#d0693a" font-size="26" text-anchor="middle" font-weight="700">人間のレビュー</text>
+<text x="910.0" y="408.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">正しさを受け持つ</text>
+<line x1="445.0" y1="360.0" x2="755.0" y2="360.0" stroke="#232a33" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="600.0" y="350.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">順序：生成が先、レビューが後</text>
+<line x1="755.0" y1="400.0" x2="445.0" y2="400.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
+<text x="600.0" y="422.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">依存：レビューは生成がなければ始まらない</text>
+<path d="M 180 442 L 180 460 L 1020 460 L 1020 442" fill="none" stroke="#2f8f83" stroke-width="2"/>
+<text x="600.0" y="482.0" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="700">補完：速さと正しさを分け持つ</text>
+<rect x="140" y="205" width="920" height="70" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
+<text x="600.0" y="248.0" fill="#232a33" font-size="20" text-anchor="middle" font-weight="700">目的：正しいコードを速く届ける</text>
+<line x1="290.0" y1="326.0" x2="290.0" y2="278.0" stroke="#2f8f83" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="910.0" y1="326.0" x2="910.0" y2="278.0" stroke="#d0693a" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="600.0" y="372.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">分業：AIが作り、人が確かめる</text>
+<circle cx="600.0" cy="550.0" r="30" fill="#e8c86a"/>
+<text x="600.0" y="556.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">時間</text>
+<text x="600.0" y="602.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">資源：人間の時間は一つ。競合</text>
+<line x1="290.0" y1="466.0" x2="566.0" y2="540.0" stroke="#d0693a" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="910.0" y1="466.0" x2="634.0" y2="540.0" stroke="#d0693a" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="150.0" y="510.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">「コードを書く」の範囲では代替</text>
+<text x="150.0" y="530.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">「正しいコードを届ける」の範囲では補完</text>
+<text x="140.0" y="316.0" fill="#2f8f83" font-size="14" text-anchor="start" font-weight="700">G：生成の速さ</text>
+<rect x="140" y="322" width="300" height="5" rx="2" fill="#d8d4c8"/><rect x="140" y="322" width="255" height="5" rx="2" fill="#2f8f83"/>
+<text x="760.0" y="316.0" fill="#d0693a" font-size="14" text-anchor="start" font-weight="700">R：レビューの処理能力</text>
+<rect x="760" y="322" width="300" height="5" rx="2" fill="#d8d4c8"/><rect x="760" y="322" width="150" height="5" rx="2" fill="#d0693a"/>
+<rect x="502" y="374" width="22" height="16" rx="3" fill="#d0693a" opacity="0.35"/>
+<rect x="530" y="374" width="22" height="16" rx="3" fill="#d0693a" opacity="0.43"/>
+<rect x="558" y="374" width="22" height="16" rx="3" fill="#d0693a" opacity="0.51"/>
+<rect x="586" y="374" width="22" height="16" rx="3" fill="#d0693a" opacity="0.59"/>
+<rect x="614" y="374" width="22" height="16" rx="3" fill="#d0693a" opacity="0.67"/>
+<rect x="642" y="374" width="22" height="16" rx="3" fill="#d0693a" opacity="0.75"/>
+<rect x="670" y="374" width="22" height="16" rx="3" fill="#d0693a" opacity="0.83"/>
+<text x="600.0" y="386.0" fill="#232a33" font-size="1" text-anchor="start" font-weight="400"></text>
+<text x="600.0" y="448.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="700">滞留：G が R を越えた分が溜まる。閾値は G = R</text>
+<circle cx="750.0" cy="382.0" r="12" fill="none" stroke="#5d6873" stroke-width="2"/>
+<line x1="750.0" y1="382.0" x2="750.0" y2="374.0" stroke="#5d6873" stroke-width="1.5"/>
+<line x1="750.0" y1="382.0" x2="756.0" y2="382.0" stroke="#5d6873" stroke-width="1.5"/>
+<text x="750.0" y="366.0" fill="#5d6873" font-size="12" text-anchor="middle" font-weight="400">遅延</text>
+<line x1="1065.0" y1="380.0" x2="1175.0" y2="380.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
+<text x="1120.0" y="366.0" fill="#5d6873" font-size="12" text-anchor="middle" font-weight="400">外部性：後工程へ</text>
+<text x="910.0" y="556.0" fill="#d0693a" font-size="13" text-anchor="middle" font-weight="400">不可逆：流出した欠陥、失った信頼</text>
+<rect x="30" y="220" width="70" height="80" rx="8" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
+<text x="65.0" y="266.0" fill="#5a4fcf" font-size="18" text-anchor="middle" font-weight="700">価値</text>
+<rect x="30" y="315" width="70" height="80" rx="8" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<text x="65.0" y="361.0" fill="#d0693a" font-size="18" text-anchor="middle" font-weight="700">効能</text>
+<rect x="30" y="410" width="70" height="80" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="65.0" y="456.0" fill="#2f8f83" font-size="18" text-anchor="middle" font-weight="700">作用</text>
+<rect x="30" y="505" width="70" height="80" rx="8" fill="#ffffff" stroke="#5d6873" stroke-width="2"/>
+<text x="65.0" y="551.0" fill="#5d6873" font-size="18" text-anchor="middle" font-weight="700">構造</text>
+<circle cx="560.0" cy="290.0" r="13" fill="#232a33"/>
+<text x="560.0" y="296.0" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">1</text>
+<text x="580.0" y="295.0" fill="#232a33" font-size="13" text-anchor="start" font-weight="400">効能：GをR以下に保つ（絞る／Rを上げる）</text>
+<circle cx="460.0" cy="504.0" r="13" fill="#232a33"/>
+<text x="460.0" y="510.0" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">2</text>
+<text x="480.0" y="509.0" fill="#232a33" font-size="13" text-anchor="start" font-weight="400">構造：戻りの流れを速く（小さく、頻繁に）</text>
+<circle cx="780.0" cy="612.0" r="13" fill="#232a33"/>
+<text x="780.0" y="618.0" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">3</text>
+<text x="800.0" y="617.0" fill="#232a33" font-size="13" text-anchor="start" font-weight="400">作用：レビューを検査・承認・学習に分ける</text>
+<circle cx="1080.0" cy="420.0" r="13" fill="#232a33"/>
+<text x="1080.0" y="426.0" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">4</text>
+<text x="1100.0" y="425.0" fill="#232a33" font-size="13" text-anchor="start" font-weight="400">外部性を帳簿に</text>
+<circle cx="160.0" cy="612.0" r="13" fill="#232a33"/>
+<text x="160.0" y="618.0" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">5</text>
+<text x="180.0" y="617.0" fill="#232a33" font-size="13" text-anchor="start" font-weight="400">価値：ない世界を推定して測る</text>
+<text x="600.0" y="672.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">五つの案のどれも、箱そのものには手を入れていない。上げているのは、あいだ</text>
+</g>
+</svg>

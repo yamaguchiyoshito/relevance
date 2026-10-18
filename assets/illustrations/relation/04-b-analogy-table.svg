@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+<title id="title">類比は、対応表を要求する</title>
+<desc id="desc">血管と道路網。空欄が、類比の限界を教える</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="600" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">RELATION     04     図4-b</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">類比は、対応表を要求する</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">血管と道路網。空欄が、類比の限界を教える</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<text x="330.0" y="225.0" fill="#d0693a" font-size="20" text-anchor="middle" font-weight="700">血管</text>
+<text x="870.0" y="225.0" fill="#2f8f83" font-size="20" text-anchor="middle" font-weight="700">道路網</text>
+<rect x="200" y="260" width="260" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<text x="330.0" y="291.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">血液</text>
+<rect x="740" y="260" width="260" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="870.0" y="291.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">車</text>
+<line x1="465.0" y1="284.0" x2="735.0" y2="284.0" stroke="#5d6873" stroke-width="1.5"/>
+<line x1="735.0" y1="284.0" x2="465.0" y2="284.0" stroke="#5d6873" stroke-width="1.5"/>
+<rect x="200" y="332" width="260" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<text x="330.0" y="363.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">心臓</text>
+<rect x="740" y="332" width="260" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="870.0" y="363.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">物流拠点</text>
+<line x1="465.0" y1="356.0" x2="735.0" y2="356.0" stroke="#5d6873" stroke-width="1.5"/>
+<line x1="735.0" y1="356.0" x2="465.0" y2="356.0" stroke="#5d6873" stroke-width="1.5"/>
+<rect x="200" y="404" width="260" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<text x="330.0" y="435.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">詰まり</text>
+<rect x="740" y="404" width="260" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="870.0" y="435.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">渋滞</text>
+<line x1="465.0" y1="428.0" x2="735.0" y2="428.0" stroke="#5d6873" stroke-width="1.5"/>
+<line x1="735.0" y1="428.0" x2="465.0" y2="428.0" stroke="#5d6873" stroke-width="1.5"/>
+<rect x="200" y="476" width="260" height="48" rx="10" fill="#ffffff" stroke="#d8d4c8" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="330.0" y="507.0" fill="#5d6873" font-size="17" text-anchor="middle" font-weight="700">（なし）</text>
+<rect x="740" y="476" width="260" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="870.0" y="507.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">信号</text>
+<text x="600.0" y="505.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="700">対応なし ＝ 類比の限界</text>
+<text x="50.0" y="572.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">比喩は表現の関係、類比は構造の関係。類比は仮説を検証可能な形に整える。</text>
+</g>
+</svg>

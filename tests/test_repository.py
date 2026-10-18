@@ -18,8 +18,10 @@ class RepositoryTests(unittest.TestCase):
         result, errors = validate()
         self.assertEqual(errors, [])
         self.assertEqual(result.chapters, 24)
-        series = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
-        self.assertEqual(result.svg_files, 1 + sum(len(c['figures']) for c in series['chapters']))
+        total = 0
+        for sf in ['series.json', 'series-2/series.json']:
+            total += sum(len(c['figures']) for c in json.loads((ROOT / sf).read_text(encoding='utf-8'))['chapters'])
+        self.assertEqual(result.svg_files, 1 + total)
         self.assertGreater(result.footnotes, 20)
 
     def test_footnotes_render_as_notes(self):
@@ -70,9 +72,9 @@ class RepositoryTests(unittest.TestCase):
             self.assertTrue(svg_errors(p))
 
     def test_figures_are_reproducible(self):
-        before = {p.name: p.read_bytes() for p in (ROOT / 'assets/illustrations').glob('*.svg')}
+        before = {str(p): p.read_bytes() for p in (ROOT / 'assets/illustrations').rglob('*.svg')}
         subprocess.run([sys.executable, str(ROOT / 'scripts/draw_figures.py')], check=True, capture_output=True)
-        after = {p.name: p.read_bytes() for p in (ROOT / 'assets/illustrations').glob('*.svg')}
+        after = {str(p): p.read_bytes() for p in (ROOT / 'assets/illustrations').rglob('*.svg')}
         self.assertEqual(before, after)
 
     def test_bibliography_is_in_sync(self):
@@ -120,8 +122,10 @@ class RepositoryTests(unittest.TestCase):
             report = check(output)
             self.assertEqual(report['errors'], [])
             self.assertEqual(report['chapter_pages'], 24)
-            series = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
-            self.assertEqual(report['chapter_images'], sum(len(c['figures']) for c in series['chapters']))
+            total = 0
+            for sf in ['series.json', 'series-2/series.json']:
+                total += sum(len(c['figures']) for c in json.loads((ROOT / sf).read_text(encoding='utf-8'))['chapters'])
+            self.assertEqual(report['chapter_images'], total)
 
     def test_combined_footnote_ids_are_namespaced(self):
         text = 'A[^a].\n\n[^a]: A source.\n'

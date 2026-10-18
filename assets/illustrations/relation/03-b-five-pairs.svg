@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+<title id="title">五つの組：見えやすいほうと、確かめにくいほう</title>
+<desc id="desc">取り違えは、いつも同じ向きに起きる</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="640" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">RELATION     03     図3-b</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">五つの組：見えやすいほうと、確かめにくいほう</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">取り違えは、いつも同じ向きに起きる</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<text x="420.0" y="215.0" fill="#2f8f83" font-size="18" text-anchor="middle" font-weight="700">見えやすい</text>
+<text x="820.0" y="215.0" fill="#d0693a" font-size="18" text-anchor="middle" font-weight="700">確かめにくい</text>
+<rect x="250" y="250" width="340" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="420.0" y="281.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">相関</text>
+<rect x="650" y="250" width="340" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="820.0" y="281.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">因果</text>
+<text x="1010.0" y="281.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">夏とアイスと事故</text>
+<line x1="595.0" y1="274.0" x2="645.0" y2="274.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="250" y="318" width="340" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="420.0" y="349.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">条件（依存）</text>
+<rect x="650" y="318" width="340" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="820.0" y="349.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">原因</text>
+<text x="1010.0" y="349.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">酸素と火</text>
+<line x1="595.0" y1="342.0" x2="645.0" y2="342.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="250" y="386" width="340" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="420.0" y="417.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">種類として含む</text>
+<rect x="650" y="386" width="340" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="820.0" y="417.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">部品として含む</text>
+<text x="1010.0" y="417.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">犬は動物、エンジンは車</text>
+<line x1="595.0" y1="410.0" x2="645.0" y2="410.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="250" y="454" width="340" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="420.0" y="485.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">違う（対比）</text>
+<rect x="650" y="454" width="340" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="820.0" y="485.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">両立しない（対立）</text>
+<text x="1010.0" y="485.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">赤と青、一つの椅子</text>
+<line x1="595.0" y1="478.0" x2="645.0" y2="478.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="250" y="522" width="340" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="420.0" y="553.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">補い合う（補完）</text>
+<rect x="650" y="522" width="340" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="820.0" y="553.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">なければ成り立たない（依存）</text>
+<text x="1010.0" y="553.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">両手と、鍵と錠</text>
+<line x1="595.0" y1="546.0" x2="645.0" y2="546.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="50.0" y="612.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">外してみないと分からない。関係がなかったら、どうなるのか（第10回へ）。</text>
+</g>
+</svg>

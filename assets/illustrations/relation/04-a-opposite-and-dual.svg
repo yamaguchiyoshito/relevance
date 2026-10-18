@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="580" viewBox="0 0 1200 580" role="img" aria-labelledby="title desc">
+<title id="title">紙と画面は反対。電子ペーパーは双対</title>
+<desc id="desc">共通の軸の両端と、役割を入れ替えて置いた第三のもの</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><radialGradient id="grel04a-1"><stop offset="0" stop-color="#5a4fcf" stop-opacity="0.55"/><stop offset="0.55" stop-color="#5a4fcf" stop-opacity="0.25"/><stop offset="1" stop-color="#5a4fcf" stop-opacity="0"/></radialGradient><radialGradient id="grel04a-2"><stop offset="0" stop-color="#2f8f83" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2f8f83" stop-opacity="0.25"/><stop offset="1" stop-color="#2f8f83" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="580" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">RELATION     04     図4-a</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">紙と画面は反対。電子ペーパーは双対</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">共通の軸の両端と、役割を入れ替えて置いた第三のもの</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<line x1="200.0" y1="430.0" x2="1000.0" y2="430.0" stroke="#d8d4c8" stroke-width="3"/>
+<text x="600.0" y="470.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">共通の軸：読むための面</text>
+<circle cx="300.0" cy="430.0" r="90" fill="url(#grel04a-1)"/>
+<text x="300.0" y="436.0" fill="#5a4fcf" font-size="26" text-anchor="middle" font-weight="700">紙</text>
+<circle cx="900.0" cy="430.0" r="90" fill="url(#grel04a-2)"/>
+<text x="900.0" y="436.0" fill="#2f8f83" font-size="26" text-anchor="middle" font-weight="700">画面</text>
+<line x1="400.0" y1="400.0" x2="800.0" y2="400.0" stroke="#d0693a" stroke-width="2"/>
+<line x1="800.0" y1="400.0" x2="400.0" y2="400.0" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="600.0" y="390.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">反対：両端にある。両立する</text>
+<rect x="500" y="230" width="200" height="90" rx="12" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<text x="600.0" y="268.0" fill="#d0693a" font-size="19" text-anchor="middle" font-weight="700">電子ペーパー</text>
+<text x="600.0" y="296.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">紙の構造 ＋ 画面の役割</text>
+<line x1="330.0" y1="395.0" x2="520.0" y2="325.0" stroke="#5a4fcf" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="400.0" y="345.0" fill="#5a4fcf" font-size="13" text-anchor="middle" font-weight="400">構造を借りる</text>
+<line x1="870.0" y1="395.0" x2="680.0" y2="325.0" stroke="#2f8f83" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="800.0" y="345.0" fill="#2f8f83" font-size="13" text-anchor="middle" font-weight="400">役割を入れ替える</text>
+<text x="600.0" y="215.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">双対：共通の構造の中で役割を入れ替えても対応が保たれる</text>
+<text x="50.0" y="552.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">第1クール第9回の「A、B or C」を、関係の名前で言い直す。</text>
+</g>
+</svg>

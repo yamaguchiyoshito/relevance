@@ -135,7 +135,7 @@ def validate(root: Path = ROOT) -> tuple[Result, list[str]]:
         captions = re.findall(r'^\*図(\d+)-(\d+)：.+\*$', text, re.M)
         if [(int(a), int(b)) for a, b in captions] != [(c['number'], i) for i in range(1, len(c['figures']) + 1)]:
             errors.append(f'{c["path"]}: figure captions must be 図{c["number"]}-1 .. 図{c["number"]}-{len(c["figures"])} in order')
-        if text.count('](../assets/illustrations/') != len(c['figures']):
+        if len(re.findall(r'^!\[[^\]]*\]\([^)]*assets/illustrations/', text, re.M)) != len(c['figures']):
             errors.append(f'{c["path"]}: number of figure references differs from series.json')
         references = set(re.findall(r'^\[\^([^\]]+)\]:', text, re.M))
         uses = set(re.findall(r'\[\^([^\]]+)\](?!:)', text))
