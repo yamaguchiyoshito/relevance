@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">関連は仮説であり、評価がそれを検証する</title>
+<desc id="desc">見出す → 言葉に固定する → 検証する → 世界の側に置かれる、という循環</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="720" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     12</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">関連は仮説であり、評価がそれを検証する</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">見出す → 言葉に固定する → 検証する → 世界の側に置かれる、という循環</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="90" y="240" width="330" height="95" rx="14" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
+<text x="255.0" y="283.5" fill="#5a4fcf" font-size="24" text-anchor="middle" font-weight="700">見出す</text>
+<text x="255.0" y="315.5" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">2ホップ・比喩・組み合わせ</text>
+<rect x="780" y="240" width="330" height="95" rx="14" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
+<text x="945.0" y="283.5" fill="#5a4fcf" font-size="24" text-anchor="middle" font-weight="700">言葉に固定する</text>
+<text x="945.0" y="315.5" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">取っ手をつける・断片を先に置く</text>
+<rect x="780" y="480" width="330" height="95" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<text x="945.0" y="523.5" fill="#d0693a" font-size="24" text-anchor="middle" font-weight="700">検証する</text>
+<text x="945.0" y="555.5" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">評価の目・外部の事実と照合</text>
+<rect x="90" y="480" width="330" height="95" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="255.0" y="523.5" fill="#2f8f83" font-size="24" text-anchor="middle" font-weight="700">世界の側に置かれる</text>
+<text x="255.0" y="555.5" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">関係が「ある」と言えるようになる</text>
+<line x1="425.0" y1="287.0" x2="775.0" y2="287.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="945.0" y1="340.0" x2="945.0" y2="475.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="775.0" y1="527.0" x2="425.0" y2="527.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="255.0" y1="475.0" x2="255.0" y2="340.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="600.0" y="272.0" fill="#2f8f83" font-size="18" text-anchor="middle" font-weight="700">生成は安い</text>
+<text x="985.0" y="412.0" fill="#d0693a" font-size="18" text-anchor="middle" font-weight="400">評価は高い</text>
+<text x="600.0" y="560.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">仮説が本物になる</text>
+<text x="225.0" y="412.0" fill="#5d6873" font-size="15" text-anchor="end" font-weight="400">新しい媒介が増え、</text>
+<text x="225.0" y="434.0" fill="#5d6873" font-size="15" text-anchor="end" font-weight="400">次の関係が見出される</text>
+<text x="600.0" y="400.0" fill="#5a4fcf" font-size="30" text-anchor="middle" font-weight="700">関連は仮説に過ぎない</text>
+<text x="600.0" y="436.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">見出すだけでは足りず、言葉にするだけでも足りない</text>
+<text x="600.0" y="648.0" fill="#232a33" font-size="24" text-anchor="middle" font-weight="700">評価の目は、どこから来るのか。</text>
+<text x="50.0" y="692.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">次の問い：「面白い」と感じる力は、体験という鍋からしか汲めないのか。</text>
+</g>
+</svg>

@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">空間そのものが、ある方向に歪んで圧縮されている</title>
+<desc id="desc">等方的な散らばり（素朴な絵）と、狭い円錐に密集する異方性（実測）</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="680" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     04</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">空間そのものが、ある方向に歪んで圧縮されている</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">等方的な散らばり（素朴な絵）と、狭い円錐に密集する異方性（実測）</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="60" y="205" width="480" height="400" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
+<text x="300.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">等方的：どの方向にも同じ</text>
+<circle cx="300.0" cy="420.0" r="150" fill="none" stroke="#d8d4c8" stroke-width="2"/>
+<circle cx="291.3" cy="428.0" r="5" fill="#5a4fcf"/>
+<circle cx="301.8" cy="399.6" r="5" fill="#5a4fcf"/>
+<circle cx="316.1" cy="441.0" r="5" fill="#5a4fcf"/>
+<circle cx="269.2" cy="414.5" r="5" fill="#5a4fcf"/>
+<circle cx="330.0" cy="400.9" r="5" fill="#5a4fcf"/>
+<circle cx="289.8" cy="457.9" r="5" fill="#5a4fcf"/>
+<circle cx="280.3" cy="382.1" r="5" fill="#5a4fcf"/>
+<circle cx="343.0" cy="435.7" r="5" fill="#5a4fcf"/>
+<circle cx="254.9" cy="438.6" r="5" fill="#5a4fcf"/>
+<circle cx="321.9" cy="373.3" r="5" fill="#5a4fcf"/>
+<circle cx="316.2" cy="471.7" r="5" fill="#5a4fcf"/>
+<circle cx="250.9" cy="391.5" r="5" fill="#5a4fcf"/>
+<circle cx="357.8" cy="407.3" r="5" fill="#5a4fcf"/>
+<circle cx="264.6" cy="470.3" r="5" fill="#5a4fcf"/>
+<circle cx="291.8" cy="356.8" r="5" fill="#5a4fcf"/>
+<circle cx="350.4" cy="462.5" r="5" fill="#5a4fcf"/>
+<circle cx="232.1" cy="422.8" r="5" fill="#5a4fcf"/>
+<circle cx="349.6" cy="370.6" r="5" fill="#5a4fcf"/>
+<circle cx="296.7" cy="491.9" r="5" fill="#5a4fcf"/>
+<circle cx="252.7" cy="363.3" r="5" fill="#5a4fcf"/>
+<circle cx="375.1" cy="430.1" r="5" fill="#5a4fcf"/>
+<circle cx="236.3" cy="464.3" r="5" fill="#5a4fcf"/>
+<circle cx="317.4" cy="342.6" r="5" fill="#5a4fcf"/>
+<circle cx="340.3" cy="490.4" r="5" fill="#5a4fcf"/>
+<circle cx="221.1" cy="394.8" r="5" fill="#5a4fcf"/>
+<circle cx="376.7" cy="384.6" r="5" fill="#5a4fcf"/>
+<circle cx="266.7" cy="499.5" r="5" fill="#5a4fcf"/>
+<circle cx="270.3" cy="337.4" r="5" fill="#5a4fcf"/>
+<circle cx="379.1" cy="461.6" r="5" fill="#5a4fcf"/>
+<circle cx="212.1" cy="443.2" r="5" fill="#5a4fcf"/>
+<circle cx="350.0" cy="342.3" r="5" fill="#5a4fcf"/>
+<circle cx="315.9" cy="512.6" r="5" fill="#5a4fcf"/>
+<circle cx="224.6" cy="361.6" r="5" fill="#5a4fcf"/>
+<circle cx="396.5" cy="412.0" r="5" fill="#5a4fcf"/>
+<circle cx="233.3" cy="492.1" r="5" fill="#5a4fcf"/>
+<circle cx="300.5" cy="320.3" r="5" fill="#5a4fcf"/>
+<circle cx="367.9" cy="494.9" r="5" fill="#5a4fcf"/>
+<circle cx="198.0" cy="410.5" r="5" fill="#5a4fcf"/>
+<circle cx="382.7" cy="357.2" r="5" fill="#5a4fcf"/>
+<circle cx="281.2" cy="523.5" r="5" fill="#5a4fcf"/>
+<circle cx="243.3" cy="329.9" r="5" fill="#5a4fcf"/>
+<circle cx="404.0" cy="448.5" r="5" fill="#5a4fcf"/>
+<circle cx="202.9" cy="469.8" r="5" fill="#5a4fcf"/>
+<circle cx="338.4" cy="316.5" r="5" fill="#5a4fcf"/>
+<circle cx="342.1" cy="523.4" r="5" fill="#5a4fcf"/>
+<circle cx="198.0" cy="371.7" r="5" fill="#5a4fcf"/>
+<circle cx="409.0" cy="386.4" r="5" fill="#5a4fcf"/>
+<circle cx="241.7" cy="519.5" r="5" fill="#5a4fcf"/>
+<circle cx="275.5" cy="306.1" r="5" fill="#5a4fcf"/>
+<circle cx="396.0" cy="488.2" r="5" fill="#5a4fcf"/>
+<circle cx="182.0" cy="434.7" r="5" fill="#5a4fcf"/>
+<circle cx="377.8" cy="328.6" r="5" fill="#5a4fcf"/>
+<circle cx="304.4" cy="541.2" r="5" fill="#5a4fcf"/>
+<circle cx="214.1" cy="332.8" r="5" fill="#5a4fcf"/>
+<circle cx="423.4" cy="426.3" r="5" fill="#5a4fcf"/>
+<circle cx="203.9" cy="499.4" r="5" fill="#5a4fcf"/>
+<circle cx="317.4" cy="295.4" r="5" fill="#5a4fcf"/>
+<circle cx="372.0" cy="524.5" r="5" fill="#5a4fcf"/>
+<circle cx="175.3" cy="391.3" r="5" fill="#5a4fcf"/>
+<circle cx="412.3" cy="356.4" r="5" fill="#5a4fcf"/>
+<circle cx="259.8" cy="543.8" r="5" fill="#5a4fcf"/>
+<circle cx="245.5" cy="300.6" r="5" fill="#5a4fcf"/>
+<circle cx="421.8" cy="471.7" r="5" fill="#5a4fcf"/>
+<circle cx="174.3" cy="464.5" r="5" fill="#5a4fcf"/>
+<circle cx="363.1" cy="301.3" r="5" fill="#5a4fcf"/>
+<circle cx="333.9" cy="551.1" r="5" fill="#5a4fcf"/>
+<circle cx="185.6" cy="345.6" r="5" fill="#5a4fcf"/>
+<circle cx="435.6" cy="397.4" r="5" fill="#5a4fcf"/>
+<circle cx="214.7" cy="529.1" r="5" fill="#5a4fcf"/>
+<circle cx="289.2" cy="280.9" r="5" fill="#5a4fcf"/>
+<circle cx="217.6" cy="533.2" r="8" fill="#d0693a"/>
+<circle cx="422.9" cy="352.9" r="8" fill="#d0693a"/>
+<line x1="300.0" y1="420.0" x2="217.6" y2="533.2" stroke="#d0693a" stroke-width="2"/>
+<line x1="300.0" y1="420.0" x2="422.9" y2="352.9" stroke="#d0693a" stroke-width="2"/>
+<text x="300.0" y="590.0" fill="#232a33" font-size="18" text-anchor="middle" font-weight="400">無関係なものは、遠く見える</text>
+<rect x="620" y="205" width="520" height="400" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
+<text x="880.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">異方的：全員が同じ方向を向く</text>
+<line x1="680.0" y1="560.0" x2="1110.0" y2="290.0" stroke="#d8d4c8" stroke-width="2"/>
+<line x1="680.0" y1="560.0" x2="1110.0" y2="410.0" stroke="#d8d4c8" stroke-width="2"/>
+<circle cx="739.3" cy="522.8" r="5" fill="#5a4fcf"/>
+<circle cx="844.9" cy="486.1" r="5" fill="#5a4fcf"/>
+<circle cx="878.0" cy="449.9" r="5" fill="#5a4fcf"/>
+<circle cx="924.1" cy="465.7" r="5" fill="#5a4fcf"/>
+<circle cx="941.8" cy="432.1" r="5" fill="#5a4fcf"/>
+<circle cx="952.2" cy="396.7" r="5" fill="#5a4fcf"/>
+<circle cx="994.0" cy="426.8" r="5" fill="#5a4fcf"/>
+<circle cx="1000.6" cy="390.1" r="5" fill="#5a4fcf"/>
+<circle cx="1040.1" cy="429.3" r="5" fill="#5a4fcf"/>
+<circle cx="1044.7" cy="390.9" r="5" fill="#5a4fcf"/>
+<circle cx="740.7" cy="525.2" r="5" fill="#5a4fcf"/>
+<circle cx="847.7" cy="492.8" r="5" fill="#5a4fcf"/>
+<circle cx="882.3" cy="458.0" r="5" fill="#5a4fcf"/>
+<circle cx="902.7" cy="422.6" r="5" fill="#5a4fcf"/>
+<circle cx="946.8" cy="442.8" r="5" fill="#5a4fcf"/>
+<circle cx="958.7" cy="407.8" r="5" fill="#5a4fcf"/>
+<circle cx="999.2" cy="439.6" r="5" fill="#5a4fcf"/>
+<circle cx="1007.2" cy="403.3" r="5" fill="#5a4fcf"/>
+<circle cx="1010.0" cy="365.5" r="5" fill="#5a4fcf"/>
+<circle cx="1051.3" cy="405.8" r="5" fill="#5a4fcf"/>
+<circle cx="742.1" cy="527.7" r="5" fill="#5a4fcf"/>
+<circle cx="850.3" cy="499.7" r="5" fill="#5a4fcf"/>
+<circle cx="886.2" cy="466.3" r="5" fill="#5a4fcf"/>
+<circle cx="908.1" cy="431.7" r="5" fill="#5a4fcf"/>
+<circle cx="951.3" cy="453.8" r="5" fill="#5a4fcf"/>
+<circle cx="964.6" cy="419.3" r="5" fill="#5a4fcf"/>
+<circle cx="971.7" cy="383.1" r="5" fill="#5a4fcf"/>
+<circle cx="1013.3" cy="416.7" r="5" fill="#5a4fcf"/>
+<circle cx="1017.6" cy="379.0" r="5" fill="#5a4fcf"/>
+<circle cx="1057.3" cy="421.0" r="5" fill="#5a4fcf"/>
+<circle cx="743.4" cy="530.3" r="5" fill="#5a4fcf"/>
+<circle cx="836.4" cy="469.5" r="5" fill="#5a4fcf"/>
+<circle cx="889.9" cy="474.8" r="5" fill="#5a4fcf"/>
+<circle cx="913.1" cy="441.1" r="5" fill="#5a4fcf"/>
+<circle cx="927.2" cy="405.8" r="5" fill="#5a4fcf"/>
+<circle cx="970.1" cy="430.9" r="5" fill="#5a4fcf"/>
+<circle cx="978.6" cy="395.1" r="5" fill="#5a4fcf"/>
+<circle cx="1018.9" cy="430.3" r="5" fill="#5a4fcf"/>
+<circle cx="1024.7" cy="392.9" r="5" fill="#5a4fcf"/>
+<circle cx="1025.4" cy="354.2" r="5" fill="#5a4fcf"/>
+<circle cx="744.5" cy="532.8" r="5" fill="#5a4fcf"/>
+<circle cx="839.9" cy="475.9" r="5" fill="#5a4fcf"/>
+<circle cx="893.2" cy="483.3" r="5" fill="#5a4fcf"/>
+<circle cx="917.8" cy="450.6" r="5" fill="#5a4fcf"/>
+<circle cx="933.3" cy="416.0" r="5" fill="#5a4fcf"/>
+<circle cx="975.1" cy="442.8" r="5" fill="#5a4fcf"/>
+<circle cx="985.0" cy="407.3" r="5" fill="#5a4fcf"/>
+<circle cx="989.3" cy="370.4" r="5" fill="#5a4fcf"/>
+<circle cx="1031.2" cy="407.0" r="5" fill="#5a4fcf"/>
+<circle cx="1033.4" cy="368.4" r="5" fill="#5a4fcf"/>
+<circle cx="745.6" cy="535.5" r="5" fill="#5a4fcf"/>
+<circle cx="843.2" cy="482.4" r="5" fill="#5a4fcf"/>
+<circle cx="875.5" cy="445.5" r="5" fill="#5a4fcf"/>
+<circle cx="922.0" cy="460.4" r="5" fill="#5a4fcf"/>
+<circle cx="938.9" cy="426.3" r="5" fill="#5a4fcf"/>
+<circle cx="979.6" cy="454.9" r="5" fill="#5a4fcf"/>
+<circle cx="991.0" cy="419.8" r="5" fill="#5a4fcf"/>
+<circle cx="996.8" cy="383.1" r="5" fill="#5a4fcf"/>
+<circle cx="1037.1" cy="421.4" r="5" fill="#5a4fcf"/>
+<circle cx="1040.9" cy="382.9" r="5" fill="#5a4fcf"/>
+<circle cx="740.0" cy="523.9" r="5" fill="#5a4fcf"/>
+<circle cx="846.2" cy="489.1" r="5" fill="#5a4fcf"/>
+<circle cx="880.0" cy="453.6" r="5" fill="#5a4fcf"/>
+<circle cx="925.8" cy="470.3" r="5" fill="#5a4fcf"/>
+<circle cx="944.1" cy="437.0" r="5" fill="#5a4fcf"/>
+<circle cx="955.2" cy="401.7" r="5" fill="#5a4fcf"/>
+<circle cx="996.4" cy="432.6" r="5" fill="#5a4fcf"/>
+<circle cx="1003.7" cy="396.1" r="5" fill="#5a4fcf"/>
+<circle cx="1005.6" cy="358.2" r="5" fill="#5a4fcf"/>
+<circle cx="1047.8" cy="397.7" r="5" fill="#5a4fcf"/>
+<circle cx="934.1" cy="400.5" r="8" fill="#d0693a"/>
+<circle cx="991.6" cy="451.3" r="8" fill="#d0693a"/>
+<line x1="680.0" y1="560.0" x2="934.1" y2="400.5" stroke="#d0693a" stroke-width="2"/>
+<line x1="680.0" y1="560.0" x2="991.6" y2="451.3" stroke="#d0693a" stroke-width="2"/>
+<text x="1010.0" y="262.0" fill="#d0693a" font-size="17" text-anchor="start" font-weight="700">角度が小さい</text>
+<text x="1010.0" y="284.0" fill="#d0693a" font-size="17" text-anchor="start" font-weight="700">＝ 似て見える</text>
+<text x="880.0" y="590.0" fill="#232a33" font-size="18" text-anchor="middle" font-weight="400">無関係なものまで、近く見える</text>
+<text x="50.0" y="652.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">測られる側に境界がないことと、測る側の物差しが曲がっていることは、別の原因。</text>
+</g>
+</svg>

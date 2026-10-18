@@ -1,0 +1,134 @@
+from pathlib import Path
+import json
+import subprocess
+import sys
+import tempfile
+import unittest
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'scripts'))
+from build import parse_markdown, render, map_url, build, site_index_text
+from validate import validate, svg_errors, walk
+from check_html import check, Document
+from bibliography import bibliography_text
+
+
+class RepositoryTests(unittest.TestCase):
+    def test_entire_repository(self):
+        result, errors = validate()
+        self.assertEqual(errors, [])
+        self.assertEqual(result.chapters, 12)
+        self.assertEqual(result.svg_files, 13)
+        self.assertGreater(result.footnotes, 20)
+
+    def test_footnotes_render_as_notes(self):
+        output = render('本文[^a]。\n\n[^a]: 出典。\n')
+        self.assertIn('class="footnotes', output)
+        self.assertNotIn('<script', output)
+
+    def test_dollar_signs_are_not_math(self):
+        ast = parse_markdown('価格は $5 と $7 です。\n')
+        self.assertFalse(any(n.get('t') == 'Math' for n in walk(ast)))
+
+    def test_site_index_stops_at_marker(self):
+        text = '# T\n\n本文\n\n<!-- SITE-INDEX-END -->\n\n## GitHubで読む\n\n運用\n'
+        self.assertEqual(site_index_text(text), '# T\n\n本文\n')
+        self.assertEqual(site_index_text('# T\n\n本文\n'), '# T\n\n本文\n')
+        readme = (ROOT / 'README.md').read_text(encoding='utf-8')
+        self.assertIn('## 全12回の目次', site_index_text(readme))
+        self.assertNotIn('## GitHubで読む', site_index_text(readme))
+
+    def test_relative_links(self):
+        self.assertEqual(map_url('../README.md'), '../index.html')
+        self.assertEqual(map_url('one.md#test'), 'one.html#test')
+        self.assertEqual(map_url('https://example.org/a.md'), 'https://example.org/a.md')
+        self.assertEqual(map_url('../assets/a.svg'), '../assets/a.svg')
+
+    def test_svg_rejects_executable_content(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / 'x.svg'
+            p.write_text('<svg viewBox="0 0 10 10" role="img"><title>X</title><desc>Y</desc><script>alert(1)</script></svg>')
+            self.assertTrue(any('forbidden SVG' in x for x in svg_errors(p)))
+
+    def test_svg_rejects_external_href(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / 'x.svg'
+            p.write_text('<svg viewBox="0 0 10 10" role="img"><title>X</title><desc>Y</desc><a href="https://example.org"/></svg>')
+            self.assertTrue(any('external href' in x for x in svg_errors(p)))
+
+    def test_svg_allows_internal_gradient(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / 'x.svg'
+            p.write_text('<svg viewBox="0 0 10 10" role="img" aria-labelledby="t d"><title id="t">X</title><desc id="d">Y</desc><defs><radialGradient id="g"/></defs><circle fill="url(#g)" r="1"/></svg>')
+            self.assertEqual(svg_errors(p), [])
+
+    def test_svg_rejects_malformed_xml(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / 'x.svg'
+            p.write_text('<svg>')
+            self.assertTrue(svg_errors(p))
+
+    def test_figures_are_reproducible(self):
+        before = {p.name: p.read_bytes() for p in (ROOT / 'assets/illustrations').glob('*.svg')}
+        subprocess.run([sys.executable, str(ROOT / 'scripts/draw_figures.py')], check=True, capture_output=True)
+        after = {p.name: p.read_bytes() for p in (ROOT / 'assets/illustrations').glob('*.svg')}
+        self.assertEqual(before, after)
+
+    def test_bibliography_is_in_sync(self):
+        sources = json.loads((ROOT / 'references/sources.json').read_text(encoding='utf-8'))
+        self.assertEqual((ROOT / 'references/bibliography.md').read_text(encoding='utf-8'), bibliography_text(sources))
+
+    def test_publish_defaults_to_dry_run(self):
+        p = subprocess.run([sys.executable, str(ROOT / 'scripts/publish.py'), '--owner', 'example'], capture_output=True, text=True)
+        self.assertEqual(p.returncode, 0)
+        self.assertIn('DRY RUN', p.stdout)
+        self.assertIn('private', p.stdout)
+
+    def test_publish_rejects_path_injection(self):
+        p = subprocess.run([sys.executable, str(ROOT / 'scripts/publish.py'), '--owner', '../bad'], capture_output=True, text=True)
+        self.assertNotEqual(p.returncode, 0)
+
+    def test_build_refuses_source_overwrite(self):
+        with self.assertRaises(RuntimeError):
+            build(ROOT)
+
+    def test_combinatorics_in_chapter_eight(self):
+        self.assertEqual(2 ** 3 - 1, 7)
+        self.assertEqual(100 * 99 * 98 // 6, 161700)
+        self.assertEqual(100 * 99 * 98, 970200)
+
+    def test_chapter_ids_and_sources_are_unique(self):
+        data = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
+        self.assertEqual(len({c['slug'] for c in data['chapters']}), 12)
+        for c in data['chapters']:
+            self.assertEqual(len(c['sources']), len(set(c['sources'])))
+
+    def test_complete_reader_links_and_figures(self):
+        with tempfile.TemporaryDirectory() as d:
+            output = Path(d) / 'reader'
+            build(output)
+            report = check(output)
+            self.assertEqual(report['errors'], [])
+            self.assertEqual(report['chapter_pages'], 12)
+            self.assertEqual(report['chapter_images'], 12)
+
+    def test_combined_footnote_ids_are_namespaced(self):
+        text = 'A[^a].\n\n[^a]: A source.\n'
+        doc = Document(render(text, prefix='a-') + render(text, prefix='b-'))
+        self.assertEqual(len(doc.ids), len(set(doc.ids)))
+
+    def test_html_checker_detects_missing_target(self):
+        with tempfile.TemporaryDirectory() as d:
+            output = Path(d)
+            (output / 'index.html').write_text('<html><a href="missing.html">Link</a></html>')
+            self.assertTrue(any('missing target' in e for e in check(output)['errors']))
+
+    def test_html_checker_rejects_network_images(self):
+        with tempfile.TemporaryDirectory() as d:
+            output = Path(d)
+            (output / 'index.html').write_text('<html><img src="https://example.org/image.svg"></html>')
+            self.assertTrue(any('external resource' in e for e in check(output)['errors']))
+
+
+if __name__ == '__main__':
+    unittest.main()

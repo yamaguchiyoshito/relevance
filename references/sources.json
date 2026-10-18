@@ -1,0 +1,178 @@
+{
+  "ethayarajh": {
+    "author": "Kawin Ethayarajh",
+    "year": 2019,
+    "title": "How Contextual are Contextualized Word Representations? Comparing the Geometry of BERT, ELMo, and GPT-2 Embeddings",
+    "url": "https://aclanthology.org/D19-1006/",
+    "note": "EMNLP-IJCNLP 2019。文脈化された単語埋め込みが異方的であることを示した。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "mu-viswanath": {
+    "author": "Jiaqi Mu, Pramod Viswanath",
+    "year": 2018,
+    "title": "All-but-the-Top: Simple and Effective Postprocessing for Word Representations",
+    "url": "https://openreview.net/forum?id=HkuGJ3kCb",
+    "note": "ICLR 2018。共通成分を差し引くことで類似度判定が改善することを示した。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "gao": {
+    "author": "Jun Gao, Di He, Xu Tan, Tao Qin, Liwei Wang, Tie-Yan Liu",
+    "year": 2019,
+    "title": "Representation Degeneration Problem in Training Natural Language Generation Models",
+    "url": "https://openreview.net/forum?id=SkEYojRqtm",
+    "note": "ICLR 2019。学習過程で埋め込みが狭い円錐に退化する機序を論じた。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "nickel-kiela": {
+    "author": "Maximilian Nickel, Douwe Kiela",
+    "year": 2017,
+    "title": "Poincaré Embeddings for Learning Hierarchical Representations",
+    "url": "https://arxiv.org/abs/1705.08039",
+    "note": "NeurIPS 2017。階層構造を双曲空間に埋め込むと少ない次元で高精度に表現できることを示した。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "wittgenstein": {
+    "author": "ルートヴィヒ・ウィトゲンシュタイン",
+    "year": 1953,
+    "title": "哲学探究（第66〜67節）",
+    "url": "https://ja.wikipedia.org/wiki/家族的類似",
+    "note": "「ゲーム」を例に家族的類似を論じた箇所。リンク先は概念の紹介ページであり原著ではない。",
+    "checked": "原著の該当節は既知の内容として参照。今回の作業で原文照合はしていない。"
+  },
+  "rosch": {
+    "author": "Eleanor Rosch",
+    "year": 1975,
+    "title": "Cognitive Representations of Semantic Categories",
+    "url": "https://doi.org/10.1037/0096-3445.104.3.192",
+    "note": "Journal of Experimental Psychology: General, 104(3)。典型例（プロトタイプ）によるカテゴリー把握の実証研究。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "young": {
+    "author": "ジェームズ・W・ヤング",
+    "year": 1940,
+    "title": "アイデアのつくり方",
+    "url": "https://www.cccmh.co.jp/books/",
+    "note": "今井茂雄訳、CCCメディアハウス。原著 A Technique for Producing Ideas。アイデアを既存要素の新しい組み合わせと定義した。リンク先は出版社の書籍一覧。",
+    "checked": "定義文は広く引用される箇所。今回の作業で原文照合はしていない。"
+  },
+  "de-mestral": {
+    "author": "George de Mestral",
+    "year": 1955,
+    "title": "面ファスナー（Velcro）の特許",
+    "url": "https://en.wikipedia.org/wiki/Velcro",
+    "note": "ゴボウの実の鉤から着想を得て面ファスナーを発明した経緯。リンク先は百科事典の項目。",
+    "checked": "逸話として広く知られる内容。一次資料は今回の作業で照合していない。"
+  },
+  "nawata": {
+    "author": "縄田健悟",
+    "year": 2014,
+    "title": "血液型と性格の無関連性 ── 日本と米国の大規模社会調査を用いた実証的論拠",
+    "url": "https://doi.org/10.4992/jjpsy.85.13016",
+    "note": "心理学研究 85(2)。大規模調査データを用いて血液型と性格の関連が認められないことを示した。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "page-brin": {
+    "author": "Lawrence Page, Sergey Brin, Rajeev Motwani, Terry Winograd",
+    "year": 1999,
+    "title": "The PageRank Citation Ranking: Bringing Order to the Web",
+    "url": "https://en.wikipedia.org/wiki/PageRank",
+    "note": "Stanford InfoLab Technical Report。リンク構造から重要度を計算する手法の原典。原文はStanfordのサーバーでhttpのみ公開されているため、リンク先は概念の紹介ページとした。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "jeh-widom": {
+    "author": "Glen Jeh, Jennifer Widom",
+    "year": 2003,
+    "title": "Scaling Personalized Web Search",
+    "url": "https://doi.org/10.1145/775152.775191",
+    "note": "WWW 2003。出発点を固定したパーソナライズドPageRankの基礎。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "edge-graphrag": {
+    "author": "Darren Edge ほか",
+    "year": 2024,
+    "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+    "url": "https://arxiv.org/abs/2404.16130",
+    "note": "Microsoft Research。知識グラフを検索拡張生成に組み込むGraphRAGの原論文。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "kleon": {
+    "author": "Austin Kleon",
+    "year": 2012,
+    "title": "Steal Like an Artist",
+    "url": "https://austinkleon.com/steal/",
+    "note": "Workman。邦訳『クリエイティブの授業』実務教育出版。多数の源から借りることで独自性が生まれるという主張。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "csikszentmihalyi": {
+    "author": "Mihaly Csikszentmihalyi",
+    "year": 1999,
+    "title": "Implications of a Systems Perspective for the Study of Creativity",
+    "url": "https://doi.org/10.1017/CBO9780511807916.018",
+    "note": "R. J. Sternberg (Ed.), Handbook of Creativity 所収。創造性を個人・領域・場の相互作用と見なし、場（評価する側）の役割を強調した。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "lakoff-johnson": {
+    "author": "George Lakoff, Mark Johnson",
+    "year": 1980,
+    "title": "Metaphors We Live By",
+    "url": "https://press.uchicago.edu/ucp/books/book/chicago/M/bo3637992.html",
+    "note": "University of Chicago Press。邦訳『レトリックと人生』大修館書店。日常言語が比喩に貫かれていることを示した。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "fauconnier-turner": {
+    "author": "Gilles Fauconnier, Mark Turner",
+    "year": 2002,
+    "title": "The Way We Think: Conceptual Blending and the Mind's Hidden Complexities",
+    "url": "https://www.basicbooks.com/titles/gilles-fauconnier/the-way-we-think/9780465087860/",
+    "note": "Basic Books。二つの概念空間を混合して新しい構造が創発する機構を論じた。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "liu": {
+    "author": "ケン・リュウ",
+    "year": 2009,
+    "title": "1ビットのエラー（Single-Bit Error）",
+    "url": "https://en.wikipedia.org/wiki/Ken_Liu",
+    "note": "古沢嘉通訳。記憶の符号化と現実の区別に関する一節を本文で要約して引いた。リンク先は著者の紹介ページ。",
+    "checked": "引用は要約であり原文の転載ではない。収録書誌は今回の作業で照合していない。"
+  },
+  "loftus": {
+    "author": "Elizabeth F. Loftus",
+    "year": 2005,
+    "title": "Planting misinformation in the human mind: A 30-year investigation of the malleability of memory",
+    "url": "https://doi.org/10.1101/lm.94705",
+    "note": "Learning & Memory, 12(4)。虚偽記憶の植えつけに関する研究の総括。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "ji": {
+    "author": "Ziwei Ji ほか",
+    "year": 2023,
+    "title": "Survey of Hallucination in Natural Language Generation",
+    "url": "https://doi.org/10.1145/3571730",
+    "note": "ACM Computing Surveys, 55(12)。LLMのハルシネーションの定義と分類に関する総説。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "gendlin": {
+    "author": "Eugene T. Gendlin",
+    "year": 1978,
+    "title": "Focusing",
+    "url": "https://focusing.org/",
+    "note": "Bantam。邦訳『フォーカシング』福村出版。まだ言葉になっていない身体感覚（フェルトセンス）から言葉を立ち上げる過程を論じた。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "harnad": {
+    "author": "Stevan Harnad",
+    "year": 1990,
+    "title": "The Symbol Grounding Problem",
+    "url": "https://doi.org/10.1016/0167-2789(90)90087-6",
+    "note": "Physica D, 42。記号が体験に接地していなければ意味を持ちえないという問題を定式化した。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  },
+  "bender-koller": {
+    "author": "Emily M. Bender, Alexander Koller",
+    "year": 2020,
+    "title": "Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data",
+    "url": "https://aclanthology.org/2020.acl-main.463/",
+    "note": "ACL 2020。言語の形式だけから学習するシステムが意味に到達できるかを論じた。",
+    "checked": "書誌のみ確認。原文は今回の作業で再取得していない。"
+  }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+<title id="title">RELEVANCE ── 意味の関連性に関する考察</title>
+<desc id="desc">LLMを逆再生して「意味」を知る、全12回</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><radialGradient id="g00-1"><stop offset="0" stop-color="#5a4fcf" stop-opacity="0.55"/><stop offset="0.55" stop-color="#5a4fcf" stop-opacity="0.25"/><stop offset="1" stop-color="#5a4fcf" stop-opacity="0"/></radialGradient><radialGradient id="g00-2"><stop offset="0" stop-color="#2f8f83" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2f8f83" stop-opacity="0.25"/><stop offset="1" stop-color="#2f8f83" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="660" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">RELEVANCE ── 意味の関連性に関する考察</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">LLMを逆再生して「意味」を知る、全12回</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<circle cx="400.0" cy="390.0" r="175" fill="url(#g00-1)"/>
+<circle cx="640.0" cy="390.0" r="175" fill="url(#g00-2)"/>
+<text x="345.0" y="395.0" fill="#5a4fcf" font-size="26" text-anchor="middle" font-weight="700">意味 A</text>
+<text x="700.0" y="395.0" fill="#2f8f83" font-size="26" text-anchor="middle" font-weight="700">意味 B</text>
+<text x="520.0" y="395.0" fill="#232a33" font-size="24" text-anchor="middle" font-weight="700">関係</text>
+<text x="520.0" y="425.0" fill="#5d6873" font-size="17" text-anchor="middle" font-weight="400">それ自体が分布</text>
+<circle cx="520.0" cy="232.0" r="12" fill="#d0693a"/>
+<text x="520.0" y="215.0" fill="#d0693a" font-size="19" text-anchor="middle" font-weight="700">媒介</text>
+<path d="M 400 330 C 430 265 480 240 508 236" fill="none" stroke="#d0693a" stroke-width="2" stroke-dasharray="8 7"/>
+<path d="M 640 330 C 610 265 560 240 532 236" fill="none" stroke="#d0693a" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="960.0" y="340.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="400">意味は、点でも集合でもなく分布。</text>
+<text x="960.0" y="380.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="400">関係もまた分布。</text>
+<text x="960.0" y="420.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="400">関連は見出され、言葉に固定され、</text>
+<text x="960.0" y="460.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="400">検証されて、世界の側に置かれる。</text>
+<text x="600.0" y="585.0" fill="#5a4fcf" font-size="30" text-anchor="middle" font-weight="700">関連は仮説であり、評価がそれを検証する。</text>
+<text x="50.0" y="632.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">AIを研究するのではなく、AIという媒体を通して人間について考える。</text>
+</g>
+</svg>

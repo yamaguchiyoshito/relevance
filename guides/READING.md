@@ -1,0 +1,30 @@
+# 読み方と表示環境
+
+[連載目次へ](../README.md)
+
+## GitHubのMarkdownで読む
+
+リポジトリのREADMEから各回を開き、Preview表示を使う。RawやCode表示は原稿テキストを見るためのものであり、図は表示されない。各回の冒頭と末尾に、前回・目次・次回のリンクがある。
+
+## HTMLで読む
+
+GitHub Pagesが有効なら、公開URLのトップページが目次になる。手元で再生成した場合は `_site/index.html` をブラウザで開く。サーバー起動は不要である。全12回を一つのファイルで読む場合は `_site/complete.html` を開く。どちらも外部通信をしない。
+
+## 再生成する
+
+Python 3.11以降とPandoc 3.xを使う。Python標準ライブラリだけを使うため、pipによる追加導入は不要である。Pandocの導入方法は[公式インストール案内](https://pandoc.org/installing.html)を参照する。
+
+```sh
+python --version
+pandoc --version
+python scripts/validate.py
+python scripts/build.py
+```
+
+WindowsでPythonコマンドが `py` の場合は `py -3 scripts/build.py` とする。HTMLを作る前にMarkdownの検査を行い、警告を残したまま公開しない。
+
+## 図と注の読み分け
+
+挿絵は原典の転載ではなく、本連載の説明のために作成した概念図である。ぼやけた円は「境界を持たない分布」の視覚的な記号であり、矢印は必ずしも因果を表さない。キャプションに示す前提を併せて読む。
+
+脚注の出典は、その理論や逸話の参照先であり、原文の引用ではない。研究や実装の裏づけがある主張と、本連載が置いた仮説は、本文中で区別している。

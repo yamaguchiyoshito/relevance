@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">生成の中に、事実と虚構を分けるものはない</title>
+<desc id="desc">同じ一文、同じ機構。差は後段の検証レイヤーの有無だけ</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="700" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     10</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">生成の中に、事実と虚構を分けるものはない</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">同じ一文、同じ機構。差は後段の検証レイヤーの有無だけ</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="70" y="300" width="300" height="100" rx="14" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
+<text x="220.0" y="346.0" fill="#5a4fcf" font-size="24" text-anchor="middle" font-weight="700">生成</text>
+<text x="220.0" y="378.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">確率的に次の語を選ぶ</text>
+<line x1="375.0" y1="350.0" x2="440.0" y2="350.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="445" y="305" width="330" height="90" rx="12" fill="#ffffff" stroke="#d8d4c8" stroke-width="2"/>
+<text x="610.0" y="342.0" fill="#232a33" font-size="19" text-anchor="middle" font-weight="400">「1890年、ロンドンに</text>
+<text x="610.0" y="370.0" fill="#232a33" font-size="19" text-anchor="middle" font-weight="400">一人の探偵が住んでいた」</text>
+<path d="M 775 330 C 820 330 820 250 860 250" fill="none" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 775 370 C 820 370 820 520 860 520" fill="none" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="865" y="205" width="265" height="90" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<text x="997.5" y="246.0" fill="#d0693a" font-size="21" text-anchor="middle" font-weight="700">検証レイヤー</text>
+<text x="997.5" y="278.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">外部の事実と照合</text>
+<line x1="997.0" y1="300.0" x2="997.0" y2="325.0" stroke="#5d6873" stroke-width="1.5"/>
+<line x1="997.0" y1="325.0" x2="930.0" y2="345.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="997.0" y1="325.0" x2="1064.0" y2="345.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="915.0" y="380.0" fill="#2f8f83" font-size="16" text-anchor="middle" font-weight="700">一致</text>
+<text x="915.0" y="404.0" fill="#232a33" font-size="19" text-anchor="middle" font-weight="700">事実</text>
+<text x="1080.0" y="380.0" fill="#d0693a" font-size="16" text-anchor="middle" font-weight="700">不一致</text>
+<text x="1080.0" y="404.0" fill="#232a33" font-size="19" text-anchor="middle" font-weight="700">ハルシネーション</text>
+<rect x="865" y="475" width="265" height="90" rx="12" fill="none" stroke="#2f8f83" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="997.0" y="512.0" fill="#2f8f83" font-size="21" text-anchor="middle" font-weight="700">検証なし</text>
+<text x="997.0" y="542.0" fill="#5d6873" font-size="17" text-anchor="middle" font-weight="400">→ 創作として読まれる</text>
+<text x="610.0" y="450.0" fill="#5d6873" font-size="17" text-anchor="middle" font-weight="400">文は一字も変わっていない。変わったのは外側だけ</text>
+<rect x="70" y="490" width="705" height="140" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
+<text x="422.0" y="530.0" fill="#232a33" font-size="20" text-anchor="middle" font-weight="700">記憶も同じ形をしている</text>
+<text x="422.0" y="565.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">思い出すこと ＝ 生成。本当にあったかは、記録や他人の証言と照合して初めて確定する</text>
+<text x="422.0" y="595.0" fill="#5a4fcf" font-size="16" text-anchor="middle" font-weight="700">関連も、記憶も、出力も、生成された時点ではすべて仮説</text>
+<text x="50.0" y="672.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">評価（価値があるか）と検証（現実と一致するか）は、基準が違うだけで同じ位置にある同じ行為。</text>
+</g>
+</svg>
