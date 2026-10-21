@@ -43,6 +43,7 @@ blockquote p:last-child{margin:0}
 /* 図版：SVGは幅1200px基準で紙色の背景を持つため、本文幅に収め、細い枠だけ添える */
 figure{margin:28px 0 24px}
 img{display:block;max-width:100%;width:min(100%,var(--measure));height:auto;margin:0 auto;padding:6px;background:#fff;border:1px solid var(--line);border-radius:10px}
+.figure-scroll{max-width:100%}.figure-link{display:block;width:fit-content;max-width:100%;margin:0 auto;text-decoration:none}
 figcaption,p:has(>em:only-child){font-size:13.5px;line-height:1.65;color:var(--muted);text-align:center;margin:8px auto 0;max-width:620px}
 figcaption em{font-style:normal}
 
@@ -82,6 +83,7 @@ body:has(.toc-state:checked) .toc-drawer{transform:none;visibility:visible}
 .toc-close{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;color:var(--muted);cursor:pointer}
 .toc-close:hover{background:var(--soft);color:var(--ink)}.toc-close svg{width:18px;height:18px}
 .toc-drawer nav{flex:1;display:grid;align-content:start;gap:2px;padding:12px;overflow:auto}
+.toc-part{padding:12px 12px 4px;font-size:12px;letter-spacing:.06em;font-weight:700;color:var(--accent)}.toc-part+.chapter-link{margin-top:2px}
 .chapter-link{display:flex;gap:12px;text-decoration:none;padding:9px 12px;border-radius:8px;color:var(--muted);line-height:1.55}
 .chapter-link span{flex:0 0 24px;white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--accent)}
 .chapter-link:hover{background:var(--soft);color:var(--ink)}
@@ -95,5 +97,5 @@ body:has(.toc-state:checked) .toc-drawer{transform:none;visibility:visible}
 @media(prefers-reduced-motion:reduce){.toc-drawer,.toc-backdrop,.toc-toggle{transition:none}html{scroll-behavior:auto}}
 @media(prefers-color-scheme:dark){:root{--paper:#171a24;--card:#1f2330;--ink:#e6e6ee;--muted:#aab0bf;--accent:#a99cff;--accent-2:#f0966a;--line:#343a4c;--soft:#232838;--table-stripe:#1b1f2b}img{background:#f7f5ef;border-color:#4a5062}}
 @media(max-width:940px){.layout{padding:22px 20px 60px}main{max-width:none}.topbar{padding:11px 18px}}
-@media(max-width:600px){.brand{font-size:15px}.brand span{display:none}body{font-size:15.5px;line-height:1.75}h1{font-size:25px}h2{font-size:20px}h3{font-size:17.5px}.topbar-actions{gap:12px;font-size:13px}.toc-toggle{padding:6px 11px}.layout{padding-left:16px;padding-right:16px}img{width:100%;padding:4px}th,td{padding:8px 9px}table{font-size:13.5px}.table-wrap{border-radius:6px}.chapter-nav{font-size:13px;padding:8px 12px}}
+@media(max-width:600px){.brand{font-size:15px}.brand span{display:none}body{font-size:15.5px;line-height:1.75}h1{font-size:25px}h2{font-size:20px}h3{font-size:17.5px}.topbar-actions{gap:12px;font-size:13px}.toc-toggle{padding:6px 11px}.layout{padding-left:16px;padding-right:16px}.figure-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -16px;padding:0 16px;scrollbar-width:thin}.figure-link{width:max-content}img{width:680px;max-width:none;padding:4px}figcaption::after{content:"　横にスクロールできる。タップで原寸。";color:var(--muted)}th,td{padding:8px 9px}table{font-size:13.5px}.table-wrap{border-radius:6px}.chapter-nav{font-size:13px;padding:8px 12px}}
 @media print{.topbar,aside,.toc-backdrop,.skip,footer{display:none}.layout{display:block;padding:0}main{max-width:none}body{background:white;color:black;font-size:11pt}h1{font-size:20pt}h2,h3{break-after:avoid}img{max-height:16cm;break-inside:avoid;border:0}a{color:inherit}pre{overflow:visible}p{orphans:3;widows:3}.table-wrap{overflow:visible;border:0}.chapter-nav{display:none}}

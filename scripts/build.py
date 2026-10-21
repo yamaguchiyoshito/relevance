@@ -5,6 +5,7 @@ import argparse
 import base64
 import html
 import json
+import os
 from pathlib import Path
 import re
 import shutil
@@ -102,11 +103,22 @@ FIGURE_WITH_CAPTION = re.compile(r'<figure>\s*(<img\b[^>]*>)\s*<figcaption aria-
 FIGURE_ALT_ONLY = re.compile(r'<figure>\s*(<img\b[^>]*>)\s*<figcaption aria-hidden="true">.*?</figcaption>\s*</figure>', re.S)
 
 
+IMG_SRC = re.compile(r'\bsrc="([^"]+)"')
+
+
+def figure_body(img: str) -> str:
+    """図を横スクロール容器と原寸SVGへのリンクで包む。電話幅では容器が横に流れ、タップで原寸を開ける。"""
+    m = IMG_SRC.search(img)
+    src = m.group(1) if m else ''
+    link = f'<a class="figure-link" href="{src}" title="図を原寸で開く">{img}</a>' if src.endswith('.svg') else img
+    return f'<div class="figure-scroll">{link}</div>'
+
+
 def merge_captions(output: str) -> str:
     """画像直後の「*図N-k：…*」段落を figcaption に取り込み、Pandoc が alt から作る自動キャプションを消す。
     alt は img の属性として残す。本文側のキャプションがない図（表紙など）は figcaption なしにする。"""
-    output = FIGURE_WITH_CAPTION.sub(lambda m: f'<figure>{m.group(1)}<figcaption>{m.group(2)}</figcaption></figure>', output)
-    return FIGURE_ALT_ONLY.sub(lambda m: f'<figure>{m.group(1)}</figure>', output)
+    output = FIGURE_WITH_CAPTION.sub(lambda m: f'<figure>{figure_body(m.group(1))}<figcaption>{m.group(2)}</figcaption></figure>', output)
+    return FIGURE_ALT_ONLY.sub(lambda m: f'<figure>{figure_body(m.group(1))}</figure>', output)
 
 
 def wrap_tables(output: str) -> str:
@@ -131,7 +143,11 @@ def wrap_page(title: str, body: str, source: Path, series: dict, css: str, all_s
     depth = len(source.parent.parts)
     root_link = '../' * depth
     links = []
+    part_starts = {p['chapters'][0]: p for p in series.get('parts', [])}
     for c in series['chapters']:
+        if c['number'] in part_starts:
+            p = part_starts[c['number']]
+            links.append(f'<div class="toc-part">第{p["number"]}部　{html.escape(p["title"])}</div>')
         current = source.as_posix() == c['path']
         links.append(f'<a class="chapter-link{" current" if current else ""}" href="{root_link}{map_url(c["path"])}"' + (' aria-current="page"' if current else '') + f'><span>{c["number"]:02d}</span>{html.escape(c["title"])}</a>')
     series_title = html.escape(series['title'])
@@ -154,6 +170,7 @@ def wrap_page(title: str, body: str, source: Path, series: dict, css: str, all_s
 
 def make_book(series: dict, css: str, dest: Path) -> None:
     code = html.escape(series.get('code', 'RELEVANCE'))
+    book_dir = (ROOT / Path(series['index']).parent).resolve()
     paths = {str((ROOT / c['path']).resolve()): f'#chapter-{c["number"]:02d}' for c in series['chapters']}
     pieces = []
     for c in series['chapters']:
@@ -174,6 +191,12 @@ def make_book(series: dict, css: str, dest: Path) -> None:
                 md = (source.parent / (raw[:-5] + '.md' if raw.endswith('.html') else raw)).resolve()
                 if str(md) in paths:
                     return f'href="{paths[str(md)]}"'
+                target = (source.parent / raw).resolve()
+                try:
+                    target.relative_to(ROOT)
+                except ValueError:
+                    return match.group(0)
+                return f'href="{os.path.relpath(target, book_dir)}"'
             return match.group(0)
         body = re.sub(r'(href|src)="([^"]*)"', rewrite, body)
         pieces.append(f'<section class="book-chapter" id="chapter-{c["number"]:02d}">{body}</section>')

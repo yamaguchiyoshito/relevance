@@ -56,6 +56,17 @@ class RepositoryTests(unittest.TestCase):
         self.assertNotIn('<h2', output)
         self.assertIn('class="sep"', output)
 
+    def test_figures_get_scroll_container_and_full_size_link(self):
+        output = render('![説明](../assets/illustrations/00-cover.svg)\n\n*図1-1：説明。*\n')
+        self.assertIn('<div class="figure-scroll"><a class="figure-link" href="../assets/illustrations/00-cover.svg"', output)
+        self.assertEqual(output.count('<figcaption'), 1)
+
+    def test_parts_tile_every_series(self):
+        for sf in ['series.json', 'series-2/series.json']:
+            data = json.loads((ROOT / sf).read_text(encoding='utf-8'))
+            covered = [n for p in data['parts'] for n in range(p['chapters'][0], p['chapters'][1] + 1)]
+            self.assertEqual(covered, list(range(1, 13)), sf)
+
     def test_dollar_signs_are_not_math(self):
         ast = parse_markdown('価格は $5 と $7 です。\n')
         self.assertFalse(any(n.get('t') == 'Math' for n in walk(ast)))

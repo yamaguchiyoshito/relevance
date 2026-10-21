@@ -91,6 +91,9 @@ def validate(root: Path = ROOT) -> tuple[Result, list[str]]:
             errors.append(f'{sf}: chapter paths and slugs must be unique')
         if not (root / s['index']).exists():
             errors.append(f'{sf}: index page {s["index"]} is missing')
+        covered = [n for part in s.get('parts', []) for n in range(part['chapters'][0], part['chapters'][1] + 1)]
+        if covered != list(range(1, 13)):
+            errors.append(f'{sf}: parts must cover chapters 1..12 exactly once, in order')
         chapters += cs
     md_paths = [root / 'README.md', *sorted((root / 'guides').glob('*.md')), root / 'references/bibliography.md', root / 'CHANGELOG.md']
     for s in all_series:

@@ -7,7 +7,7 @@
 | パス | 責務 | 編集方法 |
 | --- | --- | --- |
 | `chapters/*.md` | 各回の本文、図の参照とキャプション、脚注、前後リンク | 直接編集する |
-| `series.json` | 第1クールの順序、題名、副題、概要、各回の図の一覧（`figures`）と出典の対応 | 本文変更と同じPRで整合させる |
+| `series.json` | 第1クールの順序、題名、副題、概要、部（`parts`）、各回の図の一覧（`figures`）と出典の対応 | 本文変更と同じPRで整合させる |
 | `series-2/series.json`、`series-2/README.md`、`series-2/chapters/*.md` | 第2クールの正本、目次、本文 | 第1クールと同じ規則。図と出典は未着手なので `figures`・`sources` は空 |
 | `assets/illustrations/*.svg` | 本文から参照する独立した挿絵 | `draw_figures.py` を編集して再生成する |
 | `scripts/draw_figures.py` | 表紙と各回の図（計29点）を再現する図形コード | 原則としてこちらを編集する |

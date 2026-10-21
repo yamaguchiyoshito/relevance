@@ -7,6 +7,40 @@
   "version": "0.2.0",
   "tagline": "個々の性能ではなく、あいだを設計する。",
   "index": "series-2/README.md",
+  "parts": [
+    {
+      "number": "I",
+      "title": "関係を分ける",
+      "chapters": [
+        1,
+        3
+      ]
+    },
+    {
+      "number": "II",
+      "title": "関係の種類をめぐる",
+      "chapters": [
+        4,
+        7
+      ]
+    },
+    {
+      "number": "III",
+      "title": "関係は何を生むか",
+      "chapters": [
+        8,
+        10
+      ]
+    },
+    {
+      "number": "IV",
+      "title": "関係を設計する",
+      "chapters": [
+        11,
+        12
+      ]
+    }
+  ],
   "chapters": [
     {
       "number": 1,

@@ -7,6 +7,40 @@
   "language": "ja",
   "version": "1.0.0",
   "tagline": "関連は仮説であり、評価がそれを検証する。",
+  "parts": [
+    {
+      "number": "I",
+      "title": "意味は分布である",
+      "chapters": [
+        1,
+        4
+      ]
+    },
+    {
+      "number": "II",
+      "title": "関係を見出す",
+      "chapters": [
+        5,
+        8
+      ]
+    },
+    {
+      "number": "III",
+      "title": "言葉という装置",
+      "chapters": [
+        9,
+        11
+      ]
+    },
+    {
+      "number": "IV",
+      "title": "結",
+      "chapters": [
+        12,
+        12
+      ]
+    }
+  ],
   "chapters": [
     {
       "number": 1,
