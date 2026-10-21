@@ -47,6 +47,15 @@ class RepositoryTests(unittest.TestCase):
         self.assertIn('</table></div>', output)
         self.assertNotIn('<col style', output)
 
+    def test_nav_markers_become_nav_cards(self):
+        text = '<!-- NAV:TOP -->\n[← 第4回](a.md) | [連載目次](../README.md) | [第6回 →](b.md)\n<!-- /NAV -->\n\n本文\n\n<!-- NAV:BOTTOM -->\n---\n\n[← 第4回](a.md) | [連載目次](../README.md)\n<!-- /NAV -->\n'
+        output = render(text, next_note='次回　第6回「題名」')
+        self.assertEqual(output.count('<nav class="chapter-nav'), 2)
+        self.assertIn('chapter-nav-next">次回　第6回「題名」', output)
+        self.assertNotIn('<!-- NAV:', output)
+        self.assertNotIn('<h2', output)
+        self.assertIn('class="sep"', output)
+
     def test_dollar_signs_are_not_math(self):
         ast = parse_markdown('価格は $5 と $7 です。\n')
         self.assertFalse(any(n.get('t') == 'Math' for n in walk(ast)))

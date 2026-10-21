@@ -61,8 +61,32 @@ def transform_links(node: object) -> None:
             transform_links(child)
 
 
-def render(text: str, prefix: str = '') -> str:
-    ast = parse_markdown(text)
+NAV_TOP_MD = re.compile(r'<!-- NAV:TOP -->\n(.+?)\n<!-- /NAV -->')
+NAV_BOTTOM_MD = re.compile(r'<!-- NAV:BOTTOM -->\n---\n\n(.+?)\n<!-- /NAV -->')
+
+
+def nav_markdown(text: str, next_note: str = '') -> str:
+    """各回の冒頭・末尾の前後リンク（NAV マーカーで囲まれた行）を、Pandoc に渡す前に nav.chapter-nav へ置き換える。
+    Pandoc は HTML ブロック内の Markdown を解釈するので、リンクはそのまま書ける。末尾のナビには次回の題名を添える。"""
+    def links(line: str) -> str:
+        return line.replace(' | ', ' <span class="sep" aria-hidden="true">|</span> ')
+    text = NAV_TOP_MD.sub(lambda m: f'<nav class="chapter-nav chapter-nav-top" aria-label="前後の回">\n\n{links(m.group(1))}\n\n</nav>', text)
+    tail = f'\n\n<span class="chapter-nav-next">{next_note}</span>' if next_note else ''
+    return NAV_BOTTOM_MD.sub(lambda m: f'<nav class="chapter-nav chapter-nav-bottom" aria-label="前後の回">\n\n{links(m.group(1))}{tail}\n\n</nav>', text)
+
+
+def next_chapter_note(series: dict, source: Path) -> str:
+    """章ページの末尾ナビに添える「次回　第N回「題名」」。最終回は空。"""
+    chapters = series['chapters']
+    for i, c in enumerate(chapters):
+        if c['path'] == source.as_posix() and i + 1 < len(chapters):
+            n = chapters[i + 1]
+            return f'次回　第{n["number"]}回「{html.escape(n["title"])}」'
+    return ''
+
+
+def render(text: str, prefix: str = '', next_note: str = '') -> str:
+    ast = parse_markdown(nav_markdown(text, next_note))
     transform_links(ast)
     args = ['--from', 'json', '--to', 'html5', '--wrap=none']
     if prefix:
@@ -134,7 +158,7 @@ def make_book(series: dict, css: str, dest: Path) -> None:
     pieces = []
     for c in series['chapters']:
         source = ROOT / c['path']
-        body = render(source.read_text(encoding='utf-8'), prefix=f'c{c["number"]:02d}-')
+        body = render(source.read_text(encoding='utf-8'), prefix=f'c{c["number"]:02d}-', next_note=next_chapter_note(series, Path(c['path'])))
 
         def rewrite(match: re.Match) -> str:
             attr, url = match.group(1), html.unescape(match.group(2))
@@ -177,7 +201,8 @@ def build(output: Path) -> dict:
         if p.name == 'README.md':
             text = site_index_text(text)
         title = re.search(r'^# (.+)', text, re.M).group(1)
-        target.write_text(wrap_page(title, render(text), source, series_of(source, all_series), css, all_series), encoding='utf-8')
+        s = series_of(source, all_series)
+        target.write_text(wrap_page(title, render(text, next_note=next_chapter_note(s, source)), source, s, css, all_series), encoding='utf-8')
     shutil.rmtree(output / 'assets', ignore_errors=True)
     shutil.copytree(ROOT / 'assets', output / 'assets')
     for p in [*(ROOT / f for f in SERIES_FILES), ROOT / 'references/sources.json']:
