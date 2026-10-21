@@ -132,9 +132,14 @@ def load_series() -> list[dict]:
 
 
 def series_of(source: Path, all_series: list[dict]) -> dict:
-    """The series a document belongs to; documents outside any series belong to the first."""
+    """The series a document belongs to: its chapters and index, then any file under the series' own folder
+    (deepest folder first, so a sub-series folder wins over the repository root). Everything else belongs to the first."""
     for s in all_series:
         if source.as_posix() in {c['path'] for c in s['chapters']} | {s['index']}:
+            return s
+    for s in sorted(all_series, key=lambda s: -len(Path(s['index']).parent.parts)):
+        folder = Path(s['index']).parent
+        if folder.parts and source.as_posix().startswith(folder.as_posix() + '/'):
             return s
     return all_series[0]
 
