@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">関係を認識すること自体が、知識を生む</title>
+<desc id="desc">相似を見出す → 抽象化する → 運ぶ → 新しい仮説 → 次の相似</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="560" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">RELATION     12     図12-2</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">関係を認識すること自体が、知識を生む</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">相似を見出す → 抽象化する → 運ぶ → 新しい仮説 → 次の相似</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="480" y="216" width="240" height="48" rx="12" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="600.0" y="246.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">相似を見出す</text>
+<rect x="810" y="336" width="240" height="48" rx="12" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="930.0" y="366.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">共通構造を抽象化する</text>
+<rect x="480" y="456" width="240" height="48" rx="12" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="600.0" y="486.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">一方の知識を他方へ運ぶ</text>
+<rect x="150" y="336" width="240" height="48" rx="12" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="270.0" y="366.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">他方に新しい仮説が生まれる</text>
+<path d="M 720 250 C 860 270 920 300 930 334" fill="none" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 925 386 C 900 440 780 470 722 478" fill="none" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 480 478 C 360 470 280 430 272 386" fill="none" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 272 334 C 290 290 420 255 478 246" fill="none" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="600.0" y="352.0" fill="#5a4fcf" font-size="18" text-anchor="middle" font-weight="700">関係を見た人の側が変わる</text>
+<text x="600.0" y="378.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">対象について教える以上に</text>
+<text x="50.0" y="532.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">第1クールで「関係を見出すことがアイデアだ」と言ったことの中身。</text>
+</g>
+</svg>

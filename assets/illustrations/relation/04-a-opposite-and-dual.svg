@@ -4,7 +4,7 @@
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><radialGradient id="grel04a-1"><stop offset="0" stop-color="#5a4fcf" stop-opacity="0.55"/><stop offset="0.55" stop-color="#5a4fcf" stop-opacity="0.25"/><stop offset="1" stop-color="#5a4fcf" stop-opacity="0"/></radialGradient><radialGradient id="grel04a-2"><stop offset="0" stop-color="#2f8f83" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2f8f83" stop-opacity="0.25"/><stop offset="1" stop-color="#2f8f83" stop-opacity="0"/></radialGradient></defs>
 <rect width="1200" height="580" rx="20" fill="#f7f5ef"/>
 <g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
-<text x="50.0" y="52.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">RELATION     04     図4-a</text>
+<text x="50.0" y="52.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">RELATION     04     図4-1</text>
 <text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">紙と画面は反対。電子ペーパーは双対</text>
 <text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">共通の軸の両端と、役割を入れ替えて置いた第三のもの</text>
 <line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>

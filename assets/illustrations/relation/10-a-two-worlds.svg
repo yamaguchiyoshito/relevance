@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
 <title id="title">価値は、ない世界との差</title>
 <desc id="desc">純効果から費用を引いて、正味の価値</desc>
-<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><radialGradient id="grel10a-1"><stop offset="0" stop-color="#2f8f83" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2f8f83" stop-opacity="0.25"/><stop offset="1" stop-color="#2f8f83" stop-opacity="0"/></radialGradient><radialGradient id="grel10a-2"><stop offset="0" stop-color="#d0693a" stop-opacity="0.55"/><stop offset="0.55" stop-color="#d0693a" stop-opacity="0.25"/><stop offset="1" stop-color="#d0693a" stop-opacity="0"/></radialGradient><radialGradient id="grel10a-3"><stop offset="0" stop-color="#2f8f83" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2f8f83" stop-opacity="0.25"/><stop offset="1" stop-color="#2f8f83" stop-opacity="0"/></radialGradient><radialGradient id="grel10a-4"><stop offset="0" stop-color="#d0693a" stop-opacity="0.55"/><stop offset="0.55" stop-color="#d0693a" stop-opacity="0.25"/><stop offset="1" stop-color="#d0693a" stop-opacity="0"/></radialGradient></defs>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><radialGradient id="grel102-1"><stop offset="0" stop-color="#2f8f83" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2f8f83" stop-opacity="0.25"/><stop offset="1" stop-color="#2f8f83" stop-opacity="0"/></radialGradient><radialGradient id="grel102-2"><stop offset="0" stop-color="#d0693a" stop-opacity="0.55"/><stop offset="0.55" stop-color="#d0693a" stop-opacity="0.25"/><stop offset="1" stop-color="#d0693a" stop-opacity="0"/></radialGradient><radialGradient id="grel102-3"><stop offset="0" stop-color="#2f8f83" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2f8f83" stop-opacity="0.25"/><stop offset="1" stop-color="#2f8f83" stop-opacity="0"/></radialGradient><radialGradient id="grel102-4"><stop offset="0" stop-color="#d0693a" stop-opacity="0.55"/><stop offset="0.55" stop-color="#d0693a" stop-opacity="0.25"/><stop offset="1" stop-color="#d0693a" stop-opacity="0"/></radialGradient></defs>
 <rect width="1200" height="600" rx="20" fill="#f7f5ef"/>
 <g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
-<text x="50.0" y="52.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">RELATION     10     図10-a</text>
+<text x="50.0" y="52.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">RELATION     10     図10-2</text>
 <text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">価値は、ない世界との差</text>
 <text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">純効果から費用を引いて、正味の価値</text>
 <line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
 <rect x="80" y="205" width="440" height="300" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="300.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">関係がある世界</text>
-<circle cx="220.0" cy="370.0" r="80" fill="url(#grel10a-1)"/>
-<circle cx="380.0" cy="370.0" r="80" fill="url(#grel10a-2)"/>
+<circle cx="220.0" cy="370.0" r="80" fill="url(#grel102-1)"/>
+<circle cx="380.0" cy="370.0" r="80" fill="url(#grel102-2)"/>
 <line x1="260.0" y1="370.0" x2="340.0" y2="370.0" stroke="#232a33" stroke-width="3"/>
 <text x="300.0" y="470.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">観測できる</text>
 <rect x="680" y="205" width="440" height="300" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="900.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">関係がない世界</text>
-<circle cx="820.0" cy="370.0" r="80" fill="url(#grel10a-3)"/>
-<circle cx="980.0" cy="370.0" r="80" fill="url(#grel10a-4)"/>
+<circle cx="820.0" cy="370.0" r="80" fill="url(#grel102-3)"/>
+<circle cx="980.0" cy="370.0" r="80" fill="url(#grel102-4)"/>
 <text x="900.0" y="470.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">観測できない。想像で組み立てる（反実仮想）</text>
 <text x="600.0" y="360.0" fill="#232a33" font-size="44" text-anchor="middle" font-weight="700">−</text>
 <path d="M 80 530 L 80 548 L 1120 548 L 1120 530" fill="none" stroke="#232a33" stroke-width="2"/>

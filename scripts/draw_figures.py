@@ -26,7 +26,8 @@ class Figure:
         self.title = title
         self.subtitle = subtitle
         self.gradients = 0
-        label = code if number == 0 else f'{code}     {number:02d}' + (f'     図{number}-{part}' if part else '')
+        shown = str(ord(part) - 96) if part.isalpha() and len(part) == 1 else part  # a→1, b→2 … or an explicit number
+        label = code if number == 0 else f'{code}     {number:02d}' + (f'     図{number}-{shown}' if part else '')
         self.text(50, 52, label, 18, accent, weight=700)
         self.text(50, 103, title, 34, weight=700)
         self.text(50, 141, subtitle, 21, MUTED)
@@ -879,7 +880,7 @@ def draw_relation(made: set[str]) -> None:
     made.add(f.save('05-c-example-v2.svg'))
 
     # 6-2 two loops (figure 6-1 in the chapter)
-    f = rfig(6, '膨らむ輪と、収まる輪', '一周すると、原因と結果の席が入れ替わっている', 600, 'a')
+    f = rfig(6, '膨らむ輪と、収まる輪', '一周すると、原因と結果の席が入れ替わっている', 600, '2')
     f.panel(80, 205, 500, 360, '正のフィードバック：増幅')
     f.box(130, 300, 160, 60, '褒める', '', P, 20); f.box(370, 300, 160, 60, '伸びる', '', TERRA, 20)
     f.path('M 295 315 L 365 315', color=P, width=2.5, arrow=True); f.path('M 365 345 L 295 345', color=TERRA, width=2.5, arrow=True)
@@ -898,7 +899,7 @@ def draw_relation(made: set[str]) -> None:
     made.add(f.save('06-a-two-loops.svg'))
 
     # 7-2 two axes (figure 7-1)
-    f = rfig(7, '意味の近さと、構造の似方は別の軸', '意味は遠いが構造は似ている組が、転用の着想源になる', 640, 'a')
+    f = rfig(7, '意味の近さと、構造の似方は別の軸', '意味は遠いが構造は似ている組が、転用の着想源になる', 640, '2')
     ox, oy, w, h = 260, 560, 680, 330
     f.line(ox, oy, ox + w, oy, color=MUTED, width=2, arrow=True); f.text(ox + w / 2, oy + 30, '意味の近さ →', 15, MUTED, anchor='middle')
     f.line(ox, oy, ox, oy - h, color=MUTED, width=2, arrow=True); f.text(ox - 16, oy - h / 2, '構造の似方 ↑', 15, MUTED, anchor='end')
@@ -914,7 +915,7 @@ def draw_relation(made: set[str]) -> None:
     made.add(f.save('07-a-two-axes.svg'))
 
     # 7-3 three readings (figure 7-2)
-    f = rfig(7, '「レビュー」の三つの解釈が、三つの関係になる', '解釈が割れると、関係の種類まで割れる', 560, 'b')
+    f = rfig(7, '「レビュー」の三つの解釈が、三つの関係になる', '解釈が割れると、関係の種類まで割れる', 560, '3')
     f.box(80, 320, 220, 80, '「レビュー」', '一つの言葉', INK, 22)
     rows = [('検査：欠陥を見つける', '補完（第5回）', P), ('承認：通すか止めるか', '制約：ゲート', TERRA), ('学習：読んで学ぶ', '継承：双方向（第6回）', INDIGO)]
     for i, (r, rel, c) in enumerate(rows):
@@ -972,12 +973,12 @@ def draw_relation(made: set[str]) -> None:
     made.add(f.save('09-a-threshold.svg'))
 
     # 9-3 example v3 (figure 9-2)
-    f = rfig(9, 'AIの生成 × 人間のレビュー（第9回）', 'G と R、滞留、閾値、遅延、外部性、不可逆', 680, 'b')
+    f = rfig(9, 'AIの生成 × 人間のレビュー（第9回）', 'G と R、滞留、閾値、遅延、外部性、不可逆', 680, '3')
     running_example(f, 3); f.footer('')
     made.add(f.save('09-b-example-v3.svg'))
 
     # 10-1 two worlds
-    f = rfig(10, '価値は、ない世界との差', '純効果から費用を引いて、正味の価値', 600, 'a')
+    f = rfig(10, '価値は、ない世界との差', '純効果から費用を引いて、正味の価値', 600, '2')
     f.panel(80, 205, 440, 300, '関係がある世界')
     f.blob(220, 370, 80, P); f.blob(380, 370, 80, TERRA); f.line(260, 370, 340, 370, color=INK, width=3)
     f.text(300, 470, '観測できる', 14, MUTED, anchor='middle')
@@ -1029,6 +1030,152 @@ def draw_relation(made: set[str]) -> None:
     f.text(600, 650, '第1回に三語で書いたものが、ここまで厚くなった。', 16, INK, anchor='middle', weight=700)
     f.footer('')
     made.add(f.save('11-b-thirteen-cards.svg'))
+
+
+    # 2-2 transitivity
+    f = rfig(2, '推移するか、しないか', '「含む」の鎖は端まで通り、「似ている」の鎖は通らない', 640, '2')
+    f.panel(60, 205, 1080, 150, '')
+    for x, nm in [(230, '大阪'), (600, '関西'), (970, '日本')]:
+        f.box(x - 90, 245, 180, 60, nm, '', P, 22)
+    f.line(325, 275, 505, 275, color=P, width=2.5, arrow=True); f.text(415, 262, '含まれる', 14, MUTED, anchor='middle')
+    f.line(695, 275, 875, 275, color=P, width=2.5, arrow=True); f.text(785, 262, '含まれる', 14, MUTED, anchor='middle')
+    f.path('M 230 310 C 230 345 970 345 970 310', color=P, width=2, arrow=True); f.text(600, 345, '推移する：大阪は日本に含まれる', 15, P, anchor='middle', weight=700)
+    f.panel(60, 385, 1080, 200, '')
+    for x, nm, c in [(230, '父', INDIGO), (600, '子', INK), (970, '母', TERRA)]:
+        person(f, x, 470, c, nm)
+    f.line(260, 460, 570, 460, color=INDIGO, width=2.5); f.text(415, 448, '目が似ている', 14, INDIGO, anchor='middle')
+    f.line(630, 460, 940, 460, color=TERRA, width=2.5); f.text(785, 448, '鼻が似ている', 14, TERRA, anchor='middle')
+    f.path('M 230 535 C 230 575 970 575 970 535', color=MUTED, width=2, dash=True); f.text(600, 575, '推移しない：父と母は似ていない', 15, MUTED, anchor='middle', weight=700)
+    f.footer('似ているは対称だが推移しない。同じであるは対称で、かつ推移する。')
+    made.add(f.save('02-b-transitivity.svg'))
+
+    # 6-1 condition / facilitation / cause
+    f = rfig(6, '条件・促進・原因の三段', '「なければ起きない」「あれば起きやすい」「あれば起きる」', 520, '1')
+    cols = [(60, '条件（依存）', '種', 'なければ起きない', 0.25, MUTED), (420, '促進', '肥料', 'あれば起きやすい', 0.6, P), (780, '原因', '（原因）', 'あれば起きる', 1.0, TERRA)]
+    for x, title, ex, desc, strength, c in cols:
+        f.panel(x, 205, 360, 250, title)
+        f.text(x + 180, 285, ex, 22, c, anchor='middle', weight=700)
+        f.text(x + 180, 318, desc, 16, INK, anchor='middle')
+        f.body.append(f'<rect x="{x+60}" y="350" width="240" height="12" rx="6" fill="{LINE}"/><rect x="{x+60}" y="350" width="{int(240*strength)}" height="12" rx="6" fill="{c}"/>')
+        f.text(x + 180, 390, '結果への寄与の強さ', 12, MUTED, anchor='middle')
+    f.line(430, 300, 410, 300, color=MUTED, width=1.5); f.line(790, 300, 770, 300, color=MUTED, width=1.5)
+    f.footer('中間の段は見落とされやすく、原因に格上げされるか、無関係に格下げされがち。')
+    made.add(f.save('06-b-condition-spectrum.svg'))
+
+    # 6-3 example loops
+    f = rfig(6, 'AIの生成 × 人間のレビュー、二つの輪', '安定させる輪と、膨らませる輪が、同じ二者の間で同時に回りうる', 660, '3')
+    f.panel(60, 205, 520, 390, '収まる輪（負のフィードバック）')
+    for nm, x, y in [('生成が増える', 320, 265), ('待ちが増える', 470, 380), ('生成が減る', 320, 495), ('待ちが減る', 170, 380)]:
+        f.body.append(f'<rect x="{x-70}" y="{y-20}" width="140" height="40" rx="10" fill="#ffffff" stroke="{P}" stroke-width="2"/>'); f.text(x, y + 6, nm, 14, INK, anchor='middle', weight=700)
+    f.path('M 392 275 C 450 290 470 330 470 358', color=MUTED, width=2, arrow=True); f.path('M 465 402 C 450 450 400 480 392 486', color=MUTED, width=2, arrow=True)
+    f.path('M 248 486 C 200 470 170 440 170 402', color=MUTED, width=2, arrow=True); f.path('M 175 358 C 190 310 240 280 248 275', color=MUTED, width=2, arrow=True)
+    f.text(320, 565, 'どこかの水準に落ち着こうとする', 14, INK, anchor='middle')
+    f.panel(620, 205, 520, 390, '膨らむ輪（正のフィードバック）')
+    for nm, x, y in [('待ちが増える', 880, 265), ('レビューが雑になる', 1030, 380), ('欠陥が流出する', 880, 495), ('手戻りが起きる', 730, 380)]:
+        f.body.append(f'<rect x="{x-80}" y="{y-20}" width="160" height="40" rx="10" fill="#ffffff" stroke="{TERRA}" stroke-width="2"/>'); f.text(x, y + 6, nm, 14, INK, anchor='middle', weight=700)
+    f.path('M 962 275 C 1010 290 1030 330 1030 358', color=TERRA, width=2, arrow=True); f.path('M 1025 402 C 1010 450 960 480 962 486', color=TERRA, width=2, arrow=True)
+    f.path('M 798 486 C 750 470 730 440 730 402', color=TERRA, width=2, arrow=True); f.path('M 735 358 C 750 310 790 280 798 275', color=TERRA, width=2, arrow=True)
+    f.text(880, 565, '放っておくと膨らむ', 14, INK, anchor='middle')
+    f.footer('どちらの輪が勝つかは、二者の性質ではなく、待ちが越える境目で決まる（第9回）。')
+    made.add(f.save('06-c-example-loops.svg'))
+
+    # 7-1 association vs entailment chains
+    f = rfig(7, '連想の鎖と、含意の鎖', 'どちらも有向。含意は推移し、連想は推移しない', 600, '1')
+    f.text(120, 262, '連想', 20, P, weight=700)
+    for x, nm in [(300, '夏'), (600, '海'), (900, '塩')]:
+        f.box(x - 70, 235, 140, 56, nm, '', P, 22)
+    f.line(375, 263, 525, 263, color=P, width=2.5, arrow=True); f.line(675, 263, 825, 263, color=P, width=2.5, arrow=True)
+    f.path('M 300 296 C 300 340 900 340 900 296', color=MUTED, width=2, dash=True); f.text(600, 345, '夏から塩は、ほとんど浮かばない：推移しない', 15, MUTED, anchor='middle', weight=700)
+    f.text(120, 432, '含意', 20, TERRA, weight=700)
+    for x, nm in [(300, '独身男性'), (600, '未婚'), (900, '配偶者がいない')]:
+        f.box(x - 90, 405, 180, 56, nm, '', TERRA, 19)
+    f.line(395, 433, 505, 433, color=TERRA, width=2.5, arrow=True); f.line(695, 433, 805, 433, color=TERRA, width=2.5, arrow=True)
+    f.path('M 300 466 C 300 505 900 505 900 466', color=TERRA, width=2, arrow=True); f.text(600, 508, '独身男性なら配偶者はいない：推移する', 15, TERRA, anchor='middle', weight=700)
+    f.footer('意味の関係の中にも、推移するものとしないものが混ざっている。')
+    made.add(f.save('07-c-chains.svg'))
+
+    # 8-3 example effects by attribution
+    f = rfig(8, 'AIの生成 × 人間のレビュー、効能の帰属', '直接の効能、間接の効能、関係そのもの、全体', 600, '3')
+    f.body.append(f'<rect x="80" y="205" width="1040" height="330" rx="18" fill="none" stroke="{INDIGO}" stroke-width="2" stroke-dasharray="8 7"/>')
+    f.text(600, 240, '全体：開発全体の処理量 ── 符号は未決（＋か−かは条件次第）', 16, INDIGO, anchor='middle', weight=700)
+    f.box(140, 290, 300, 90, 'AIの生成', '', P, 24); f.box(760, 290, 300, 90, '人間のレビュー', '', TERRA, 24)
+    f.text(290, 420, '直接の効能：時間の短縮（＋）', 14, P, anchor='middle', weight=700); f.text(290, 442, '帰属：全体の速さ', 13, MUTED, anchor='middle')
+    f.text(910, 420, '直接の効能：欠陥の検出（＋）', 14, TERRA, anchor='middle', weight=700); f.text(910, 442, '帰属：コードという対象', 13, MUTED, anchor='middle')
+    f.line(445, 335, 755, 335, color=INK, width=3)
+    f.text(600, 320, '関係そのもの', 14, INK, anchor='middle', weight=700)
+    f.text(600, 372, '間接の効能：滞留（−）、手戻り（−）', 14, INK, anchor='middle'); f.text(600, 394, '信頼の変化（±）：依存の強度を書き換える', 14, INK, anchor='middle')
+    f.text(600, 500, '直接の正と間接の負のどちらが大きいかは、関係の種類からは出てこない', 15, MUTED, anchor='middle')
+    f.footer('')
+    made.add(f.save('08-c-example-effects.svg'))
+
+    # 9-2 delay and accumulation
+    f = rfig(9, '遅延と累積：効能はすぐには見えない', '運動の効果は遅れて現れ、利子は積み上がって閾値を越える', 600, '2')
+    for ox, title, c in [(100, '遅延：運動の効果', P), (640, '累積：借金の利子', TERRA)]:
+        f.panel(ox - 40, 205, 500, 330, title)
+        f.line(ox, 480, ox + 420, 480, color=MUTED, width=2, arrow=True); f.text(ox + 210, 508, '時間 →', 14, MUTED, anchor='middle')
+        f.line(ox, 480, ox, 260, color=MUTED, width=2, arrow=True)
+    pts = []
+    for i in range(41):
+        x = 100 + i * 10; n = i / 40
+        y = 470 - 170 * (0 if n < 0.45 else min(1, (n - 0.45) / 0.35) ** 1.6)
+        pts.append(f'{x:.1f},{y:.1f}')
+    f.body.append(f'<polyline points="{" ".join(pts)}" fill="none" stroke="{P}" stroke-width="3"/>')
+    f.line(100 + 180, 470, 100 + 180, 300, color=LINE, width=1.5, dash=True); f.text(285, 290, '今日走る', 13, MUTED, anchor='middle'); f.text(430, 290, '効果が現れる', 13, P, anchor='middle', weight=700)
+    pts = []
+    for i in range(41):
+        x = 640 + i * 10; n = i / 40
+        y = 470 - 190 * (n ** 2.2)
+        pts.append(f'{x:.1f},{y:.1f}')
+    f.body.append(f'<polyline points="{" ".join(pts)}" fill="none" stroke="{TERRA}" stroke-width="3"/>')
+    f.line(640, 340, 1060, 340, color=TERRA, width=1.5, dash=True); f.text(1050, 330, '閾値', 13, TERRA, anchor='end', weight=700)
+    f.text(850, 300, '越えた瞬間に、全部が一度に現れる', 13, TERRA, anchor='middle')
+    f.footer('遅れて現れる効能は、別の原因に帰されやすい。累積する効能は、閾値を越えるまで見えない。')
+    made.add(f.save('09-c-delay-accumulation.svg'))
+
+    # 10-2 three substitutes for the missing world
+    f = rfig(10, 'ない世界の、三つの代用と、それぞれの穴', '時間で比べる、他と比べる、外してみる', 600, '1')
+    cols = [(60, '時間で比べる', '関係を結ぶ前と後', '穴：前と後では、関係以外も変わっている'), (420, '他と比べる', '関係のある組と、ない組', '穴：組が違えば、関係以外も違う'), (780, '外してみる', '関係を一度解消する', '穴：輪の中では戻ってくる。不可逆なら戻らない')]
+    for i, (x, title, how, hole) in enumerate(cols):
+        f.panel(x, 205, 360, 350, title)
+        f.text(x + 180, 275, how, 15, INK, anchor='middle')
+        if i == 0:
+            f.line(x + 60, 350, x + 300, 350, color=MUTED, width=2, arrow=True); f.text(x + 100, 340, '前', 14, MUTED, anchor='middle'); f.text(x + 260, 340, '後', 14, MUTED, anchor='middle')
+            f.blob(x + 100, 400, 40, P, 0.4); f.blob(x + 260, 400, 40, P, 0.6); f.circ(x + 260, 400, 5, TERRA)
+        elif i == 1:
+            f.blob(x + 100, 370, 36, P, 0.5); f.blob(x + 160, 370, 36, TERRA, 0.5); f.line(x + 110, 370, x + 150, 370, color=INK, width=2)
+            f.blob(x + 220, 420, 36, P, 0.5); f.blob(x + 280, 420, 36, TERRA, 0.5)
+        else:
+            f.blob(x + 110, 390, 44, P, 0.5); f.blob(x + 250, 390, 44, TERRA, 0.5)
+            f.line(x + 140, 390, x + 170, 390, color=INK, width=2); f.line(x + 190, 390, x + 220, 390, color=INK, width=2)
+            f.line(x + 172, 378, x + 188, 402, color=TERRA, width=2.5); f.line(x + 188, 378, x + 172, 402, color=TERRA, width=2.5)
+        f.text(x + 180, 500, hole, 13, TERRA, anchor='middle', weight=700)
+    f.footer('代用の穴をどれだけ塞げているかが、価値の主張の確からしさを決める。')
+    made.add(f.save('10-b-three-substitutes.svg'))
+
+    # 10-3 three worlds for the example
+    f = rfig(10, 'AIの生成 × 人間のレビュー、三つの世界', '今の世界、レビューがない世界、生成がない世界', 650, '3')
+    cols = [(60, '今の世界', P, [('生成', P), ('レビュー', TERRA)], '符号は G と R の大小で変わる'), (420, 'レビューがない世界', MUTED, [('生成', P), ('（なし）', LINE)], '速い。欠陥が流出し、手戻りと不可逆の損失が残る'), (780, '生成がない世界', MUTED, [('（人間が書く）', LINE), ('レビュー', TERRA)], '遅い。レビューは追いつき、滞留は起きない')]
+    for x, title, c, boxes, note in cols:
+        f.panel(x, 205, 360, 370, title)
+        for j, (nm, bc) in enumerate(boxes):
+            dash = ' stroke-dasharray="7 6"' if bc == LINE else ''
+            f.body.append(f'<rect x="{x+40+j*160}" y="290" width="120" height="56" rx="10" fill="#ffffff" stroke="{bc}" stroke-width="2"{dash}/>'); f.text(x + 100 + j * 160, 325, nm, 15, INK if bc != LINE else MUTED, anchor='middle', weight=700)
+        f.text(x + 180, 420, note, 13, INK, anchor='middle')
+    f.text(420, 520, '差 ＝ レビューの価値', 15, TERRA, anchor='middle', weight=700); f.line(420, 528, 420, 560, color=TERRA, width=1.5)
+    f.text(780, 520, '差 ＝ 生成の価値', 15, P, anchor='middle', weight=700); f.line(780, 528, 780, 560, color=P, width=1.5)
+    f.footer('ない世界は観測できない。見つかった欠陥から流出したはずの欠陥を見積もる、という推定の穴が残る。')
+    made.add(f.save('10-c-three-worlds.svg'))
+
+    # 12-2 cognition loop
+    f = rfig(12, '関係を認識すること自体が、知識を生む', '相似を見出す → 抽象化する → 運ぶ → 新しい仮説 → 次の相似', 560, '2')
+    nodes = [('相似を見出す', 600, 240), ('共通構造を抽象化する', 930, 360), ('一方の知識を他方へ運ぶ', 600, 480), ('他方に新しい仮説が生まれる', 270, 360)]
+    for nm, x, y in nodes:
+        f.body.append(f'<rect x="{x-120}" y="{y-24}" width="240" height="48" rx="12" fill="#ffffff" stroke="{P}" stroke-width="2"/>'); f.text(x, y + 6, nm, 15, INK, anchor='middle', weight=700)
+    f.path('M 720 250 C 860 270 920 300 930 334', color=P, width=2, arrow=True); f.path('M 925 386 C 900 440 780 470 722 478', color=P, width=2, arrow=True)
+    f.path('M 480 478 C 360 470 280 430 272 386', color=P, width=2, arrow=True); f.path('M 272 334 C 290 290 420 255 478 246', color=P, width=2, arrow=True)
+    f.text(600, 352, '関係を見た人の側が変わる', 18, INDIGO, anchor='middle', weight=700); f.text(600, 378, '対象について教える以上に', 13, MUTED, anchor='middle')
+    f.footer('第1クールで「関係を見出すことがアイデアだ」と言ったことの中身。')
+    made.add(f.save('12-b-cognition-loop.svg'))
 
     # 12-1 example v4
     f = rfig(12, 'AIの生成 × 人間のレビュー（最終形）', '四つの階層と、あいだに置く五つの設計案', 720, 'a')

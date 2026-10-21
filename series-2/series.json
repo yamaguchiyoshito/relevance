@@ -4,7 +4,7 @@
   "title": "二者のあいだ",
   "subtitle": "RELATION ── 二者のあいだに関する考察、全12回",
   "language": "ja",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "tagline": "個々の性能ではなく、あいだを設計する。",
   "index": "series-2/README.md",
   "parts": [
@@ -64,7 +64,8 @@
       "summary": "関係の意味（何によって結びつくか）と構造（方向・対称性・強度・時間変化）は別の軸である。",
       "path": "series-2/chapters/02-meaning-and-structure.md",
       "figures": [
-        "assets/illustrations/relation/02-a-four-axes.svg"
+        "assets/illustrations/relation/02-a-four-axes.svg",
+        "assets/illustrations/relation/02-b-transitivity.svg"
       ],
       "sources": []
     },
@@ -116,7 +117,9 @@
       "summary": "因果は時間の中でしか成立せず、フィードバックと循環によって原因と結果の席は入れ替わる。",
       "path": "series-2/chapters/06-causal-and-temporal-relations.md",
       "figures": [
-        "assets/illustrations/relation/06-a-two-loops.svg"
+        "assets/illustrations/relation/06-b-condition-spectrum.svg",
+        "assets/illustrations/relation/06-a-two-loops.svg",
+        "assets/illustrations/relation/06-c-example-loops.svg"
       ],
       "sources": []
     },
@@ -128,6 +131,7 @@
       "summary": "意味が似ていることと意味的に関連していることは別で、意味的には遠いが構造的に似た組が転用の着想源になる。",
       "path": "series-2/chapters/07-semantic-relations.md",
       "figures": [
+        "assets/illustrations/relation/07-c-chains.svg",
         "assets/illustrations/relation/07-a-two-axes.svg",
         "assets/illustrations/relation/07-b-three-readings.svg"
       ],
@@ -142,7 +146,8 @@
       "path": "series-2/chapters/08-relation-and-effect.md",
       "figures": [
         "assets/illustrations/relation/08-a-type-vs-effect.svg",
-        "assets/illustrations/relation/08-b-attribution.svg"
+        "assets/illustrations/relation/08-b-attribution.svg",
+        "assets/illustrations/relation/08-c-example-effects.svg"
       ],
       "sources": []
     },
@@ -155,6 +160,7 @@
       "path": "series-2/chapters/09-conditions-of-effects.md",
       "figures": [
         "assets/illustrations/relation/09-a-threshold.svg",
+        "assets/illustrations/relation/09-c-delay-accumulation.svg",
         "assets/illustrations/relation/09-b-example-v3.svg"
       ],
       "sources": []
@@ -167,7 +173,9 @@
       "summary": "関係の価値は関係がない世界との差であり、費用を引いて初めて正味の価値になる。評価とは反実仮想の比較である。",
       "path": "series-2/chapters/10-counterfactual-value.md",
       "figures": [
-        "assets/illustrations/relation/10-a-two-worlds.svg"
+        "assets/illustrations/relation/10-b-three-substitutes.svg",
+        "assets/illustrations/relation/10-a-two-worlds.svg",
+        "assets/illustrations/relation/10-c-three-worlds.svg"
       ],
       "sources": []
     },
@@ -192,7 +200,8 @@
       "summary": "個々の対象の性能ではなく、対象と対象のあいだを設計・改善の対象にする。",
       "path": "series-2/chapters/12-designing-relations.md",
       "figures": [
-        "assets/illustrations/relation/12-a-example-v4.svg"
+        "assets/illustrations/relation/12-a-example-v4.svg",
+        "assets/illustrations/relation/12-b-cognition-loop.svg"
       ],
       "sources": []
     }
