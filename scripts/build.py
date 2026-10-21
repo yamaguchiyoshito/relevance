@@ -34,7 +34,8 @@ def run_pandoc(text: str, args: list[str]) -> str:
 
 
 def parse_markdown(text: str) -> dict:
-    return json.loads(run_pandoc(text, ['--from', READER, '--to', 'json']))
+    # --columns を十分大きくし、パイプテーブルに区切り行由来の相対列幅(colgroup)を付けさせない。列幅はブラウザが内容に応じて決める。
+    return json.loads(run_pandoc(text, ['--from', READER, '--to', 'json', '--columns=10000']))
 
 
 def map_url(url: str) -> str:
@@ -69,7 +70,25 @@ def render(text: str, prefix: str = '') -> str:
     output = run_pandoc(json.dumps(ast, ensure_ascii=False), args)
     if prefix:
         output = output.replace('id="footnotes"', f'id="{prefix}footnotes"')
-    return output
+    return wrap_tables(merge_captions(output))
+
+
+# Pandoc が alt から作る自動キャプションは aria-hidden 付きで出る。本文由来の figcaption と区別するため、その属性で限定する。
+FIGURE_WITH_CAPTION = re.compile(r'<figure>\s*(<img\b[^>]*>)\s*<figcaption aria-hidden="true">.*?</figcaption>\s*</figure>\s*<p><em>(図[^<]*)</em></p>', re.S)
+FIGURE_ALT_ONLY = re.compile(r'<figure>\s*(<img\b[^>]*>)\s*<figcaption aria-hidden="true">.*?</figcaption>\s*</figure>', re.S)
+
+
+def merge_captions(output: str) -> str:
+    """画像直後の「*図N-k：…*」段落を figcaption に取り込み、Pandoc が alt から作る自動キャプションを消す。
+    alt は img の属性として残す。本文側のキャプションがない図（表紙など）は figcaption なしにする。"""
+    output = FIGURE_WITH_CAPTION.sub(lambda m: f'<figure>{m.group(1)}<figcaption>{m.group(2)}</figcaption></figure>', output)
+    return FIGURE_ALT_ONLY.sub(lambda m: f'<figure>{m.group(1)}</figure>', output)
+
+
+def wrap_tables(output: str) -> str:
+    """<table> を横スクロール用の <div class="table-wrap"> で包む。table 自体を display:block にすると行が内容幅で止まるため。"""
+    output = re.sub(r'<table(\s[^>]*)?>', lambda m: f'<div class="table-wrap"><table{m.group(1) or ""}>', output)
+    return output.replace('</table>', '</table></div>')
 
 
 def load_series() -> list[dict]:
@@ -99,7 +118,7 @@ def wrap_page(title: str, body: str, source: Path, series: dict, css: str, all_s
     other_block = f'<div class="toc-drawer-other"><span>別の連載</span>{other}</div>' if other else ''
     return f'''<!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light dark"><title>{html.escape(title)} | {series_title}</title>
+<meta name="color-scheme" content="light dark"><title>{series_title if title == series['title'] else html.escape(title) + ' | ' + series_title}</title>
 <style>{css}</style></head><body>
 <a class="skip" href="#main">本文へ移動</a>
 <input type="checkbox" id="toc-state" class="toc-state" aria-label="目次を開く">

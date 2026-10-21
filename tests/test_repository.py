@@ -29,6 +29,24 @@ class RepositoryTests(unittest.TestCase):
         self.assertIn('class="footnotes', output)
         self.assertNotIn('<script', output)
 
+    def test_caption_paragraph_becomes_figcaption(self):
+        output = render('![代替テキスト](../assets/illustrations/00-cover.svg)\n\n*図1-1：説明。*\n\n次の段落。\n')
+        self.assertEqual(output.count('<figcaption'), 1)
+        self.assertIn('<figcaption>図1-1：説明。</figcaption>', output)
+        self.assertNotIn('<p><em>図1-1', output)
+        self.assertIn('alt="代替テキスト"', output)
+
+    def test_alt_only_figure_has_no_caption(self):
+        output = render('![表紙の説明](../assets/illustrations/00-cover.svg)\n')
+        self.assertEqual(output.count('<figcaption'), 0)
+        self.assertIn('alt="表紙の説明"', output)
+
+    def test_tables_are_wrapped_and_unsized(self):
+        output = render('| 回 | 文章 |\n| --- | --- |\n| 01 | 本文 |\n')
+        self.assertIn('<div class="table-wrap"><table', output)
+        self.assertIn('</table></div>', output)
+        self.assertNotIn('<col style', output)
+
     def test_dollar_signs_are_not_math(self):
         ast = parse_markdown('価格は $5 と $7 です。\n')
         self.assertFalse(any(n.get('t') == 'Math' for n in walk(ast)))

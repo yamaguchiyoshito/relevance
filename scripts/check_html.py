@@ -18,6 +18,8 @@ class Document(HTMLParser):
         self.links = []
         self.scripts = 0
         self.images = 0
+        self.figcaptions = 0
+        self.stray_captions = text.count('<p><em>図')
         self.feed(text)
 
     def handle_starttag(self, tag, attributes):
@@ -28,6 +30,8 @@ class Document(HTMLParser):
             self.scripts += 1
         if tag == 'img':
             self.images += 1
+        if tag == 'figcaption':
+            self.figcaptions += 1
         for attr in ['href', 'src']:
             if attr in attrs:
                 self.links.append((tag, attr, attrs[attr]))
@@ -62,6 +66,11 @@ def check(site: Path) -> dict:
         errors.append('No generated HTML pages found')
     all_series = [json.loads((ROOT / f).read_text(encoding='utf-8')) for f in ['series.json', 'series-2/series.json']]
     chapters = [d for p, d in docs.items() if p.parent.name == 'chapters']
+    for path, doc in docs.items():
+        if doc.stray_captions:
+            errors.append(f'{path.name}: figure caption paragraph was not merged into figcaption')
+        if path.parent.name == 'chapters' and doc.figcaptions != doc.images:
+            errors.append(f'{path.name}: {doc.images} figures but {doc.figcaptions} figcaptions')
     expected_chapters = sum(len(s['chapters']) for s in all_series)
     if len(chapters) != expected_chapters:
         errors.append(f'Expected {expected_chapters} chapter HTML pages')
