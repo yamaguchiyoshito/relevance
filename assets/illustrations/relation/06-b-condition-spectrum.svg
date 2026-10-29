@@ -13,19 +13,19 @@
 <text x="240.0" y="285.0" fill="#5d6873" font-size="22" text-anchor="middle" font-weight="700">種</text>
 <text x="240.0" y="318.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">なければ起きない</text>
 <rect x="120" y="350" width="240" height="12" rx="6" fill="#d8d4c8"/><rect x="120" y="350" width="60" height="12" rx="6" fill="#5d6873"/>
-<text x="240.0" y="390.0" fill="#5d6873" font-size="12" text-anchor="middle" font-weight="400">結果への寄与の強さ</text>
+<text x="240.0" y="390.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">結果への寄与の強さ</text>
 <rect x="420" y="205" width="360" height="250" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="600.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">促進</text>
 <text x="600.0" y="285.0" fill="#2f8f83" font-size="22" text-anchor="middle" font-weight="700">肥料</text>
 <text x="600.0" y="318.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">あれば起きやすい</text>
 <rect x="480" y="350" width="240" height="12" rx="6" fill="#d8d4c8"/><rect x="480" y="350" width="144" height="12" rx="6" fill="#2f8f83"/>
-<text x="600.0" y="390.0" fill="#5d6873" font-size="12" text-anchor="middle" font-weight="400">結果への寄与の強さ</text>
+<text x="600.0" y="390.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">結果への寄与の強さ</text>
 <rect x="780" y="205" width="360" height="250" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="960.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">原因</text>
 <text x="960.0" y="285.0" fill="#d0693a" font-size="18" text-anchor="middle" font-weight="700">種・水・温度がそろう</text>
 <text x="960.0" y="318.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">あれば起きる</text>
 <rect x="840" y="350" width="240" height="12" rx="6" fill="#d8d4c8"/><rect x="840" y="350" width="240" height="12" rx="6" fill="#d0693a"/>
-<text x="960.0" y="390.0" fill="#5d6873" font-size="12" text-anchor="middle" font-weight="400">結果への寄与の強さ</text>
+<text x="960.0" y="390.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">結果への寄与の強さ</text>
 <line x1="430.0" y1="300.0" x2="410.0" y2="300.0" stroke="#5d6873" stroke-width="1.5"/>
 <line x1="790.0" y1="300.0" x2="770.0" y2="300.0" stroke="#5d6873" stroke-width="1.5"/>
 <text x="50.0" y="492.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">中間の段は見落とされやすく、原因に格上げされるか、無関係に格下げされがち。</text>

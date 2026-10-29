@@ -11,33 +11,33 @@
 <rect x="60" y="205" width="520" height="390" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="320.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">収まる輪（負のフィードバック）</text>
 <rect x="250" y="245" width="140" height="40" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="320.0" y="271.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="700">生成が増える</text>
+<text x="320.0" y="271.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">生成が増える</text>
 <rect x="400" y="360" width="140" height="40" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="470.0" y="386.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="700">待ちが増える</text>
+<text x="470.0" y="386.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">待ちが増える</text>
 <rect x="250" y="475" width="140" height="40" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="320.0" y="501.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="700">生成が減る</text>
+<text x="320.0" y="501.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">生成が減る</text>
 <rect x="100" y="360" width="140" height="40" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="170.0" y="386.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="700">待ちが減る</text>
+<text x="170.0" y="386.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">待ちが減る</text>
 <path d="M 392 275 C 450 290 470 330 470 358" fill="none" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M 465 402 C 450 450 400 480 392 486" fill="none" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M 248 486 C 200 470 170 440 170 402" fill="none" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M 175 358 C 190 310 240 280 248 275" fill="none" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="320.0" y="565.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">どこかの水準に落ち着こうとする</text>
+<text x="320.0" y="565.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">どこかの水準に落ち着こうとする</text>
 <rect x="620" y="205" width="520" height="390" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="880.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">膨らむ輪（正のフィードバック）</text>
 <rect x="800" y="245" width="160" height="40" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="880.0" y="271.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="700">待ちが増える</text>
+<text x="880.0" y="271.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">待ちが増える</text>
 <rect x="950" y="360" width="160" height="40" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="1030.0" y="386.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="700">レビューが雑になる</text>
+<text x="1030.0" y="386.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">レビューが雑になる</text>
 <rect x="800" y="475" width="160" height="40" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="880.0" y="501.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="700">欠陥が流出する</text>
+<text x="880.0" y="501.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">欠陥が流出する</text>
 <rect x="650" y="360" width="160" height="40" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="730.0" y="386.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="700">手戻りが起きる</text>
+<text x="730.0" y="386.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">手戻りが起きる</text>
 <path d="M 962 275 C 1010 290 1030 330 1030 358" fill="none" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M 1025 402 C 1010 450 960 480 962 486" fill="none" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M 798 486 C 750 470 730 440 730 402" fill="none" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M 735 358 C 750 310 790 280 798 275" fill="none" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="880.0" y="565.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">放っておくと膨らむ</text>
+<text x="880.0" y="565.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">放っておくと膨らむ</text>
 <text x="50.0" y="632.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">どちらの輪が勝つかは、二者の性質ではなく、待ちが越える境目で決まる（第9回）。</text>
 </g>
 </svg>

@@ -12,26 +12,26 @@
 <text x="330.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">目的の枠：プロジェクトの成功</text>
 <circle cx="230.0" cy="358.0" r="11" fill="#2f8f83"/>
 <path d="M 214 402 C 214 376 246 376 246 402 Z" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="230.0" y="426.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">構想に強い</text>
+<text x="230.0" y="426.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">構想に強い</text>
 <circle cx="430.0" cy="358.0" r="11" fill="#d0693a"/>
 <path d="M 414 402 C 414 376 446 376 446 402 Z" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="430.0" y="426.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">細部に強い</text>
+<text x="430.0" y="426.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">細部に強い</text>
 <line x1="255.0" y1="380.0" x2="405.0" y2="380.0" stroke="#2f8f83" stroke-width="3" marker-end="url(#arrow)"/>
 <line x1="405.0" y1="392.0" x2="255.0" y2="392.0" stroke="#d0693a" stroke-width="3" marker-end="url(#arrow)"/>
-<text x="330.0" y="476.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="700">補完：構想が細部を導き、細部が構想を現実にする</text>
+<text x="330.0" y="476.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">補完：構想が細部を導き、細部が構想を現実にする</text>
 <rect x="620" y="205" width="500" height="300" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="870.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">資源の枠：席は一つ</text>
 <circle cx="770.0" cy="358.0" r="11" fill="#2f8f83"/>
 <path d="M 754 402 C 754 376 786 376 786 402 Z" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="770.0" y="426.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">構想に強い</text>
+<text x="770.0" y="426.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">構想に強い</text>
 <circle cx="970.0" cy="358.0" r="11" fill="#d0693a"/>
 <path d="M 954 402 C 954 376 986 376 986 402 Z" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="970.0" y="426.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">細部に強い</text>
+<text x="970.0" y="426.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">細部に強い</text>
 <rect x="845" y="300" width="50" height="40" rx="6" fill="#ffffff" stroke="#232a33" stroke-width="2"/>
-<text x="870.0" y="290.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">席</text>
+<text x="870.0" y="290.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">席</text>
 <line x1="790.0" y1="360.0" x2="850.0" y2="335.0" stroke="#2f8f83" stroke-width="2.5" marker-end="url(#arrow)"/>
 <line x1="950.0" y1="360.0" x2="890.0" y2="335.0" stroke="#d0693a" stroke-width="2.5" marker-end="url(#arrow)"/>
-<text x="870.0" y="476.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="700">競合：同じ資源を争う</text>
+<text x="870.0" y="476.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">競合：同じ資源を争う</text>
 <text x="50.0" y="552.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">機能の関係は、二者の性質ではなく、目的と範囲と資源の枠で決まる。</text>
 </g>
 </svg>

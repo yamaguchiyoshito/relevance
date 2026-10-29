@@ -58,7 +58,7 @@
 <line x1="365.4" y1="371.1" x2="381.6" y2="350.7" stroke="#d0693a" stroke-width="2.5" marker-end="url(#arrow)"/>
 <circle cx="206.8" cy="404.7" r="9" fill="#d0693a"/>
 <line x1="206.8" y1="404.7" x2="222.9" y2="384.3" stroke="#d0693a" stroke-width="2.5" marker-end="url(#arrow)"/>
-<text x="320.0" y="570.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">同じ方向を見ている二人：何か共通の関心があるかもしれない</text>
+<text x="320.0" y="570.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">同じ方向を見ている二人：何か共通の関心があるかもしれない</text>
 <rect x="620" y="205" width="520" height="380" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="880.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">全員が同じ向き</text>
 <circle cx="881.8" cy="379.7" r="9" fill="#5a4fcf"/>
@@ -105,6 +105,6 @@
 <line x1="773.0" y1="474.4" x2="789.2" y2="454.1" stroke="#5a4fcf" stroke-width="2.5" marker-end="url(#arrow)"/>
 <circle cx="909.3" cy="269.8" r="9" fill="#5a4fcf"/>
 <line x1="909.3" y1="269.8" x2="925.5" y2="249.4" stroke="#5a4fcf" stroke-width="2.5" marker-end="url(#arrow)"/>
-<text x="880.0" y="570.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">同じ方向を見ている二人：何も教えてくれない。全員がそうだから</text>
+<text x="880.0" y="570.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">同じ方向を見ている二人：何も教えてくれない。全員がそうだから</text>
 </g>
 </svg>

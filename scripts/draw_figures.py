@@ -10,6 +10,19 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'assets' / 'illustrations'
 BG, INK, MUTED, LINE = '#f7f5ef', '#232a33', '#5d6873', '#d8d4c8'
 INDIGO, TERRA, TEAL, SOFT = '#5a4fcf', '#d0693a', '#2f8f83', '#ece9e0'
+
+# Type-size policy (2026-10-30): the reader shows figures at 720px (about 0.6x), so nothing is set
+# below 14px; 14 and 15, used for explanatory sentences, are raised one step. 16px and above keep
+# the size they were drawn with.
+TYPE_FLOOR = 14
+TYPE_STEP = {14: 15, 15: 16}
+
+
+def type_size(size: float) -> float:
+    if size < TYPE_FLOOR:
+        return TYPE_FLOOR
+    return TYPE_STEP.get(size, size)
+
 FONT = 'system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'
 
 
@@ -36,6 +49,7 @@ class Figure:
         self.line(50, 166, 1150, 166, color=LINE, width=1)
 
     def text(self, x, y, s, size=24, color=INK, anchor='start', weight=400):
+        size = type_size(size)
         self.body.append(f'<text x="{x:.1f}" y="{y:.1f}" fill="{color}" font-size="{size}" text-anchor="{anchor}" font-weight="{weight}">{escape(str(s))}</text>')
 
     def line(self, x1, y1, x2, y2, color=MUTED, width=2, arrow=False, dash=False):
@@ -723,7 +737,7 @@ def running_example(f, version: int, notes: bool = True):
     # v3: G and R gauges, queue, threshold, delay, externality, irreversibility
     f.text(gx, by - 14, 'G：生成の速さ', 14, P, weight=700)
     f.body.append(f'<rect x="{gx}" y="{by-8}" width="{bw}" height="5" rx="2" fill="{LINE}"/><rect x="{gx}" y="{by-8}" width="{int(bw*0.85)}" height="5" rx="2" fill="{P}"/>')
-    f.text(rx, by - 14, 'R：レビューの処理能力', 14, TERRA, weight=700)
+    f.text(rx + bw / 2 - 12, by - 14, 'R：レビューの処理能力', 14, TERRA, anchor='end', weight=700)
     f.body.append(f'<rect x="{rx}" y="{by-8}" width="{bw}" height="5" rx="2" fill="{LINE}"/><rect x="{rx}" y="{by-8}" width="{int(bw*0.5)}" height="5" rx="2" fill="{TERRA}"/>')
     for i in range(7):
         f.body.append(f'<rect x="{int(mid-98+i*28)}" y="{by+48}" width="22" height="16" rx="3" fill="{TERRA}" opacity="{0.35+0.08*i:.2f}"/>')
@@ -1463,11 +1477,11 @@ def draw_stage3(made: set[str]) -> None:
     # 3-3 correlation or causation in the example (series 2)
     f = rfig(3, 'レビューが丁寧なチームは、欠陥が少ない', '相関か、因果か、第三の原因か', 580, '3')
     f.circ(600, 250, 54, TERRA, fill=False, width=3); f.text(600, 256, '丁寧なチーム', 15, TERRA, anchor='middle', weight=700); f.text(600, 182, '第三の原因？', 14, TERRA, anchor='middle')
-    f.circ(300, 460, 34, P); f.text(300, 466, 'レビュー', 15, '#ffffff', anchor='middle', weight=700)
-    f.circ(900, 460, 34, P); f.text(900, 466, '少ない欠陥', 14, '#ffffff', anchor='middle', weight=700)
+    f.circ(300, 460, 42, P); f.text(300, 466, 'レビュー', 15, '#ffffff', anchor='middle', weight=700)
+    f.circ(900, 460, 42, P); f.text(900, 466, '少ない欠陥', 14, '#ffffff', anchor='middle', weight=700)
     f.line(560, 290, 330, 438, color=TERRA, width=2, dash=True, arrow=True); f.line(640, 290, 870, 438, color=TERRA, width=2, dash=True, arrow=True)
-    f.line(336, 448, 864, 448, color=P, width=2.5, arrow=True); f.text(600, 438, '因果？：レビューが欠陥を減らす', 14, P, anchor='middle')
-    f.line(864, 472, 336, 472, color=MUTED, width=2, arrow=True, dash=True); f.text(600, 500, '逆向きの因果？：欠陥の少ないコードはレビューが通りやすい', 13, MUTED, anchor='middle')
+    f.line(344, 448, 856, 448, color=P, width=2.5, arrow=True); f.text(600, 438, '因果？：レビューが欠陥を減らす', 14, P, anchor='middle')
+    f.line(856, 472, 344, 472, color=MUTED, width=2, arrow=True, dash=True); f.text(600, 500, '逆向きの因果？：欠陥の少ないコードはレビューが通りやすい', 13, MUTED, anchor='middle')
     f.footer('観察は同じでも、三つの読み方がある。どれかは、向きと時間と仕組みを確かめるまで決まらない。')
     made.add(f.save('03-c-example-correlation.svg'))
 
@@ -1532,7 +1546,7 @@ def draw_stage4(made: set[str]) -> None:
     f.box(x + 30, y + 42, 60, 36, 'A', '', P, 15); f.box(x + 158, y + 42, 60, 36, 'B', '', TERRA, 15)
     for dy, c in [(-12, P), (0, TERRA), (12, MUTED)]:
         f.line(x + 95, y + 60 + dy, x + 153, y + 60 + dy, color=c, width=2)
-    f.text(x + 124, y + 114, '一組の二者に、複数の群が同時に当てはまる', 11, MUTED, anchor='middle')
+    f.text(x + 124, y + 104, '一組の二者に、', 12, MUTED, anchor='middle'); f.text(x + 124, y + 124, '複数の群が同時に当てはまる', 12, MUTED, anchor='middle')
     f.footer('群は排他的な分類ではない。意味的関係の細分は付録B、効能との対応は付録Cにある。')
     made.add(f.save('appendix-a-seven-groups.svg'))
 
@@ -1555,16 +1569,16 @@ def draw_stage4(made: set[str]) -> None:
     f.line(325, 318, 430, 270, color=P, width=2, arrow=True); f.text(400, 306, 'properties', 11, MUTED)
     # effect side (right)
     ent(880, 200, 250, 66, 'EffectCategory', '効能の上位分類（付録C-1）', TERRA)
-    ent(880, 300, 250, 66, 'EffectType', '発見・創発などの概念（効能の型カード）', TERRA)
-    ent(880, 400, 250, 66, 'EffectInstance', '具体的に発生した効能（効能の実例カード）', TERRA, dash=True)
+    ent(880, 300, 250, 66, 'EffectType', '発見・創発などの概念（型カード）', TERRA)
+    ent(880, 400, 250, 66, 'EffectInstance', '具体的に発生した効能（実例カード）', TERRA, dash=True)
     f.line(1005, 300, 1005, 270, color=TERRA, width=2, arrow=True); f.text(1015, 288, 'category', 11, MUTED)
     f.line(1005, 400, 1005, 370, color=TERRA, width=2, arrow=True); f.text(1015, 388, 'effect_type', 11, MUTED)
     # the rule in the middle
     ent(540, 280, 270, 106, 'RelationEffectRule', '', INK)
     f.text(675, 332, '仕組み・前提条件・限界・状態', 12, INK, anchor='middle')
-    f.text(675, 352, '型と型をつなぐ。実例どうしは直接つながない', 11, MUTED, anchor='middle')
+    f.text(675, 352, '型と型をつなぐ（実例どうしは結ばない）', 11, MUTED, anchor='middle')
     f.line(325, 333, 535, 333, color=MUTED, width=2, arrow=True); f.text(430, 322, 'relation_type', 11, MUTED, anchor='middle')
-    f.line(815, 333, 875, 333, color=MUTED, width=2, arrow=True); f.text(845, 322, 'effect_type', 11, MUTED, anchor='middle')
+    f.line(815, 333, 875, 333, color=MUTED, width=2, arrow=True); f.text(876, 272, 'effect_type', 11, MUTED, anchor='end')
     f.path('M 325 433 C 500 433 700 433 875 433', color=LINE, width=2, dash=True, arrow=True)
     f.text(600, 422, '規則が成り立てば、実例から効能の実例が生じる（仮説として）', 11, MUTED, anchor='middle')
     # evidence at the bottom, attached to both instances

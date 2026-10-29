@@ -13,15 +13,15 @@
 <circle cx="220.0" cy="370.0" r="80" fill="url(#grel102-1)"/>
 <circle cx="380.0" cy="370.0" r="80" fill="url(#grel102-2)"/>
 <line x1="260.0" y1="370.0" x2="340.0" y2="370.0" stroke="#232a33" stroke-width="3"/>
-<text x="300.0" y="470.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">観測できる</text>
+<text x="300.0" y="470.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">観測できる</text>
 <rect x="680" y="205" width="440" height="300" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="900.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">関係がない世界</text>
 <circle cx="820.0" cy="370.0" r="80" fill="url(#grel102-3)"/>
 <circle cx="980.0" cy="370.0" r="80" fill="url(#grel102-4)"/>
-<text x="900.0" y="470.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">観測できない。想像で組み立てる（反実仮想）</text>
+<text x="900.0" y="470.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">観測できない。想像で組み立てる（反実仮想）</text>
 <circle cx="600.0" cy="352.0" r="28" fill="none" stroke="#232a33" stroke-width="2.5"/>
 <text x="600.0" y="365.0" fill="#232a33" font-size="40" text-anchor="middle" font-weight="700">−</text>
 <path d="M 80 530 L 80 548 L 1120 548 L 1120 530" fill="none" stroke="#232a33" stroke-width="2"/>
-<text x="600.0" y="575.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">純効果 ＝ ある世界の結果 − ない世界の結果　　正味の価値 ＝ 純効果 − 関係を結び、維持する費用</text>
+<text x="600.0" y="575.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="700">純効果 ＝ ある世界の結果 − ない世界の結果　　正味の価値 ＝ 純効果 − 関係を結び、維持する費用</text>
 </g>
 </svg>

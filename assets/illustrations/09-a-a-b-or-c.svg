@@ -12,14 +12,14 @@
 <circle cx="730.0" cy="440.0" r="150" fill="url(#grel092-2)"/>
 <text x="445.0" y="445.0" fill="#5a4fcf" font-size="32" text-anchor="middle" font-weight="700">紙</text>
 <text x="755.0" y="445.0" fill="#2f8f83" font-size="32" text-anchor="middle" font-weight="700">画面</text>
-<text x="445.0" y="480.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">目に優しい・手触り</text>
-<text x="755.0" y="480.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">何千冊・検索</text>
+<text x="445.0" y="480.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">目に優しい・手触り</text>
+<text x="755.0" y="480.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">何千冊・検索</text>
 <line x1="520.0" y1="440.0" x2="565.0" y2="440.0" stroke="#5a4fcf" stroke-width="3" marker-end="url(#arrow)"/>
 <line x1="680.0" y1="440.0" x2="635.0" y2="440.0" stroke="#2f8f83" stroke-width="3" marker-end="url(#arrow)"/>
 <path d="M 600 400 L 600 332" fill="none" stroke="#d0693a" stroke-width="3" marker-end="url(#arrow)"/>
 <polygon points="600,215 610,250 647,255 617,278 625,315 600,297 575,315 583,278 553,255 590,250" fill="#d0693a" opacity="0.9"/>
 <text x="600.0" y="195.0" fill="#d0693a" font-size="22" text-anchor="middle" font-weight="700">or C：電子ペーパー</text>
 <text x="600.0" y="585.0" fill="#232a33" font-size="18" text-anchor="middle" font-weight="700">紙であり、画面である。矛盾がそのまま魅力になる</text>
-<text x="600.0" y="612.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">間隙は一瞬しか開かない。取り出しが遅いとCは消える</text>
+<text x="600.0" y="612.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">間隙は一瞬しか開かない。取り出しが遅いとCは消える</text>
 </g>
 </svg>

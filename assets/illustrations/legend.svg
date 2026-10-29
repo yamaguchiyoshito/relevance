@@ -29,7 +29,7 @@
 <text x="910.0" y="412.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">深緑：対の他方。第2クールの主色</text>
 <circle cx="120.0" cy="494.0" r="12" fill="#d8d4c8"/>
 <text x="170.0" y="500.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">灰：補助・背景</text>
-<text x="490.0" y="500.0" fill="#5a4fcf" font-size="15" text-anchor="middle" font-weight="700">図5-2</text>
+<text x="490.0" y="500.0" fill="#5a4fcf" font-size="16" text-anchor="middle" font-weight="700">図5-2</text>
 <text x="540.0" y="500.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">「図N-k」：第N回のk番目の図</text>
 <rect x="830" y="480" width="60" height="28" rx="6" fill="#ece9e0" stroke="#d8d4c8" stroke-width="1.5"/>
 <circle cx="860.0" cy="494.0" r="10" fill="url(#grel00-2)"/>

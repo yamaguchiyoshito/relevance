@@ -19,15 +19,15 @@
 <text x="742.0" y="287.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">一見、関係なさそう（出発点）</text>
 <line x1="720.0" y1="292.0" x2="720.0" y2="315.0" stroke="#d8d4c8" stroke-width="2"/>
 <circle cx="720.0" cy="325.0" r="10" fill="#d0693a"/>
-<text x="720.0" y="330.0" fill="#ffffff" font-size="13" text-anchor="middle" font-weight="700">1</text>
+<text x="720.0" y="330.0" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">1</text>
 <text x="742.0" y="331.0" fill="#232a33" font-size="19" text-anchor="start" font-weight="400">「現時点では」関係なさそう</text>
 <line x1="720.0" y1="336.0" x2="720.0" y2="359.0" stroke="#d8d4c8" stroke-width="2"/>
 <circle cx="720.0" cy="369.0" r="10" fill="#d0693a"/>
-<text x="720.0" y="374.0" fill="#ffffff" font-size="13" text-anchor="middle" font-weight="700">2</text>
+<text x="720.0" y="374.0" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">2</text>
 <text x="742.0" y="375.0" fill="#232a33" font-size="19" text-anchor="start" font-weight="400">まだ関係を発見できていない</text>
 <line x1="720.0" y1="380.0" x2="720.0" y2="403.0" stroke="#d8d4c8" stroke-width="2"/>
 <circle cx="720.0" cy="413.0" r="10" fill="#2f8f83"/>
-<text x="720.0" y="418.0" fill="#ffffff" font-size="13" text-anchor="middle" font-weight="700">3</text>
+<text x="720.0" y="418.0" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">3</text>
 <text x="742.0" y="419.0" fill="#232a33" font-size="19" text-anchor="start" font-weight="400">これから関係していく</text>
 <text x="880.0" y="480.0" fill="#5d6873" font-size="18" text-anchor="middle" font-weight="400">関係は、時間の中で現れる</text>
 </g>

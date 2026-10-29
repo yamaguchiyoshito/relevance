@@ -11,7 +11,7 @@
 <rect x="80" y="250" width="330" height="150" rx="14" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
 <text x="245.0" y="321.0" fill="#5a4fcf" font-size="30" text-anchor="middle" font-weight="700">LLM</text>
 <text x="245.0" y="353.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">確率的に尤もらしい次の語を選ぶ</text>
-<text x="445.0" y="248.0" fill="#5d6873" font-size="15" text-anchor="start" font-weight="400">「鳥が」の次の語</text>
+<text x="445.0" y="248.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">「鳥が」の次の語</text>
 <text x="445.0" y="282.0" fill="#232a33" font-size="18" text-anchor="start" font-weight="400">飛ぶ</text>
 <rect x="505" y="266" width="79" height="18" rx="4" fill="#5a4fcf" opacity="0.71"/>
 <text x="445.0" y="314.0" fill="#232a33" font-size="18" text-anchor="start" font-weight="400">鳴く</text>
@@ -20,7 +20,7 @@
 <rect x="505" y="330" width="19" height="18" rx="4" fill="#5a4fcf" opacity="0.44"/>
 <text x="445.0" y="378.0" fill="#232a33" font-size="18" text-anchor="start" font-weight="400">読む</text>
 <rect x="505" y="362" width="3" height="18" rx="4" fill="#5a4fcf" opacity="0.36"/>
-<text x="530.0" y="410.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">確率</text>
+<text x="530.0" y="410.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">確率</text>
 <rect x="790" y="250" width="330" height="150" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
 <text x="955.0" y="321.0" fill="#2f8f83" font-size="30" text-anchor="middle" font-weight="700">意味とはなにか</text>
 <text x="955.0" y="353.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">人間の側で起きていること</text>

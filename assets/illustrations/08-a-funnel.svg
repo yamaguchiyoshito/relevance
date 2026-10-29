@@ -110,7 +110,7 @@
 <circle cx="254.0" cy="427.0" r="4" fill="#5a4fcf"/>
 <circle cx="272.0" cy="427.0" r="4" fill="#5a4fcf"/>
 <line x1="300.0" y1="345.0" x2="380.0" y2="345.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="340.0" y="325.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">組み合わせる</text>
+<text x="340.0" y="325.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">組み合わせる</text>
 <text x="340.0" y="372.0" fill="#2f8f83" font-size="17" text-anchor="middle" font-weight="700">安い</text>
 <text x="560.0" y="235.0" fill="#232a33" font-size="20" text-anchor="middle" font-weight="700">候補 ～100万</text>
 <circle cx="562.3" cy="348.0" r="2.6" fill="#5a4fcf"/>

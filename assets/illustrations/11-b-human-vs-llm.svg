@@ -12,10 +12,10 @@
 <text x="320.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">人間：鍋に取っ手がついている</text>
 <circle cx="300.0" cy="450.0" r="125" fill="url(#grel11b-1)"/>
 <text x="300.0" y="445.0" fill="#5a4fcf" font-size="26" text-anchor="middle" font-weight="700">意味</text>
-<text x="300.0" y="472.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">体験に根ざした分布</text>
+<text x="300.0" y="472.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">体験に根ざした分布</text>
 <path d="M 225 345 C 225 290 375 290 375 345" fill="none" stroke="#d0693a" stroke-width="5"/>
 <text x="300.0" y="292.0" fill="#d0693a" font-size="19" text-anchor="middle" font-weight="700">言葉（取っ手）</text>
-<text x="300.0" y="590.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">物理世界が一次、言葉は二次。切れたら体験まで降りて結び直せる</text>
+<text x="300.0" y="590.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">物理世界が一次、言葉は二次。切れたら体験まで降りて結び直せる</text>
 <rect x="620" y="205" width="520" height="420" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="880.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">LLM：取っ手だけが結び合っている</text>
 <line x1="760.0" y1="330.0" x2="900.0" y2="300.0" stroke="#d8d4c8" stroke-width="1.5"/>
@@ -32,22 +32,22 @@
 <line x1="1010.0" y1="470.0" x2="950.0" y2="560.0" stroke="#d8d4c8" stroke-width="1.5"/>
 <line x1="800.0" y1="540.0" x2="950.0" y2="560.0" stroke="#d8d4c8" stroke-width="1.5"/>
 <rect x="715" y="317" width="90" height="26" rx="13" fill="#ffffff" stroke="#d0693a" stroke-width="2.5"/>
-<text x="760.0" y="336.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="700">言葉</text>
+<text x="760.0" y="336.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">言葉</text>
 <rect x="855" y="287" width="90" height="26" rx="13" fill="#ffffff" stroke="#d0693a" stroke-width="2.5"/>
-<text x="900.0" y="306.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="700">言葉</text>
+<text x="900.0" y="306.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">言葉</text>
 <rect x="985" y="337" width="90" height="26" rx="13" fill="#ffffff" stroke="#d0693a" stroke-width="2.5"/>
-<text x="1030.0" y="356.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="700">言葉</text>
+<text x="1030.0" y="356.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">言葉</text>
 <rect x="675" y="427" width="90" height="26" rx="13" fill="#ffffff" stroke="#d0693a" stroke-width="2.5"/>
-<text x="720.0" y="446.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="700">言葉</text>
+<text x="720.0" y="446.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">言葉</text>
 <rect x="825" y="407" width="90" height="26" rx="13" fill="#ffffff" stroke="#d0693a" stroke-width="2.5"/>
-<text x="870.0" y="426.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="700">言葉</text>
+<text x="870.0" y="426.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">言葉</text>
 <rect x="965" y="457" width="90" height="26" rx="13" fill="#ffffff" stroke="#d0693a" stroke-width="2.5"/>
-<text x="1010.0" y="476.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="700">言葉</text>
+<text x="1010.0" y="476.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">言葉</text>
 <rect x="755" y="527" width="90" height="26" rx="13" fill="#ffffff" stroke="#d0693a" stroke-width="2.5"/>
-<text x="800.0" y="546.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="700">言葉</text>
+<text x="800.0" y="546.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">言葉</text>
 <rect x="905" y="547" width="90" height="26" rx="13" fill="#ffffff" stroke="#d0693a" stroke-width="2.5"/>
-<text x="950.0" y="566.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="700">言葉</text>
-<text x="880.0" y="600.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">鍋はない。言語そのものが一次的な現実</text>
+<text x="950.0" y="566.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">言葉</text>
+<text x="880.0" y="600.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">鍋はない。言語そのものが一次的な現実</text>
 <text x="50.0" y="672.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">弱点：体験まで降りて結び直せない。可能性：取っ手を介さず、言葉そのものの空間を直接動かせる。</text>
 </g>
 </svg>

@@ -12,9 +12,9 @@
 <text x="225.0" y="234.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">第1クール RELEVANCE</text>
 <circle cx="180.0" cy="350.0" r="70" fill="url(#grel00-1)"/>
 <circle cx="270.0" cy="350.0" r="70" fill="url(#grel00-2)"/>
-<text x="225.0" y="440.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">関係は一つのぼやけた雲</text>
+<text x="225.0" y="440.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">関係は一つのぼやけた雲</text>
 <line x1="395.0" y1="335.0" x2="455.0" y2="335.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="425.0" y="322.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">ほどく</text>
+<text x="425.0" y="322.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">ほどく</text>
 <rect x="460" y="200" width="330" height="270" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="625.0" y="234.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">第2クール RELATION</text>
 <rect x="490" y="320" width="80" height="44" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/><rect x="680" y="320" width="80" height="44" rx="8" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
@@ -22,9 +22,9 @@
 <path d="M 570 342 C 600 342 620 334 650 334 L 680 338" fill="none" stroke="#d0693a" stroke-width="2"/>
 <path d="M 570 342 C 600 342 620 350 650 350 L 680 346" fill="none" stroke="#5d6873" stroke-width="2"/>
 <path d="M 570 342 C 600 342 620 366 650 366 L 680 354" fill="none" stroke="#5a4fcf" stroke-width="2"/>
-<text x="625.0" y="440.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">性質の違う関係型の重なり</text>
+<text x="625.0" y="440.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">性質の違う関係型の重なり</text>
 <line x1="795.0" y1="335.0" x2="855.0" y2="335.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
-<text x="825.0" y="322.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">次へ</text>
+<text x="825.0" y="322.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">次へ</text>
 <rect x="860" y="200" width="280" height="270" rx="16" fill="none" stroke="#d8d4c8" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="1000.0" y="234.0" fill="#5d6873" font-size="20" text-anchor="middle" font-weight="700">次の問い：三者</text>
 <circle cx="1000.0" cy="300.0" r="10" fill="#d8d4c8"/>
@@ -33,6 +33,6 @@
 <line x1="1000.0" y1="300.0" x2="940.0" y2="390.0" stroke="#d8d4c8" stroke-width="1.5" stroke-dasharray="8 7"/>
 <line x1="1000.0" y1="300.0" x2="1060.0" y2="390.0" stroke="#d8d4c8" stroke-width="1.5" stroke-dasharray="8 7"/>
 <line x1="940.0" y1="390.0" x2="1060.0" y2="390.0" stroke="#d8d4c8" stroke-width="1.5" stroke-dasharray="8 7"/>
-<text x="1000.0" y="440.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">媒介・外部性・観察者（未着手）</text>
+<text x="1000.0" y="440.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">媒介・外部性・観察者（未着手）</text>
 </g>
 </svg>

@@ -15,10 +15,10 @@
 <circle cx="770.0" cy="400.0" r="110" fill="url(#grel08b-2)"/>
 <text x="770.0" y="406.0" fill="#d0693a" font-size="26" text-anchor="middle" font-weight="700">妻</text>
 <line x1="500.0" y1="400.0" x2="700.0" y2="400.0" stroke="#232a33" stroke-width="3"/>
-<text x="600.0" y="385.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">関係そのもの：信頼</text>
-<text x="430.0" y="520.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">対象への効能：夫の考えが変わる</text>
-<text x="770.0" y="520.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">対象への効能：妻の考えが変わる</text>
-<text x="600.0" y="440.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">二人の考えは変わらないのに、間が変わることがある</text>
+<text x="600.0" y="385.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="700">関係そのもの：信頼</text>
+<text x="430.0" y="520.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">対象への効能：夫の考えが変わる</text>
+<text x="770.0" y="520.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">対象への効能：妻の考えが変わる</text>
+<text x="600.0" y="440.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">二人の考えは変わらないのに、間が変わることがある</text>
 <text x="50.0" y="622.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">どこに帰属するかで、測る場所が変わる。夫の変化を測っても、信頼の変化は見えない。</text>
 </g>
 </svg>

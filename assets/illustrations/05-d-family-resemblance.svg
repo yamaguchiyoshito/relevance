@@ -28,9 +28,9 @@
 <line x1="1010.0" y1="307.0" x2="950.0" y2="380.0" stroke="#5a4fcf" stroke-width="1.5"/>
 <line x1="1010.0" y1="307.0" x2="1070.0" y2="470.0" stroke="#5a4fcf" stroke-width="1.5"/>
 <circle cx="950.0" cy="380.0" r="6" fill="#2f8f83"/>
-<text x="950.0" y="405.0" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="400">スズメ：近い</text>
+<text x="950.0" y="405.0" fill="#2f8f83" font-size="16" text-anchor="middle" font-weight="400">スズメ：近い</text>
 <circle cx="1070.0" cy="470.0" r="6" fill="#d0693a"/>
-<text x="1070.0" y="495.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="400">ペンギン：遠い</text>
-<text x="1010.0" y="555.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">同じ枝の中。距離が違う</text>
+<text x="1070.0" y="495.0" fill="#d0693a" font-size="16" text-anchor="middle" font-weight="400">ペンギン：遠い</text>
+<text x="1010.0" y="555.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">同じ枝の中。距離が違う</text>
 </g>
 </svg>

@@ -11,21 +11,21 @@
 <rect x="60" y="205" width="500" height="330" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="310.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">遅延：運動の効果</text>
 <line x1="100.0" y1="480.0" x2="520.0" y2="480.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="310.0" y="508.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">時間 →</text>
+<text x="310.0" y="508.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">時間 →</text>
 <line x1="100.0" y1="480.0" x2="100.0" y2="260.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="600" y="205" width="500" height="330" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="850.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">累積：借金の利子</text>
 <line x1="640.0" y1="480.0" x2="1060.0" y2="480.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="850.0" y="508.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">時間 →</text>
+<text x="850.0" y="508.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">時間 →</text>
 <line x1="640.0" y1="480.0" x2="640.0" y2="260.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
 <polyline points="100.0,470.0 110.0,470.0 120.0,470.0 130.0,470.0 140.0,470.0 150.0,470.0 160.0,470.0 170.0,470.0 180.0,470.0 190.0,470.0 200.0,470.0 210.0,470.0 220.0,470.0 230.0,470.0 240.0,470.0 250.0,470.0 260.0,470.0 270.0,470.0 280.0,470.0 290.0,467.5 300.0,462.4 310.0,455.5 320.0,447.1 330.0,437.3 340.0,426.2 350.0,413.9 360.0,400.6 370.0,386.2 380.0,370.8 390.0,354.4 400.0,337.2 410.0,319.0 420.0,300.0 430.0,300.0 440.0,300.0 450.0,300.0 460.0,300.0 470.0,300.0 480.0,300.0 490.0,300.0 500.0,300.0" fill="none" stroke="#2f8f83" stroke-width="3"/>
 <line x1="280.0" y1="470.0" x2="280.0" y2="300.0" stroke="#d8d4c8" stroke-width="1.5" stroke-dasharray="8 7"/>
-<text x="285.0" y="290.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">今日走る</text>
-<text x="430.0" y="290.0" fill="#2f8f83" font-size="13" text-anchor="middle" font-weight="700">効果が現れる</text>
+<text x="285.0" y="290.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">今日走る</text>
+<text x="430.0" y="290.0" fill="#2f8f83" font-size="14" text-anchor="middle" font-weight="700">効果が現れる</text>
 <polyline points="640.0,470.0 650.0,469.9 660.0,469.7 670.0,469.4 680.0,468.8 690.0,468.0 700.0,467.1 710.0,465.9 720.0,464.5 730.0,462.9 740.0,461.0 750.0,458.9 760.0,456.6 770.0,454.0 780.0,451.1 790.0,448.0 800.0,444.7 810.0,441.1 820.0,437.2 830.0,433.1 840.0,428.6 850.0,424.0 860.0,419.0 870.0,413.8 880.0,408.2 890.0,402.4 900.0,396.4 910.0,390.0 920.0,383.3 930.0,376.4 940.0,369.1 950.0,361.6 960.0,353.7 970.0,345.6 980.0,337.1 990.0,328.4 1000.0,319.3 1010.0,309.9 1020.0,300.3 1030.0,290.3 1040.0,280.0" fill="none" stroke="#d0693a" stroke-width="3"/>
 <line x1="640.0" y1="340.0" x2="1060.0" y2="340.0" stroke="#d0693a" stroke-width="1.5" stroke-dasharray="8 7"/>
-<text x="1050.0" y="330.0" fill="#d0693a" font-size="13" text-anchor="end" font-weight="700">閾値</text>
-<text x="850.0" y="300.0" fill="#d0693a" font-size="13" text-anchor="middle" font-weight="400">越えた瞬間に、全部が一度に現れる</text>
+<text x="1050.0" y="330.0" fill="#d0693a" font-size="14" text-anchor="end" font-weight="700">閾値</text>
+<text x="850.0" y="300.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="400">越えた瞬間に、全部が一度に現れる</text>
 <text x="50.0" y="572.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">遅れて現れる効能は、別の原因に帰されやすい。累積する効能は、閾値を越えるまで見えない。</text>
 </g>
 </svg>

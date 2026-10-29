@@ -8,67 +8,68 @@
 <text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">関係型の七群の地図</text>
 <text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">46種を七つの群に分け、本文のどの回が扱うかを添える</text>
 <line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
-<text x="70.0" y="205.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="700">第I部　関係を分ける（第1〜3回）</text>
-<text x="70.0" y="232.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="700">第II部　関係の種類をめぐる（第4〜7回）</text>
+<text x="70.0" y="205.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="700">第I部　関係を分ける（第1〜3回）</text>
+<text x="70.0" y="232.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="700">第II部　関係の種類をめぐる（第4〜7回）</text>
 <line x1="70.0" y1="240.0" x2="1130.0" y2="240.0" stroke="#d8d4c8" stroke-width="1"/>
 <rect x="70" y="262" width="248" height="134" rx="12" fill="#ffffff" stroke="#5d6873" stroke-width="2"/>
 <text x="86.0" y="294.0" fill="#5d6873" font-size="20" text-anchor="start" font-weight="700">存在論</text>
-<text x="304.0" y="292.0" fill="#5d6873" font-size="13" text-anchor="end" font-weight="400">A-1</text>
-<text x="86.0" y="316.0" fill="#5d6873" font-size="12" text-anchor="start" font-weight="400">REL-001〜006</text>
-<text x="86.0" y="342.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">同一・包含・全体部分</text>
-<text x="86.0" y="361.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">上位下位・所属・実体属性</text>
-<text x="86.0" y="384.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="700">第1回・第3回</text>
+<text x="304.0" y="292.0" fill="#5d6873" font-size="14" text-anchor="end" font-weight="400">A-1</text>
+<text x="86.0" y="316.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">REL-001〜006</text>
+<text x="86.0" y="342.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">同一・包含・全体部分</text>
+<text x="86.0" y="361.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">上位下位・所属・実体属性</text>
+<text x="86.0" y="384.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="700">第1回・第3回</text>
 <rect x="338" y="262" width="248" height="134" rx="12" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
 <text x="354.0" y="294.0" fill="#2f8f83" font-size="20" text-anchor="start" font-weight="700">比較</text>
-<text x="572.0" y="292.0" fill="#5d6873" font-size="13" text-anchor="end" font-weight="400">A-2</text>
-<text x="354.0" y="316.0" fill="#5d6873" font-size="12" text-anchor="start" font-weight="400">REL-007〜015</text>
-<text x="354.0" y="342.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">相似・反対・逆転</text>
-<text x="354.0" y="361.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">双対・同型 ほか（細分は14種）</text>
-<text x="354.0" y="384.0" fill="#2f8f83" font-size="13" text-anchor="start" font-weight="700">第4回</text>
+<text x="572.0" y="292.0" fill="#5d6873" font-size="14" text-anchor="end" font-weight="400">A-2</text>
+<text x="354.0" y="316.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">REL-007〜015</text>
+<text x="354.0" y="342.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">相似・反対・逆転</text>
+<text x="354.0" y="361.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">双対・同型 ほか（細分は14種）</text>
+<text x="354.0" y="384.0" fill="#2f8f83" font-size="14" text-anchor="start" font-weight="700">第4回</text>
 <rect x="606" y="262" width="248" height="134" rx="12" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
 <text x="622.0" y="294.0" fill="#2f8f83" font-size="20" text-anchor="start" font-weight="700">機能</text>
-<text x="840.0" y="292.0" fill="#5d6873" font-size="13" text-anchor="end" font-weight="400">A-3</text>
-<text x="622.0" y="316.0" fill="#5d6873" font-size="12" text-anchor="start" font-weight="400">REL-016〜022</text>
-<text x="622.0" y="342.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">補完・代替・競合・依存</text>
-<text x="622.0" y="361.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">協調・分業・制約</text>
-<text x="622.0" y="384.0" fill="#2f8f83" font-size="13" text-anchor="start" font-weight="700">第5回</text>
+<text x="840.0" y="292.0" fill="#5d6873" font-size="14" text-anchor="end" font-weight="400">A-3</text>
+<text x="622.0" y="316.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">REL-016〜022</text>
+<text x="622.0" y="342.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">補完・代替・競合・依存</text>
+<text x="622.0" y="361.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">協調・分業・制約</text>
+<text x="622.0" y="384.0" fill="#2f8f83" font-size="14" text-anchor="start" font-weight="700">第5回</text>
 <rect x="874" y="262" width="248" height="134" rx="12" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
 <text x="890.0" y="294.0" fill="#d0693a" font-size="20" text-anchor="start" font-weight="700">因果</text>
-<text x="1108.0" y="292.0" fill="#5d6873" font-size="13" text-anchor="end" font-weight="400">A-4</text>
-<text x="890.0" y="316.0" fill="#5d6873" font-size="12" text-anchor="start" font-weight="400">REL-023〜028</text>
-<text x="890.0" y="342.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">原因結果・促進・抑制</text>
-<text x="890.0" y="361.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">相互作用・フィードバック・相関</text>
-<text x="890.0" y="384.0" fill="#d0693a" font-size="13" text-anchor="start" font-weight="700">第6回</text>
+<text x="1108.0" y="292.0" fill="#5d6873" font-size="14" text-anchor="end" font-weight="400">A-4</text>
+<text x="890.0" y="316.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">REL-023〜028</text>
+<text x="890.0" y="342.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">原因結果・促進・抑制</text>
+<text x="890.0" y="361.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">相互作用・フィードバック・相関</text>
+<text x="890.0" y="384.0" fill="#d0693a" font-size="14" text-anchor="start" font-weight="700">第6回</text>
 <rect x="70" y="412" width="248" height="134" rx="12" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
 <text x="86.0" y="444.0" fill="#d0693a" font-size="20" text-anchor="start" font-weight="700">時間</text>
-<text x="304.0" y="442.0" fill="#5d6873" font-size="13" text-anchor="end" font-weight="400">A-5</text>
-<text x="86.0" y="466.0" fill="#5d6873" font-size="12" text-anchor="start" font-weight="400">REL-029〜034</text>
-<text x="86.0" y="492.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">先行後続・同時・重複</text>
-<text x="86.0" y="511.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">反復・循環・継承</text>
-<text x="86.0" y="534.0" fill="#d0693a" font-size="13" text-anchor="start" font-weight="700">第6回</text>
+<text x="304.0" y="442.0" fill="#5d6873" font-size="14" text-anchor="end" font-weight="400">A-5</text>
+<text x="86.0" y="466.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">REL-029〜034</text>
+<text x="86.0" y="492.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">先行後続・同時・重複</text>
+<text x="86.0" y="511.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">反復・循環・継承</text>
+<text x="86.0" y="534.0" fill="#d0693a" font-size="14" text-anchor="start" font-weight="700">第6回</text>
 <rect x="338" y="412" width="248" height="134" rx="12" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
 <text x="354.0" y="444.0" fill="#5a4fcf" font-size="20" text-anchor="start" font-weight="700">変換</text>
-<text x="572.0" y="442.0" fill="#5d6873" font-size="13" text-anchor="end" font-weight="400">A-6</text>
-<text x="354.0" y="466.0" fill="#5d6873" font-size="12" text-anchor="start" font-weight="400">REL-035〜040</text>
-<text x="354.0" y="492.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">変形・反転変換・拡張</text>
-<text x="354.0" y="511.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">縮小・抽象化・具体化</text>
-<text x="354.0" y="534.0" fill="#5a4fcf" font-size="13" text-anchor="start" font-weight="700">第4回末尾</text>
+<text x="572.0" y="442.0" fill="#5d6873" font-size="14" text-anchor="end" font-weight="400">A-6</text>
+<text x="354.0" y="466.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">REL-035〜040</text>
+<text x="354.0" y="492.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">変形・反転変換・拡張</text>
+<text x="354.0" y="511.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">縮小・抽象化・具体化</text>
+<text x="354.0" y="534.0" fill="#5a4fcf" font-size="14" text-anchor="start" font-weight="700">第4回末尾</text>
 <rect x="606" y="412" width="248" height="134" rx="12" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
 <text x="622.0" y="444.0" fill="#5a4fcf" font-size="20" text-anchor="start" font-weight="700">意味</text>
-<text x="840.0" y="442.0" fill="#5d6873" font-size="13" text-anchor="end" font-weight="400">A-7</text>
-<text x="622.0" y="466.0" fill="#5d6873" font-size="12" text-anchor="start" font-weight="400">REL-041〜046</text>
-<text x="622.0" y="492.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">類義・対義・比喩</text>
-<text x="622.0" y="511.0" fill="#232a33" font-size="12" text-anchor="start" font-weight="400">象徴・類比・換喩</text>
-<text x="622.0" y="534.0" fill="#5a4fcf" font-size="13" text-anchor="start" font-weight="700">第7回</text>
+<text x="840.0" y="442.0" fill="#5d6873" font-size="14" text-anchor="end" font-weight="400">A-7</text>
+<text x="622.0" y="466.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">REL-041〜046</text>
+<text x="622.0" y="492.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">類義・対義・比喩</text>
+<text x="622.0" y="511.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">象徴・類比・換喩</text>
+<text x="622.0" y="534.0" fill="#5a4fcf" font-size="14" text-anchor="start" font-weight="700">第7回</text>
 <rect x="874" y="412" width="248" height="134" rx="12" fill="#ece9e0" stroke="#d8d4c8" stroke-width="1.5" stroke-dasharray="7 6"/>
 <rect x="904" y="454" width="60" height="36" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="934.0" y="480.0" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="700">A</text>
+<text x="934.0" y="480.0" fill="#2f8f83" font-size="16" text-anchor="middle" font-weight="700">A</text>
 <rect x="1032" y="454" width="60" height="36" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="1062.0" y="480.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">B</text>
+<text x="1062.0" y="480.0" fill="#d0693a" font-size="16" text-anchor="middle" font-weight="700">B</text>
 <line x1="969.0" y1="460.0" x2="1027.0" y2="460.0" stroke="#2f8f83" stroke-width="2"/>
 <line x1="969.0" y1="472.0" x2="1027.0" y2="472.0" stroke="#d0693a" stroke-width="2"/>
 <line x1="969.0" y1="484.0" x2="1027.0" y2="484.0" stroke="#5d6873" stroke-width="2"/>
-<text x="998.0" y="526.0" fill="#5d6873" font-size="11" text-anchor="middle" font-weight="400">一組の二者に、複数の群が同時に当てはまる</text>
+<text x="998.0" y="516.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">一組の二者に、</text>
+<text x="998.0" y="536.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">複数の群が同時に当てはまる</text>
 <text x="50.0" y="612.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">群は排他的な分類ではない。意味的関係の細分は付録B、効能との対応は付録Cにある。</text>
 </g>
 </svg>

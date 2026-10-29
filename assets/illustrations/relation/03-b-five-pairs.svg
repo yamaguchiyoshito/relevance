@@ -14,31 +14,31 @@
 <text x="420.0" y="281.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">相関</text>
 <rect x="650" y="250" width="340" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 6"/>
 <text x="820.0" y="281.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">因果</text>
-<text x="1010.0" y="281.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">夏とアイスと事故</text>
+<text x="1010.0" y="281.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">夏とアイスと事故</text>
 <line x1="595.0" y1="274.0" x2="645.0" y2="274.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
 <rect x="250" y="318" width="340" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
 <text x="420.0" y="349.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">条件（依存）</text>
 <rect x="650" y="318" width="340" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 6"/>
 <text x="820.0" y="349.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">原因</text>
-<text x="1010.0" y="349.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">酸素と火</text>
+<text x="1010.0" y="349.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">酸素と火</text>
 <line x1="595.0" y1="342.0" x2="645.0" y2="342.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
 <rect x="250" y="386" width="340" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
 <text x="420.0" y="417.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">種類として含む</text>
 <rect x="650" y="386" width="340" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 6"/>
 <text x="820.0" y="417.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">部品として含む</text>
-<text x="1010.0" y="417.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">犬は動物、エンジンは車</text>
+<text x="1010.0" y="417.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">犬は動物、エンジンは車</text>
 <line x1="595.0" y1="410.0" x2="645.0" y2="410.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
 <rect x="250" y="454" width="340" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
 <text x="420.0" y="485.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">違う（対比）</text>
 <rect x="650" y="454" width="340" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 6"/>
 <text x="820.0" y="485.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">両立しない（対立）</text>
-<text x="1010.0" y="485.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">赤と青、一つの椅子</text>
+<text x="1010.0" y="485.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">赤と青、一つの椅子</text>
 <line x1="595.0" y1="478.0" x2="645.0" y2="478.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
 <rect x="250" y="522" width="340" height="48" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
 <text x="420.0" y="553.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">補い合う（補完）</text>
 <rect x="650" y="522" width="340" height="48" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 6"/>
 <text x="820.0" y="553.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="700">なければ成り立たない（依存）</text>
-<text x="1010.0" y="553.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">両手と、鍵と錠</text>
+<text x="1010.0" y="553.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">両手と、鍵と錠</text>
 <line x1="595.0" y1="546.0" x2="645.0" y2="546.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
 <text x="50.0" y="612.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">外してみないと分からない。関係がなかったら、どうなるのか（第10回へ）。</text>
 </g>

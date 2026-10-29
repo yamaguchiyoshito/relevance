@@ -17,14 +17,14 @@
 <rect x="190" y="370" width="55" height="55" rx="6" fill="#d0693a" opacity="0.75"/>
 <text x="185.0" y="470.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">元の作品</text>
 <line x1="280.0" y1="365.0" x2="350.0" y2="365.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="315.0" y="350.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">複製</text>
+<text x="315.0" y="350.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">複製</text>
 <rect x="360" y="290" width="150" height="150" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="6 5"/>
 <rect x="375" y="305" width="55" height="55" rx="6" fill="#d0693a" opacity="0.30"/>
 <rect x="440" y="305" width="55" height="55" rx="6" fill="#d0693a" opacity="0.45"/>
 <rect x="375" y="370" width="55" height="55" rx="6" fill="#d0693a" opacity="0.60"/>
 <rect x="440" y="370" width="55" height="55" rx="6" fill="#d0693a" opacity="0.75"/>
 <text x="435.0" y="470.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">元がそのまま透ける</text>
-<text x="310.0" y="560.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">評価は働いていない。媒介が一つしかない2ホップ</text>
+<text x="310.0" y="560.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">評価は働いていない。媒介が一つしかない2ホップ</text>
 <rect x="620" y="205" width="520" height="400" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="880.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">格好良い：多数の源から選び抜く</text>
 <rect x="665" y="300" width="48" height="48" rx="6" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
@@ -37,15 +37,15 @@
 <rect x="873" y="328" width="14" height="14" rx="3" fill="#5d6873"/>
 <rect x="905" y="300" width="48" height="48" rx="6" fill="#ffffff" stroke="#8a6fd1" stroke-width="2"/>
 <rect x="913" y="308" width="14" height="14" rx="3" fill="#8a6fd1"/>
-<text x="800.0" y="470.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">多数の源。それぞれの一番良いところだけを選ぶ</text>
+<text x="800.0" y="470.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">多数の源。それぞれの一番良いところだけを選ぶ</text>
 <circle cx="1040.0" cy="440.0" r="10" fill="#232a33"/>
-<text x="1040.0" y="480.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">新しい媒介</text>
+<text x="1040.0" y="480.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">新しい媒介</text>
 <line x1="680.0" y1="325.0" x2="1010.0" y2="426.0" stroke="#5a4fcf" stroke-width="1.5" marker-end="url(#arrow)"/>
 <line x1="760.0" y1="345.0" x2="1020.0" y2="426.0" stroke="#2f8f83" stroke-width="1.5" marker-end="url(#arrow)"/>
 <line x1="800.0" y1="325.0" x2="1030.0" y2="426.0" stroke="#d0693a" stroke-width="1.5" marker-end="url(#arrow)"/>
 <line x1="880.0" y1="345.0" x2="1040.0" y2="426.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
 <line x1="920.0" y1="325.0" x2="1050.0" y2="426.0" stroke="#8a6fd1" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="880.0" y="560.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">選び抜く ＝ 評価。要素は元の文脈を離れ、新しい関係の中に入る</text>
+<text x="880.0" y="560.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">選び抜く ＝ 評価。要素は元の文脈を離れ、新しい関係の中に入る</text>
 <text x="50.0" y="662.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">差は、盗んだ量ではなく、評価した量。</text>
 </g>
 </svg>

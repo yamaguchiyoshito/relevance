@@ -9,45 +9,45 @@
 <text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">反対、双対、相似</text>
 <line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
 <text x="110.0" y="260.0" fill="#2f8f83" font-size="22" text-anchor="start" font-weight="700">反対</text>
-<text x="110.0" y="288.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">作る ／ 壊そうとする。可能性を広げる ／ 絞る</text>
+<text x="110.0" y="288.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">作る ／ 壊そうとする。可能性を広げる ／ 絞る</text>
 <rect x="480" y="230" width="140" height="56" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
 <text x="550.0" y="266.0" fill="#2f8f83" font-size="18" text-anchor="middle" font-weight="700">生成</text>
 <rect x="820" y="230" width="140" height="56" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
 <text x="890.0" y="266.0" fill="#d0693a" font-size="18" text-anchor="middle" font-weight="700">レビュー</text>
 <line x1="625.0" y1="258.0" x2="660.0" y2="258.0" stroke="#2f8f83" stroke-width="2.5" marker-end="url(#arrow)"/>
 <line x1="815.0" y1="258.0" x2="780.0" y2="258.0" stroke="#d0693a" stroke-width="2.5" marker-end="url(#arrow)"/>
-<text x="720.0" y="264.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">反対</text>
+<text x="720.0" y="264.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">反対</text>
 <text x="110.0" y="380.0" fill="#d0693a" font-size="22" text-anchor="start" font-weight="700">双対</text>
-<text x="110.0" y="408.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">提案 ／ 検証。役割を入れ替えても構造は保たれる</text>
+<text x="110.0" y="408.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">提案 ／ 検証。役割を入れ替えても構造は保たれる</text>
 <rect x="480" y="340" width="140" height="44" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="550.0" y="370.0" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="700">AIが提案</text>
+<text x="550.0" y="370.0" fill="#2f8f83" font-size="16" text-anchor="middle" font-weight="700">AIが提案</text>
 <rect x="820" y="340" width="140" height="44" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="890.0" y="370.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">人が検証</text>
+<text x="890.0" y="370.0" fill="#d0693a" font-size="16" text-anchor="middle" font-weight="700">人が検証</text>
 <rect x="480" y="394" width="140" height="44" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="550.0" y="424.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">人が提案</text>
+<text x="550.0" y="424.0" fill="#d0693a" font-size="16" text-anchor="middle" font-weight="700">人が提案</text>
 <rect x="820" y="394" width="140" height="44" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="890.0" y="424.0" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="700">AIが検証</text>
+<text x="890.0" y="424.0" fill="#2f8f83" font-size="16" text-anchor="middle" font-weight="700">AIが検証</text>
 <line x1="625.0" y1="362.0" x2="815.0" y2="362.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
 <line x1="625.0" y1="416.0" x2="815.0" y2="416.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="720.0" y="460.0" fill="#5d6873" font-size="12" text-anchor="middle" font-weight="400">役割を入れ替えた構成も、すでに使われている</text>
+<text x="720.0" y="460.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">役割を入れ替えた構成も、すでに使われている</text>
 <text x="110.0" y="500.0" fill="#5a4fcf" font-size="22" text-anchor="start" font-weight="700">相似</text>
-<text x="110.0" y="528.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">どちらも 入力 → 処理 → 出力</text>
+<text x="110.0" y="528.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">どちらも 入力 → 処理 → 出力</text>
 <rect x="460" y="476" width="48" height="40" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="484.0" y="501.0" fill="#232a33" font-size="12" text-anchor="middle" font-weight="400">入力</text>
+<text x="484.0" y="501.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">入力</text>
 <line x1="510.0" y1="496.0" x2="518.0" y2="496.0" stroke="#2f8f83" stroke-width="1.5" marker-end="url(#arrow)"/>
 <rect x="520" y="476" width="48" height="40" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="544.0" y="501.0" fill="#232a33" font-size="12" text-anchor="middle" font-weight="400">処理</text>
+<text x="544.0" y="501.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">処理</text>
 <line x1="570.0" y1="496.0" x2="578.0" y2="496.0" stroke="#2f8f83" stroke-width="1.5" marker-end="url(#arrow)"/>
 <rect x="580" y="476" width="48" height="40" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="604.0" y="501.0" fill="#232a33" font-size="12" text-anchor="middle" font-weight="400">出力</text>
+<text x="604.0" y="501.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">出力</text>
 <rect x="800" y="476" width="48" height="40" rx="8" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="824.0" y="501.0" fill="#232a33" font-size="12" text-anchor="middle" font-weight="400">入力</text>
+<text x="824.0" y="501.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">入力</text>
 <line x1="850.0" y1="496.0" x2="858.0" y2="496.0" stroke="#d0693a" stroke-width="1.5" marker-end="url(#arrow)"/>
 <rect x="860" y="476" width="48" height="40" rx="8" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="884.0" y="501.0" fill="#232a33" font-size="12" text-anchor="middle" font-weight="400">処理</text>
+<text x="884.0" y="501.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">処理</text>
 <line x1="910.0" y1="496.0" x2="918.0" y2="496.0" stroke="#d0693a" stroke-width="1.5" marker-end="url(#arrow)"/>
 <rect x="920" y="476" width="48" height="40" rx="8" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
-<text x="944.0" y="501.0" fill="#232a33" font-size="12" text-anchor="middle" font-weight="400">出力</text>
-<text x="720.0" y="545.0" fill="#5d6873" font-size="12" text-anchor="middle" font-weight="400">生成側で効いた工夫をレビュー側へ運べるかもしれない（仮説）</text>
+<text x="944.0" y="501.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">出力</text>
+<text x="720.0" y="545.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">生成側で効いた工夫をレビュー側へ運べるかもしれない（仮説）</text>
 </g>
 </svg>

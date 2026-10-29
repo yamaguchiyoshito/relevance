@@ -10,25 +10,25 @@
 <line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
 <rect x="90" y="280" width="260" height="150" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="2.5"/>
 <text x="220.0" y="318.0" fill="#2f8f83" font-size="24" text-anchor="middle" font-weight="700">相似</text>
-<text x="220.0" y="348.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">関係の型</text>
-<text x="220.0" y="372.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">対称・推移しない</text>
-<text x="220.0" y="395.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">例：心臓とポンプ</text>
+<text x="220.0" y="348.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">関係の型</text>
+<text x="220.0" y="372.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">対称・推移しない</text>
+<text x="220.0" y="395.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">例：心臓とポンプ</text>
 <rect x="850" y="280" width="260" height="150" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2.5"/>
 <text x="980.0" y="318.0" fill="#d0693a" font-size="24" text-anchor="middle" font-weight="700">知識転用</text>
-<text x="980.0" y="348.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">効能の型</text>
-<text x="980.0" y="372.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">帰属：転用先</text>
-<text x="980.0" y="395.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">例：血液の循環</text>
+<text x="980.0" y="348.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">効能の型</text>
+<text x="980.0" y="372.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">帰属：転用先</text>
+<text x="980.0" y="395.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">例：血液の循環</text>
 <rect x="420" y="255" width="360" height="200" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="600.0" y="289.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">条件</text>
 <circle cx="450.0" cy="310.0" r="5" fill="#232a33"/>
-<text x="468.0" y="316.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">共通する構造が特定されている</text>
+<text x="468.0" y="316.0" fill="#232a33" font-size="15" text-anchor="start" font-weight="400">共通する構造が特定されている</text>
 <circle cx="450.0" cy="350.0" r="5" fill="#232a33"/>
-<text x="468.0" y="356.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">運ぶ知識が手元にある</text>
+<text x="468.0" y="356.0" fill="#232a33" font-size="15" text-anchor="start" font-weight="400">運ぶ知識が手元にある</text>
 <circle cx="450.0" cy="390.0" r="5" fill="#232a33"/>
-<text x="468.0" y="396.0" fill="#232a33" font-size="14" text-anchor="start" font-weight="400">運んだ先で成り立つか確かめられる</text>
+<text x="468.0" y="396.0" fill="#232a33" font-size="15" text-anchor="start" font-weight="400">運んだ先で成り立つか確かめられる</text>
 <line x1="355.0" y1="355.0" x2="415.0" y2="355.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
 <line x1="785.0" y1="355.0" x2="845.0" y2="355.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
-<text x="600.0" y="490.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">点線：生じうるが、保証ではない。多対多の対応</text>
+<text x="600.0" y="490.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="700">点線：生じうるが、保証ではない。多対多の対応</text>
 <text x="50.0" y="532.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">種類と効能を混同しない。</text>
 </g>
 </svg>

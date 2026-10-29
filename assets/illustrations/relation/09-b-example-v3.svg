@@ -15,26 +15,26 @@
 <text x="910.0" y="376.0" fill="#d0693a" font-size="26" text-anchor="middle" font-weight="700">人間のレビュー</text>
 <text x="910.0" y="408.0" fill="#5d6873" font-size="19" text-anchor="middle" font-weight="400">正しさを受け持つ</text>
 <line x1="445.0" y1="352.0" x2="755.0" y2="352.0" stroke="#232a33" stroke-width="2.5" marker-end="url(#arrow)"/>
-<text x="600.0" y="342.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">順序：生成が先、レビューが後</text>
+<text x="600.0" y="342.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">順序：生成が先、レビューが後</text>
 <line x1="755.0" y1="404.0" x2="445.0" y2="404.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
-<text x="600.0" y="426.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">依存：レビューは生成がなければ始まらない</text>
+<text x="600.0" y="426.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">依存：レビューは生成がなければ始まらない</text>
 <path d="M 180 442 L 180 460 L 1020 460 L 1020 442" fill="none" stroke="#2f8f83" stroke-width="2"/>
-<text x="600.0" y="482.0" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="700">補完：速さと正しさを分け持つ</text>
+<text x="600.0" y="482.0" fill="#2f8f83" font-size="16" text-anchor="middle" font-weight="700">補完：速さと正しさを分け持つ</text>
 <rect x="140" y="205" width="920" height="70" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="600.0" y="248.0" fill="#232a33" font-size="20" text-anchor="middle" font-weight="700">目的：正しいコードを速く届ける</text>
 <line x1="290.0" y1="326.0" x2="290.0" y2="278.0" stroke="#2f8f83" stroke-width="1.5" marker-end="url(#arrow)"/>
 <line x1="910.0" y1="326.0" x2="910.0" y2="278.0" stroke="#d0693a" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="600.0" y="372.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">分業：AIが作り、人が確かめる</text>
+<text x="600.0" y="372.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">分業：AIが作り、人が確かめる</text>
 <circle cx="600.0" cy="550.0" r="30" fill="#e8c86a"/>
-<text x="600.0" y="556.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">時間</text>
-<text x="600.0" y="602.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">資源：人間の時間は一つ。競合</text>
+<text x="600.0" y="556.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="700">時間</text>
+<text x="600.0" y="602.0" fill="#d0693a" font-size="16" text-anchor="middle" font-weight="700">資源：人間の時間は一つ。競合</text>
 <line x1="290.0" y1="466.0" x2="566.0" y2="540.0" stroke="#d0693a" stroke-width="1.5" marker-end="url(#arrow)"/>
 <line x1="910.0" y1="466.0" x2="634.0" y2="540.0" stroke="#d0693a" stroke-width="1.5" marker-end="url(#arrow)"/>
-<text x="150.0" y="510.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">「コードを書く」の範囲では代替</text>
-<text x="150.0" y="530.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="400">「正しいコードを届ける」の範囲では補完</text>
-<text x="140.0" y="316.0" fill="#2f8f83" font-size="14" text-anchor="start" font-weight="700">G：生成の速さ</text>
+<text x="150.0" y="510.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">「コードを書く」の範囲では代替</text>
+<text x="150.0" y="530.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">「正しいコードを届ける」の範囲では補完</text>
+<text x="140.0" y="316.0" fill="#2f8f83" font-size="15" text-anchor="start" font-weight="700">G：生成の速さ</text>
 <rect x="140" y="322" width="300" height="5" rx="2" fill="#d8d4c8"/><rect x="140" y="322" width="255" height="5" rx="2" fill="#2f8f83"/>
-<text x="760.0" y="316.0" fill="#d0693a" font-size="14" text-anchor="start" font-weight="700">R：レビューの処理能力</text>
+<text x="898.0" y="316.0" fill="#d0693a" font-size="15" text-anchor="end" font-weight="700">R：レビューの処理能力</text>
 <rect x="760" y="322" width="300" height="5" rx="2" fill="#d8d4c8"/><rect x="760" y="322" width="150" height="5" rx="2" fill="#d0693a"/>
 <rect x="502" y="378" width="22" height="16" rx="3" fill="#d0693a" opacity="0.35"/>
 <rect x="530" y="378" width="22" height="16" rx="3" fill="#d0693a" opacity="0.43"/>
@@ -43,14 +43,14 @@
 <rect x="614" y="378" width="22" height="16" rx="3" fill="#d0693a" opacity="0.67"/>
 <rect x="642" y="378" width="22" height="16" rx="3" fill="#d0693a" opacity="0.75"/>
 <rect x="670" y="378" width="22" height="16" rx="3" fill="#d0693a" opacity="0.83"/>
-<text x="600.0" y="450.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="700">滞留：G が R を越えた分が溜まる。閾値は G = R</text>
+<text x="600.0" y="450.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">滞留：G が R を越えた分が溜まる。閾値は G = R</text>
 <circle cx="750.0" cy="388.0" r="10" fill="none" stroke="#5d6873" stroke-width="2"/>
 <line x1="750.0" y1="388.0" x2="750.0" y2="381.0" stroke="#5d6873" stroke-width="1.5"/>
 <line x1="750.0" y1="388.0" x2="755.0" y2="388.0" stroke="#5d6873" stroke-width="1.5"/>
-<text x="736.0" y="393.0" fill="#5d6873" font-size="13" text-anchor="end" font-weight="400">遅延</text>
+<text x="736.0" y="393.0" fill="#5d6873" font-size="14" text-anchor="end" font-weight="400">遅延</text>
 <line x1="1065.0" y1="380.0" x2="1150.0" y2="380.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
-<text x="1064.0" y="366.0" fill="#5d6873" font-size="12" text-anchor="start" font-weight="400">外部性：後工程へ</text>
-<text x="910.0" y="556.0" fill="#d0693a" font-size="13" text-anchor="middle" font-weight="400">不可逆：流出した欠陥、失った信頼</text>
-<text x="600.0" y="640.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">G &lt; R：補完が効き、速いほど速い　／　G &gt; R：関係は同じまま、効能が反転する</text>
+<text x="1064.0" y="366.0" fill="#5d6873" font-size="14" text-anchor="start" font-weight="400">外部性：後工程へ</text>
+<text x="910.0" y="556.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="400">不可逆：流出した欠陥、失った信頼</text>
+<text x="600.0" y="640.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="700">G &lt; R：補完が効き、速いほど速い　／　G &gt; R：関係は同じまま、効能が反転する</text>
 </g>
 </svg>

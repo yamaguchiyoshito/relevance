@@ -140,7 +140,7 @@
 <circle cx="255.1" cy="328.7" r="9" fill="#d0693a"/>
 <line x1="284.1" y1="350.7" x2="282.8" y2="314.3" stroke="#d0693a" stroke-width="1"/>
 <circle cx="282.8" cy="314.3" r="9" fill="#d0693a"/>
-<text x="320.0" y="585.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">遠い枝の葉同士が、紙の上では隣り合ってしまう</text>
+<text x="320.0" y="585.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">遠い枝の葉同士が、紙の上では隣り合ってしまう</text>
 <rect x="620" y="205" width="520" height="400" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="880.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">双曲空間：外へ向かうほど場所が増える</text>
 <circle cx="880.0" cy="410.0" r="28" fill="none" stroke="#d8d4c8" stroke-width="2"/>
@@ -273,6 +273,6 @@
 <circle cx="799.3" cy="283.6" r="4" fill="#d0693a"/>
 <line x1="847.8" y1="347.9" x2="823.2" y2="271.2" stroke="#d0693a" stroke-width="1"/>
 <circle cx="823.2" cy="271.2" r="4" fill="#d0693a"/>
-<text x="880.0" y="588.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">中心＝抽象、縁＝具体。近いことと包含されることが同時に成り立つ</text>
+<text x="880.0" y="588.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">中心＝抽象、縁＝具体。近いことと包含されることが同時に成り立つ</text>
 </g>
 </svg>

@@ -9,18 +9,18 @@
 <text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">意味は遠いが構造は似ている組が、転用の着想源になる</text>
 <line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
 <line x1="200.0" y1="560.0" x2="1000.0" y2="560.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="600.0" y="590.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">意味の近さ →</text>
+<text x="600.0" y="590.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">意味の近さ →</text>
 <line x1="200.0" y1="560.0" x2="200.0" y2="230.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="184.0" y="395.0" fill="#5d6873" font-size="15" text-anchor="end" font-weight="400">構造の似方 ↑</text>
+<text x="184.0" y="395.0" fill="#5d6873" font-size="16" text-anchor="end" font-weight="400">構造の似方 ↑</text>
 <line x1="600.0" y1="560.0" x2="600.0" y2="230.0" stroke="#d8d4c8" stroke-width="1" stroke-dasharray="8 7"/>
 <line x1="200.0" y1="395.0" x2="1000.0" y2="395.0" stroke="#d8d4c8" stroke-width="1" stroke-dasharray="8 7"/>
-<text x="800.0" y="312.5" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">類義語：驚きはない</text>
-<text x="400.0" y="477.5" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">本当に無関係</text>
-<text x="800.0" y="477.5" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">意味は近いが、構造は違う</text>
+<text x="800.0" y="312.5" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">類義語：驚きはない</text>
+<text x="400.0" y="477.5" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">本当に無関係</text>
+<text x="800.0" y="477.5" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">意味は近いが、構造は違う</text>
 <rect x="230" y="250" width="340.0" height="125.0" rx="12" fill="#2f8f83" opacity="0.12"/>
 <text x="400.0" y="298.5" fill="#2f8f83" font-size="16" text-anchor="middle" font-weight="700">レビュー滞留 ↔ 工場の仕掛品</text>
-<text x="400.0" y="326.5" fill="#2f8f83" font-size="14" text-anchor="middle" font-weight="400">意味は遠いが、構造は似ている</text>
-<text x="400.0" y="348.5" fill="#2f8f83" font-size="14" text-anchor="middle" font-weight="700">＝ 転用の着想源</text>
+<text x="400.0" y="326.5" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="400">意味は遠いが、構造は似ている</text>
+<text x="400.0" y="348.5" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="700">＝ 転用の着想源</text>
 <text x="50.0" y="612.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">関係は一つではない。同じ二つの対象が、意味の軸では遠く、構造の軸では近い。</text>
 </g>
 </svg>

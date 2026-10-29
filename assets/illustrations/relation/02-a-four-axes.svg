@@ -17,28 +17,28 @@
 <rect x="885" y="205" width="255" height="390" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="1012.5" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">時間変化</text>
 <line x1="90.0" y1="290.0" x2="280.0" y2="290.0" stroke="#2f8f83" stroke-width="3" marker-end="url(#arrow)"/>
-<text x="185.0" y="320.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">一方向：手紙</text>
+<text x="185.0" y="320.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">一方向：手紙</text>
 <line x1="90.0" y1="380.0" x2="280.0" y2="380.0" stroke="#2f8f83" stroke-width="3" marker-end="url(#arrow)"/>
 <line x1="280.0" y1="380.0" x2="90.0" y2="380.0" stroke="#2f8f83" stroke-width="3" marker-end="url(#arrow)"/>
-<text x="185.0" y="410.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">双方向：会話</text>
+<text x="185.0" y="410.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">双方向：会話</text>
 <line x1="90.0" y1="470.0" x2="280.0" y2="470.0" stroke="#2f8f83" stroke-width="3"/>
-<text x="185.0" y="500.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">無向：同じ町の出身</text>
+<text x="185.0" y="500.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">無向：同じ町の出身</text>
 <circle cx="390.0" cy="300.0" r="10" fill="#2f8f83"/>
 <circle cx="540.0" cy="300.0" r="10" fill="#2f8f83"/>
 <line x1="400.0" y1="300.0" x2="530.0" y2="300.0" stroke="#2f8f83" stroke-width="3"/>
-<text x="462.0" y="340.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">似ている：対称</text>
+<text x="462.0" y="340.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">似ている：対称</text>
 <circle cx="430.0" cy="430.0" r="60" fill="none" stroke="#2f8f83" stroke-width="2"/>
 <circle cx="430.0" cy="430.0" r="18" fill="#d0693a"/>
-<text x="462.0" y="520.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">含む：非対称</text>
+<text x="462.0" y="520.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">含む：非対称</text>
 <line x1="640.0" y1="300.0" x2="840.0" y2="300.0" stroke="#d0693a" stroke-width="7"/>
-<text x="740.0" y="335.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">強い依存</text>
+<text x="740.0" y="335.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">強い依存</text>
 <line x1="640.0" y1="430.0" x2="840.0" y2="430.0" stroke="#d0693a" stroke-width="1.2" stroke-dasharray="8 7"/>
-<text x="740.0" y="465.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">弱い相関</text>
-<text x="740.0" y="540.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">両側で同じとは限らない</text>
+<text x="740.0" y="465.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="400">弱い相関</text>
+<text x="740.0" y="540.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">両側で同じとは限らない</text>
 <line x1="915.0" y1="300.0" x2="1115.0" y2="300.0" stroke="#5a4fcf" stroke-width="3"/>
-<text x="1015.0" y="335.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">固定：大阪は関西の中</text>
+<text x="1015.0" y="335.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">固定：大阪は関西の中</text>
 <polyline points="915,470 955,420 995,450 1035,390 1075,430 1115,410" fill="none" stroke="#5a4fcf" stroke-width="3"/>
-<text x="1015.0" y="505.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">動的：二つの店の競合</text>
+<text x="1015.0" y="505.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="400">動的：二つの店の競合</text>
 <text x="50.0" y="622.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">関係の名前が決まる前に、形は問える。</text>
 </g>
 </svg>
