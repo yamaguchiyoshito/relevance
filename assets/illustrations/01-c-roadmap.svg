@@ -14,7 +14,7 @@
 <text x="840.0" y="255.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">第12回</text>
 <rect x="150" y="293" width="640" height="64" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
 <text x="190.0" y="333.0" fill="#d0693a" font-size="20" text-anchor="start" font-weight="700">第III部</text>
-<text x="290.0" y="333.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">言葉という装置：比喩、検証、意味の取っ手</text>
+<text x="290.0" y="333.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">言葉という装置：比喩、検証、意味のハンドル</text>
 <text x="840.0" y="333.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">第9〜11回</text>
 <rect x="150" y="371" width="640" height="64" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
 <text x="190.0" y="411.0" fill="#2f8f83" font-size="20" text-anchor="start" font-weight="700">第II部</text>
@@ -30,6 +30,6 @@
 <text x="1035.0" y="340.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">一本の問い</text>
 <text x="1035.0" y="373.0" fill="#5a4fcf" font-size="16" text-anchor="middle" font-weight="700">「関係している」とは</text>
 <text x="1035.0" y="400.0" fill="#5a4fcf" font-size="16" text-anchor="middle" font-weight="700">どういう事態か</text>
-<text x="50.0" y="572.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">第2クールの見取り図（図1-2）と同じ構図。向こうは階層、こちらは部。</text>
+<text x="50.0" y="572.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">第2クール第1回の見取り図（向こうの図1-2）と同じ構図。向こうは階層、こちらは部。</text>
 </g>
 </svg>

@@ -13,7 +13,7 @@
 <line x1="620.0" y1="240.0" x2="760.0" y2="450.0" stroke="#d8d4c8" stroke-width="1.5"/>
 <line x1="900.0" y1="320.0" x2="760.0" y2="450.0" stroke="#d8d4c8" stroke-width="1.5"/>
 <line x1="900.0" y1="320.0" x2="1040.0" y2="460.0" stroke="#d8d4c8" stroke-width="1.5"/>
-<line x1="620.0" y1="240.0" x2="620.0" y2="380.0" stroke="#d0693a" stroke-width="2"/>
+<line x1="620.0" y1="296.0" x2="620.0" y2="380.0" stroke="#d0693a" stroke-width="2"/>
 <line x1="900.0" y1="320.0" x2="620.0" y2="380.0" stroke="#d0693a" stroke-width="2"/>
 <circle cx="300.0" cy="278.0" r="11" fill="#5a4fcf"/>
 <path d="M 284 322 C 284 296 316 296 316 322 Z" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
@@ -32,7 +32,7 @@
 <text x="1040.0" y="466.0" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="700">レビュー</text>
 <rect x="560" y="362" width="120" height="36" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
 <text x="620.0" y="386.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">「人A」</text>
-<path d="M 300 322 C 340 400 540 400 560 384" fill="none" stroke="#d0693a" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
+<path d="M 322 318 C 380 400 540 400 560 384" fill="none" stroke="#d0693a" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
 <text x="385.0" y="418.0" fill="#d0693a" font-size="13" text-anchor="end" font-weight="400">人Aが、人Bと人Cの関心のキーワードになる</text>
 <text x="600.0" y="560.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">人とキーワードを分けて扱う必要はない。どちらも同じ図の上のノード</text>
 <text x="50.0" y="592.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">2ホップ：人Aと人Bは「分布」を介して、人Bと人Cは「2ホップ」と「人A」を介して結ばれる。</text>

@@ -25,7 +25,7 @@
 <line x1="775.0" y1="527.0" x2="425.0" y2="527.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
 <line x1="255.0" y1="475.0" x2="255.0" y2="340.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
 <text x="600.0" y="272.0" fill="#2f8f83" font-size="18" text-anchor="middle" font-weight="700">生成は安い</text>
-<text x="985.0" y="412.0" fill="#d0693a" font-size="18" text-anchor="middle" font-weight="400">評価は高い</text>
+<text x="962.0" y="412.0" fill="#d0693a" font-size="18" text-anchor="start" font-weight="400">評価は高い</text>
 <text x="600.0" y="560.0" fill="#5d6873" font-size="16" text-anchor="middle" font-weight="400">仮説が本物になる</text>
 <text x="225.0" y="412.0" fill="#5d6873" font-size="15" text-anchor="end" font-weight="400">新しい媒介が増え、</text>
 <text x="225.0" y="434.0" fill="#5d6873" font-size="15" text-anchor="end" font-weight="400">次の関係が見出される</text>

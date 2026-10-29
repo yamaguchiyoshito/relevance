@@ -13,14 +13,15 @@
 <rect x="770" y="300" width="200" height="90" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
 <text x="870.0" y="353.0" fill="#d0693a" font-size="30" text-anchor="middle" font-weight="700">B</text>
 <path d="M 535 345 C 600 345 640 297 700 297 L 765 326" fill="none" stroke="#2f8f83" stroke-width="2.5"/>
-<text x="700.0" y="290.0" fill="#2f8f83" font-size="12" text-anchor="middle" font-weight="400">順序</text>
+<text x="700.0" y="288.0" fill="#2f8f83" font-size="13" text-anchor="middle" font-weight="400">順序</text>
 <path d="M 535 345 C 600 345 640 329 700 329 L 765 339" fill="none" stroke="#d0693a" stroke-width="2.5"/>
-<text x="700.0" y="322.0" fill="#d0693a" font-size="12" text-anchor="middle" font-weight="400">依存</text>
+<text x="700.0" y="320.0" fill="#d0693a" font-size="13" text-anchor="middle" font-weight="400">依存</text>
 <path d="M 535 345 C 600 345 640 361 700 361 L 765 351" fill="none" stroke="#5d6873" stroke-width="2.5"/>
-<text x="700.0" y="354.0" fill="#5d6873" font-size="12" text-anchor="middle" font-weight="400">補完・競合</text>
+<text x="700.0" y="378.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">補完・競合</text>
 <path d="M 535 345 C 600 345 640 393 700 393 L 765 364" fill="none" stroke="#5a4fcf" stroke-width="2.5"/>
-<text x="700.0" y="386.0" fill="#5a4fcf" font-size="12" text-anchor="middle" font-weight="400">フィードバック</text>
+<text x="700.0" y="410.0" fill="#5a4fcf" font-size="13" text-anchor="middle" font-weight="400">フィードバック</text>
 <text x="650.0" y="250.0" fill="#232a33" font-size="20" text-anchor="middle" font-weight="700">あいだ</text>
+<line x1="165.0" y1="480.0" x2="165.0" y2="228.0" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="90" y="232" width="150" height="48" rx="8" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
 <text x="165.0" y="263.0" fill="#5a4fcf" font-size="18" text-anchor="middle" font-weight="700">価値</text>
 <rect x="90" y="292" width="150" height="48" rx="8" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
@@ -29,10 +30,9 @@
 <text x="165.0" y="383.0" fill="#2f8f83" font-size="18" text-anchor="middle" font-weight="700">作用</text>
 <rect x="90" y="412" width="150" height="48" rx="8" fill="#ffffff" stroke="#5d6873" stroke-width="2"/>
 <text x="165.0" y="443.0" fill="#5d6873" font-size="18" text-anchor="middle" font-weight="700">構造</text>
-<line x1="165.0" y1="480.0" x2="165.0" y2="228.0" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="1060.0" y="300.0" fill="#232a33" font-size="19" text-anchor="middle" font-weight="400">関係は一つではない。</text>
-<text x="1060.0" y="334.0" fill="#232a33" font-size="19" text-anchor="middle" font-weight="400">種類と効能を混同しない。</text>
-<text x="1060.0" y="368.0" fill="#232a33" font-size="19" text-anchor="middle" font-weight="400">関係がなかったら。</text>
+<text x="1075.0" y="300.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="400">関係は一つではない。</text>
+<text x="1075.0" y="334.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="400">種類と効能を混同しない。</text>
+<text x="1075.0" y="368.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="400">関係がなかったら。</text>
 <text x="600.0" y="585.0" fill="#2f8f83" font-size="30" text-anchor="middle" font-weight="700">個々の性能ではなく、あいだを設計する。</text>
 <text x="50.0" y="632.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">第1クール「意味の関連性」の続編。関係を一つの塊から、性質の違う関係型の重なりへほどく。</text>
 </g>

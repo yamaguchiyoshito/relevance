@@ -19,8 +19,8 @@
 <text x="415.0" y="262.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">含まれる</text>
 <line x1="695.0" y1="275.0" x2="875.0" y2="275.0" stroke="#2f8f83" stroke-width="2.5" marker-end="url(#arrow)"/>
 <text x="785.0" y="262.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">含まれる</text>
-<path d="M 230 310 C 230 345 970 345 970 310" fill="none" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="600.0" y="345.0" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="700">推移する：大阪は日本に含まれる</text>
+<path d="M 230 310 C 230 328 970 328 970 310" fill="none" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="600.0" y="347.0" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="700">推移する：大阪は日本に含まれる</text>
 <rect x="60" y="385" width="1080" height="200" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <circle cx="230.0" cy="448.0" r="11" fill="#5a4fcf"/>
 <path d="M 214 492 C 214 466 246 466 246 492 Z" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
@@ -35,8 +35,8 @@
 <text x="415.0" y="448.0" fill="#5a4fcf" font-size="14" text-anchor="middle" font-weight="400">目が似ている</text>
 <line x1="630.0" y1="460.0" x2="940.0" y2="460.0" stroke="#d0693a" stroke-width="2.5"/>
 <text x="785.0" y="448.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="400">鼻が似ている</text>
-<path d="M 230 535 C 230 575 970 575 970 535" fill="none" stroke="#5d6873" stroke-width="2" stroke-dasharray="8 7"/>
-<text x="600.0" y="575.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="700">推移しない：父と母は似ていない</text>
+<path d="M 230 535 C 230 556 970 556 970 535" fill="none" stroke="#5d6873" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="600.0" y="578.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="700">推移しない：父と母は似ていない</text>
 <text x="50.0" y="612.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">似ているは対称だが推移しない。同じであるは対称で、かつ推移する。</text>
 </g>
 </svg>

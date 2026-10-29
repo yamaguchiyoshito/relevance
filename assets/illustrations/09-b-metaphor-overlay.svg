@@ -17,17 +17,17 @@
 <text x="230.0" y="480.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="400">「市場は熊のようだ」</text>
 <rect x="430" y="205" width="340" height="340" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="600.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">隠喩：距離をゼロに</text>
-<circle cx="570.0" cy="390.0" r="80" fill="url(#grel093-3)"/>
-<circle cx="630.0" cy="390.0" r="80" fill="url(#grel093-4)"/>
-<text x="545.0" y="395.0" fill="#5a4fcf" font-size="18" text-anchor="middle" font-weight="700">市場</text>
-<text x="655.0" y="395.0" fill="#d0693a" font-size="18" text-anchor="middle" font-weight="700">熊</text>
+<circle cx="588.0" cy="390.0" r="80" fill="url(#grel093-3)"/>
+<circle cx="612.0" cy="390.0" r="80" fill="url(#grel093-4)"/>
+<text x="548.0" y="395.0" fill="#5a4fcf" font-size="18" text-anchor="middle" font-weight="700">市場</text>
+<text x="652.0" y="395.0" fill="#d0693a" font-size="18" text-anchor="middle" font-weight="700">熊</text>
 <text x="600.0" y="480.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="400">「市場は熊だ」</text>
 <rect x="800" y="205" width="340" height="340" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="970.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">擬人法：人間を重ねる</text>
-<circle cx="950.0" cy="390.0" r="85" fill="url(#grel093-5)"/>
-<circle cx="990.0" cy="390.0" r="85" fill="url(#grel093-6)"/>
-<text x="925.0" y="395.0" fill="#2f8f83" font-size="18" text-anchor="middle" font-weight="700">風</text>
-<text x="1015.0" y="395.0" fill="#d0693a" font-size="18" text-anchor="middle" font-weight="700">人</text>
+<circle cx="942.0" cy="390.0" r="85" fill="url(#grel093-5)"/>
+<circle cx="998.0" cy="390.0" r="85" fill="url(#grel093-6)"/>
+<text x="912.0" y="395.0" fill="#2f8f83" font-size="18" text-anchor="middle" font-weight="700">風</text>
+<text x="1028.0" y="395.0" fill="#d0693a" font-size="18" text-anchor="middle" font-weight="700">人</text>
 <text x="970.0" y="480.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="400">「風がささやく」</text>
 <text x="600.0" y="570.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">型は違っても、重ねた瞬間に間に何かが立ち上がる。新しい関連の仮説が生成される</text>
 </g>

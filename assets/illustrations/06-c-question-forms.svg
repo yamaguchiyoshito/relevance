@@ -30,7 +30,7 @@
 <text x="760.0" y="494.0" fill="#5a4fcf" font-size="16" text-anchor="start" font-weight="400">言葉で埋める</text>
 <text x="1080.0" y="494.0" fill="#5a4fcf" font-size="20" text-anchor="middle" font-weight="700">生成</text>
 <rect x="1030" y="200" width="100" height="360" rx="12" fill="none" stroke="#d8d4c8" stroke-width="1.5" stroke-dasharray="7 6"/>
-<line x1="1080.0" y1="265.0" x2="1080.0" y2="500.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1080.0" y1="268.0" x2="1080.0" y2="462.0" stroke="#5d6873" stroke-width="1.5" marker-end="url(#arrow)"/>
 <text x="50.0" y="572.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">最後の問いに答えるために必要なのは判定ではなく生成。それはアイデアを出すことそのもの。</text>
 </g>
 </svg>

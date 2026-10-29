@@ -8,15 +8,15 @@
 <text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">レビューが丁寧なチームは、欠陥が少ない</text>
 <text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">相関か、因果か、第三の原因か</text>
 <line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
-<circle cx="600.0" cy="250.0" r="36" fill="none" stroke="#d0693a" stroke-width="3"/>
-<text x="600.0" y="257.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">丁寧なチーム</text>
-<text x="600.0" y="200.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="400">第三の原因？</text>
+<circle cx="600.0" cy="250.0" r="54" fill="none" stroke="#d0693a" stroke-width="3"/>
+<text x="600.0" y="256.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="700">丁寧なチーム</text>
+<text x="600.0" y="182.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="400">第三の原因？</text>
 <circle cx="300.0" cy="460.0" r="34" fill="#2f8f83"/>
 <text x="300.0" y="466.0" fill="#ffffff" font-size="15" text-anchor="middle" font-weight="700">レビュー</text>
 <circle cx="900.0" cy="460.0" r="34" fill="#2f8f83"/>
 <text x="900.0" y="466.0" fill="#ffffff" font-size="14" text-anchor="middle" font-weight="700">少ない欠陥</text>
-<line x1="572.0" y1="278.0" x2="330.0" y2="438.0" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
-<line x1="628.0" y1="278.0" x2="870.0" y2="438.0" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
+<line x1="560.0" y1="290.0" x2="330.0" y2="438.0" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
+<line x1="640.0" y1="290.0" x2="870.0" y2="438.0" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
 <line x1="336.0" y1="448.0" x2="864.0" y2="448.0" stroke="#2f8f83" stroke-width="2.5" marker-end="url(#arrow)"/>
 <text x="600.0" y="438.0" fill="#2f8f83" font-size="14" text-anchor="middle" font-weight="400">因果？：レビューが欠陥を減らす</text>
 <line x1="864.0" y1="472.0" x2="336.0" y2="472.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>

@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
 <title id="title">同じ二人が、補完にも競合にもなる</title>
 <desc id="desc">二人は変わらない。変わったのは、二人を囲む枠</desc>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
-<rect width="1200" height="600" rx="20" fill="#f7f5ef"/>
+<rect width="1200" height="630" rx="20" fill="#f7f5ef"/>
 <g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
 <text x="50.0" y="52.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">RELATION     05     図5-1</text>
 <text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">同じ二人が、補完にも競合にもなる</text>
@@ -32,6 +32,6 @@
 <line x1="790.0" y1="360.0" x2="850.0" y2="335.0" stroke="#2f8f83" stroke-width="2.5" marker-end="url(#arrow)"/>
 <line x1="950.0" y1="360.0" x2="890.0" y2="335.0" stroke="#d0693a" stroke-width="2.5" marker-end="url(#arrow)"/>
 <text x="870.0" y="520.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="700">競合：同じ資源を争う</text>
-<text x="50.0" y="572.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">機能の関係は、二者の性質ではなく、目的と範囲と資源の枠で決まる。</text>
+<text x="50.0" y="602.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">機能の関係は、二者の性質ではなく、目的と範囲と資源の枠で決まる。</text>
 </g>
 </svg>

@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
 <title id="title">膨らむ輪と、収まる輪</title>
 <desc id="desc">一周すると、原因と結果の席が入れ替わっている</desc>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
-<rect width="1200" height="600" rx="20" fill="#f7f5ef"/>
+<rect width="1200" height="630" rx="20" fill="#f7f5ef"/>
 <g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
 <text x="50.0" y="52.0" fill="#2f8f83" font-size="18" text-anchor="start" font-weight="700">RELATION     06     図6-2</text>
 <text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">膨らむ輪と、収まる輪</text>
@@ -37,6 +37,6 @@
 <path d="M 815 468 C 760 450 735 420 732 392" fill="none" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M 735 348 C 745 310 790 285 814 278" fill="none" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
 <text x="870.0" y="540.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">一定の範囲に収まろうとする</text>
-<text x="50.0" y="572.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">どちらが原因かは、どこから見るかで変わる。</text>
+<text x="50.0" y="602.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">どちらが原因かは、どこから見るかで変わる。</text>
 </g>
 </svg>

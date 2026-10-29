@@ -37,7 +37,7 @@
 <rect x="873" y="328" width="14" height="14" rx="3" fill="#5d6873"/>
 <rect x="905" y="300" width="48" height="48" rx="6" fill="#ffffff" stroke="#8a6fd1" stroke-width="2"/>
 <rect x="913" y="308" width="14" height="14" rx="3" fill="#8a6fd1"/>
-<text x="785.0" y="375.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">多数の源。それぞれの一番良いところだけを選ぶ</text>
+<text x="800.0" y="470.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">多数の源。それぞれの一番良いところだけを選ぶ</text>
 <circle cx="1040.0" cy="440.0" r="10" fill="#232a33"/>
 <text x="1040.0" y="480.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">新しい媒介</text>
 <line x1="680.0" y1="325.0" x2="1010.0" y2="426.0" stroke="#5a4fcf" stroke-width="1.5" marker-end="url(#arrow)"/>

@@ -13,7 +13,7 @@
 <line x1="460.0" y1="230.0" x2="520.0" y2="230.0" stroke="#232a33" stroke-width="2.5"/>
 <text x="540.0" y="236.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">実線：確定した関係・流れ</text>
 <line x1="830.0" y1="230.0" x2="890.0" y2="230.0" stroke="#5d6873" stroke-width="2" stroke-dasharray="8 7"/>
-<text x="910.0" y="236.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">破線：仮説・未決・予告</text>
+<text x="910.0" y="236.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">破線：仮説・未決・予告・区切り枠</text>
 <line x1="90.0" y1="318.0" x2="150.0" y2="318.0" stroke="#232a33" stroke-width="2" marker-end="url(#arrow)"/>
 <text x="170.0" y="324.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">矢印：向き</text>
 <line x1="460.0" y1="310.0" x2="520.0" y2="310.0" stroke="#232a33" stroke-width="5"/>
@@ -24,9 +24,9 @@
 <circle cx="120.0" cy="406.0" r="12" fill="#d0693a"/>
 <text x="170.0" y="412.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">橙：注目点・負の効能・第三のもの</text>
 <circle cx="490.0" cy="406.0" r="12" fill="#5a4fcf"/>
-<text x="540.0" y="412.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">藍：第1クールの要素・参照</text>
+<text x="540.0" y="412.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">藍：対の一方。第1クールの主色</text>
 <circle cx="860.0" cy="406.0" r="12" fill="#2f8f83"/>
-<text x="910.0" y="412.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">深緑：第2クールの要素</text>
+<text x="910.0" y="412.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">深緑：対の他方。第2クールの主色</text>
 <circle cx="120.0" cy="494.0" r="12" fill="#d8d4c8"/>
 <text x="170.0" y="500.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">灰：補助・背景</text>
 <text x="490.0" y="500.0" fill="#5a4fcf" font-size="15" text-anchor="middle" font-weight="700">図5-2</text>

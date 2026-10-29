@@ -17,12 +17,10 @@
 <circle cx="800.0" cy="380.0" r="110" fill="none" stroke="#5d6873" stroke-width="3"/>
 <text x="800.0" y="388.0" fill="#5d6873" font-size="30" text-anchor="middle" font-weight="700">D</text>
 <text x="325.0" y="388.0" fill="#232a33" font-size="18" text-anchor="middle" font-weight="700">目</text>
-<text x="325.0" y="410.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">似ている</text>
 <text x="515.0" y="388.0" fill="#232a33" font-size="18" text-anchor="middle" font-weight="700">鼻</text>
-<text x="515.0" y="410.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">似ている</text>
 <text x="705.0" y="388.0" fill="#232a33" font-size="18" text-anchor="middle" font-weight="700">輪郭</text>
-<text x="705.0" y="410.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">似ている</text>
-<text x="515.0" y="540.0" fill="#232a33" font-size="18" text-anchor="middle" font-weight="400">AとDは直接は似ていない。それでも、ひとつながりの家族</text>
+<text x="515.0" y="528.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="400">隣どうしは一箇所だけ似ている。AとDは直接は似ていない</text>
+<text x="515.0" y="556.0" fill="#232a33" font-size="17" text-anchor="middle" font-weight="400">それでも、ひとつながりの家族</text>
 <rect x="880" y="215" width="260" height="370" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="1010.0" y="249.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">「鳥」の枝の中で</text>
 <circle cx="1010.0" cy="300.0" r="7" fill="#5a4fcf"/>
