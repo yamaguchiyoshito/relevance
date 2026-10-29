@@ -12,14 +12,14 @@
 <text x="430.0" y="353.0" fill="#2f8f83" font-size="30" text-anchor="middle" font-weight="700">A</text>
 <rect x="770" y="300" width="200" height="90" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
 <text x="870.0" y="353.0" fill="#d0693a" font-size="30" text-anchor="middle" font-weight="700">B</text>
-<path d="M 535 345 C 600 345 640 297 700 297 L 765 326" fill="none" stroke="#2f8f83" stroke-width="2.5"/>
-<text x="700.0" y="288.0" fill="#2f8f83" font-size="13" text-anchor="middle" font-weight="400">順序</text>
-<path d="M 535 345 C 600 345 640 329 700 329 L 765 339" fill="none" stroke="#d0693a" stroke-width="2.5"/>
-<text x="700.0" y="320.0" fill="#d0693a" font-size="13" text-anchor="middle" font-weight="400">依存</text>
-<path d="M 535 345 C 600 345 640 361 700 361 L 765 351" fill="none" stroke="#5d6873" stroke-width="2.5"/>
-<text x="700.0" y="378.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">補完・競合</text>
-<path d="M 535 345 C 600 345 640 393 700 393 L 765 364" fill="none" stroke="#5a4fcf" stroke-width="2.5"/>
-<text x="700.0" y="410.0" fill="#5a4fcf" font-size="13" text-anchor="middle" font-weight="400">フィードバック</text>
+<path d="M 535 345 C 620 345 690 275 765 324" fill="none" stroke="#2f8f83" stroke-width="2.5"/>
+<path d="M 535 345 C 620 345 690 321 765 338" fill="none" stroke="#d0693a" stroke-width="2.5"/>
+<path d="M 535 345 C 620 345 690 369 765 352" fill="none" stroke="#5d6873" stroke-width="2.5"/>
+<path d="M 535 345 C 620 345 690 415 765 366" fill="none" stroke="#5a4fcf" stroke-width="2.5"/>
+<text x="519.0" y="280.0" fill="#2f8f83" font-size="13" text-anchor="start" font-weight="700">順序</text>
+<text x="563.0" y="280.0" fill="#d0693a" font-size="13" text-anchor="start" font-weight="700">依存</text>
+<text x="607.0" y="280.0" fill="#5d6873" font-size="13" text-anchor="start" font-weight="700">補完・競合</text>
+<text x="690.0" y="280.0" fill="#5a4fcf" font-size="13" text-anchor="start" font-weight="700">フィードバック</text>
 <text x="650.0" y="250.0" fill="#232a33" font-size="20" text-anchor="middle" font-weight="700">あいだ</text>
 <line x1="165.0" y1="480.0" x2="165.0" y2="228.0" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="90" y="232" width="150" height="48" rx="8" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>

@@ -8,9 +8,9 @@
 <circle cx="900.0" cy="180.0" r="10" fill="#5a4fcf"/>
 <circle cx="600.0" cy="290.0" r="10" fill="#d0693a"/>
 <circle cx="300.0" cy="180.0" r="10" fill="#5a4fcf"/>
-<path d="M 612 74 C 760 95 880 140 898 170" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 898 190 C 880 230 760 275 612 286" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 588 286 C 440 275 320 230 302 190" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 302 170 C 320 140 440 95 588 74" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 616 76 C 760 95 880 140 888 164" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 892 198 C 880 230 760 275 616 284" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 584 284 C 440 275 320 230 308 198" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 310 164 C 320 140 440 95 584 76" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
 </g>
 </svg>

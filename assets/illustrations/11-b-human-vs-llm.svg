@@ -13,9 +13,8 @@
 <circle cx="300.0" cy="450.0" r="125" fill="url(#grel11b-1)"/>
 <text x="300.0" y="445.0" fill="#5a4fcf" font-size="26" text-anchor="middle" font-weight="700">意味</text>
 <text x="300.0" y="472.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">体験に根ざした分布</text>
-<rect x="150" y="300" width="300" height="34" rx="17" fill="#ffffff" stroke="#d0693a" stroke-width="3"/>
-<text x="300.0" y="324.0" fill="#d0693a" font-size="19" text-anchor="middle" font-weight="700">言葉（取っ手）</text>
-<line x1="300.0" y1="334.0" x2="300.0" y2="345.0" stroke="#d0693a" stroke-width="3"/>
+<path d="M 225 345 C 225 290 375 290 375 345" fill="none" stroke="#d0693a" stroke-width="5"/>
+<text x="300.0" y="292.0" fill="#d0693a" font-size="19" text-anchor="middle" font-weight="700">言葉（取っ手）</text>
 <text x="300.0" y="590.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">物理世界が一次、言葉は二次。切れたら体験まで降りて結び直せる</text>
 <rect x="620" y="205" width="520" height="420" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="880.0" y="239.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">LLM：取っ手だけが結び合っている</text>

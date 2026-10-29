@@ -5,7 +5,6 @@
 <rect width="1200" height="360" rx="20" fill="#f7f5ef"/>
 <g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
 <circle cx="600.0" cy="230.0" r="115" fill="url(#grel090-1)"/>
-<rect x="470" y="80" width="260" height="34" rx="17" fill="#ffffff" stroke="#d0693a" stroke-width="3"/>
-<line x1="600.0" y1="114.0" x2="600.0" y2="140.0" stroke="#d0693a" stroke-width="3"/>
+<path d="M 520 140 C 520 72 680 72 680 140" fill="none" stroke="#d0693a" stroke-width="6"/>
 </g>
 </svg>

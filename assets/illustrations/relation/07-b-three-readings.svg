@@ -22,7 +22,7 @@
 <text x="550.0" y="377.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="700">承認：通すか止めるか</text>
 <line x1="705.0" y1="370.0" x2="775.0" y2="370.0" stroke="#d0693a" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="780" y="340" width="320" height="60" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2" stroke-dasharray="7 6"/>
-<text x="940.0" y="377.0" fill="#d0693a" font-size="16" text-anchor="middle" font-weight="700">制約：ゲート</text>
+<text x="940.0" y="377.0" fill="#d0693a" font-size="16" text-anchor="middle" font-weight="700">制約：ゲート（第5回）</text>
 <line x1="305.0" y1="360.0" x2="395.0" y2="480.0" stroke="#5a4fcf" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="400" y="450" width="300" height="60" rx="10" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
 <text x="550.0" y="487.0" fill="#232a33" font-size="16" text-anchor="middle" font-weight="700">学習：読んで学ぶ</text>

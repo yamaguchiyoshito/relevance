@@ -8,7 +8,7 @@
 <text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">「間にある」と「中にある」は両立する</text>
 <text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">どの範囲を一塊と見るかの違いに過ぎない</text>
 <line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
-<rect x="180" y="215" width="840" height="220" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
+<rect x="180" y="215" width="840" height="190" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
 <text x="600.0" y="250.0" fill="#5d6873" font-size="24" text-anchor="middle" font-weight="700">関西</text>
 <circle cx="290.0" cy="340.0" r="13" fill="#5a4fcf"/>
 <circle cx="910.0" cy="340.0" r="13" fill="#5a4fcf"/>
@@ -17,11 +17,11 @@
 <line x1="306.0" y1="340.0" x2="894.0" y2="340.0" stroke="#5a4fcf" stroke-width="2" stroke-dasharray="8 7"/>
 <circle cx="480.0" cy="340.0" r="7" fill="#d0693a"/>
 <text x="480.0" y="318.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="400">高槻</text>
-<circle cx="600.0" cy="340.0" r="7" fill="#d0693a"/>
-<text x="600.0" y="318.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="400">淀川</text>
 <circle cx="720.0" cy="340.0" r="7" fill="#d0693a"/>
 <text x="720.0" y="318.0" fill="#d0693a" font-size="15" text-anchor="middle" font-weight="400">山崎</text>
-<text x="600.0" y="410.0" fill="#232a33" font-size="18" text-anchor="middle" font-weight="400">大阪と京都の「間にある」 ＝ 関西の「中にある」</text>
-<text x="600.0" y="470.0" fill="#5d6873" font-size="18" text-anchor="middle" font-weight="400">ズームを引けば中、寄せれば間</text>
+<path d="M 596 296 C 586 312 614 328 604 344 C 594 360 616 372 606 386" fill="none" stroke="#2f8f83" stroke-width="2.5"/>
+<text x="600.0" y="288.0" fill="#2f8f83" font-size="15" text-anchor="middle" font-weight="400">淀川</text>
+<text x="600.0" y="436.0" fill="#232a33" font-size="18" text-anchor="middle" font-weight="400">大阪と京都の「間にある」 ＝ 関西の「中にある」</text>
+<text x="600.0" y="466.0" fill="#5d6873" font-size="18" text-anchor="middle" font-weight="400">ズームを引けば中、寄せれば間</text>
 </g>
 </svg>

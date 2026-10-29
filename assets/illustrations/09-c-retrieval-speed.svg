@@ -1,44 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
 <title id="title">取り出しの速さ</title>
 <desc id="desc">思いついてから取り出すまでの時間が長いと、関連は消える</desc>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
-<rect width="1200" height="560" rx="20" fill="#f7f5ef"/>
+<rect width="1200" height="600" rx="20" fill="#f7f5ef"/>
 <g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
 <text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     09     図9-1</text>
 <text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">取り出しの速さ</text>
 <text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">思いついてから取り出すまでの時間が長いと、関連は消える</text>
 <line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
-<line x1="120.0" y1="480.0" x2="1100.0" y2="480.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="610.0" y="508.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">時間 →</text>
-<text x="110.0" y="300.0" fill="#d0693a" font-size="16" text-anchor="end" font-weight="700">遅い</text>
-<text x="110.0" y="400.0" fill="#2f8f83" font-size="16" text-anchor="end" font-weight="700">速い</text>
-<circle cx="170.0" cy="300.0" r="9" fill="#d0693a"/>
-<text x="170.0" y="272.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">「あったな」</text>
-<line x1="180.0" y1="300.0" x2="760.0" y2="300.0" stroke="#d0693a" stroke-width="2" stroke-dasharray="8 7"/>
-<text x="470.0" y="290.0" fill="#d0693a" font-size="13" text-anchor="middle" font-weight="400">整った言葉を待つ</text>
-<circle cx="760.0" cy="300.0" r="9" fill="none" stroke="#d0693a" stroke-width="2"/>
-<text x="760.0" y="272.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">取り出せた頃には</text>
-<circle cx="800.0" cy="300.0" r="4" fill="#d0693a"/>
-<circle cx="824.0" cy="300.0" r="3" fill="#d0693a"/>
-<circle cx="848.0" cy="300.0" r="2" fill="#d0693a"/>
-<circle cx="872.0" cy="300.0" r="1" fill="#d0693a"/>
-<text x="900.0" y="305.0" fill="#d0693a" font-size="14" text-anchor="start" font-weight="400">消える</text>
-<circle cx="170.0" cy="400.0" r="9" fill="#2f8f83"/>
-<rect x="228" y="384" width="64" height="32" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="260.0" y="405.0" fill="#2f8f83" font-size="13" text-anchor="middle" font-weight="400">断片</text>
-<line x1="180.0" y1="400.0" x2="226.0" y2="400.0" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="318" y="384" width="64" height="32" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="350.0" y="405.0" fill="#2f8f83" font-size="13" text-anchor="middle" font-weight="400">断片</text>
-<line x1="292.0" y1="400.0" x2="316.0" y2="400.0" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="408" y="384" width="64" height="32" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="440.0" y="405.0" fill="#2f8f83" font-size="13" text-anchor="middle" font-weight="400">断片</text>
-<line x1="382.0" y1="400.0" x2="406.0" y2="400.0" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="498" y="384" width="64" height="32" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
-<text x="530.0" y="405.0" fill="#2f8f83" font-size="13" text-anchor="middle" font-weight="400">断片</text>
-<line x1="472.0" y1="400.0" x2="496.0" y2="400.0" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 562 400 C 620 400 650 360 700 352" fill="none" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="760.0" y="356.0" fill="#2f8f83" font-size="14" text-anchor="start" font-weight="700">次の関連を呼ぶ</text>
-<text x="610.0" y="450.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">言葉を先に置く：断片でよいから書き出す</text>
-<text x="50.0" y="532.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">整った言葉を待つから遅くなる。周囲に断片を散らせば、輪郭は周囲から決まる（第7回）。</text>
+<line x1="120.0" y1="500.0" x2="1100.0" y2="500.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="610.0" y="528.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">時間 →</text>
+<text x="110.0" y="290.0" fill="#d0693a" font-size="16" text-anchor="end" font-weight="700">遅い</text>
+<text x="110.0" y="410.0" fill="#2f8f83" font-size="16" text-anchor="end" font-weight="700">速い</text>
+<circle cx="170.0" cy="290.0" r="9" fill="#d0693a"/>
+<text x="170.0" y="262.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">「あったな」</text>
+<line x1="180.0" y1="290.0" x2="820.0" y2="290.0" stroke="#d0693a" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="500.0" y="280.0" fill="#d0693a" font-size="14" text-anchor="middle" font-weight="400">整った言葉を待つ</text>
+<circle cx="820.0" cy="290.0" r="9" fill="none" stroke="#d0693a" stroke-width="2"/>
+<text x="820.0" y="262.0" fill="#5d6873" font-size="14" text-anchor="middle" font-weight="400">取り出せた頃には</text>
+<circle cx="860.0" cy="290.0" r="4" fill="#d0693a"/>
+<circle cx="884.0" cy="290.0" r="3" fill="#d0693a"/>
+<circle cx="908.0" cy="290.0" r="2" fill="#d0693a"/>
+<circle cx="932.0" cy="290.0" r="1" fill="#d0693a"/>
+<text x="960.0" y="295.0" fill="#d0693a" font-size="15" text-anchor="start" font-weight="400">消える</text>
+<circle cx="170.0" cy="410.0" r="9" fill="#2f8f83"/>
+<rect x="236" y="394" width="68" height="32" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="270.0" y="415.0" fill="#2f8f83" font-size="14" text-anchor="middle" font-weight="400">断片</text>
+<line x1="180.0" y1="410.0" x2="234.0" y2="410.0" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="356" y="394" width="68" height="32" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="390.0" y="415.0" fill="#2f8f83" font-size="14" text-anchor="middle" font-weight="400">断片</text>
+<line x1="304.0" y1="410.0" x2="354.0" y2="410.0" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="476" y="394" width="68" height="32" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="510.0" y="415.0" fill="#2f8f83" font-size="14" text-anchor="middle" font-weight="400">断片</text>
+<line x1="424.0" y1="410.0" x2="474.0" y2="410.0" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="596" y="394" width="68" height="32" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="630.0" y="415.0" fill="#2f8f83" font-size="14" text-anchor="middle" font-weight="400">断片</text>
+<line x1="544.0" y1="410.0" x2="594.0" y2="410.0" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 664 410 C 740 410 790 366 860 356" fill="none" stroke="#2f8f83" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="880.0" y="360.0" fill="#2f8f83" font-size="15" text-anchor="start" font-weight="700">次の関連を呼ぶ</text>
+<text x="610.0" y="466.0" fill="#232a33" font-size="15" text-anchor="middle" font-weight="700">言葉を先に置く：断片でよいから書き出す</text>
+<text x="50.0" y="572.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">整った言葉を待つから遅くなる。周囲に断片を散らせば、輪郭は周囲から決まる（第7回）。</text>
 </g>
 </svg>

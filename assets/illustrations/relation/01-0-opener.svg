@@ -7,9 +7,9 @@
 <circle cx="170.0" cy="180.0" r="14" fill="#2f8f83"/>
 <circle cx="1030.0" cy="180.0" r="14" fill="#2f8f83"/>
 <line x1="184.0" y1="180.0" x2="560.0" y2="180.0" stroke="#232a33" stroke-width="9"/>
-<path d="M 560 180 C 700 180 760 114 880 114 L 1016 157" fill="none" stroke="#2f8f83" stroke-width="3"/>
-<path d="M 560 180 C 700 180 760 158 880 158 L 1016 172" fill="none" stroke="#d0693a" stroke-width="3"/>
-<path d="M 560 180 C 700 180 760 202 880 202 L 1016 188" fill="none" stroke="#5d6873" stroke-width="3"/>
-<path d="M 560 180 C 700 180 760 246 880 246 L 1016 203" fill="none" stroke="#5a4fcf" stroke-width="3"/>
+<path d="M 560 180 C 720 180 800 114 1016 157" fill="none" stroke="#2f8f83" stroke-width="3"/>
+<path d="M 560 180 C 720 180 800 158 1016 172" fill="none" stroke="#d0693a" stroke-width="3"/>
+<path d="M 560 180 C 720 180 800 202 1016 188" fill="none" stroke="#5d6873" stroke-width="3"/>
+<path d="M 560 180 C 720 180 800 246 1016 203" fill="none" stroke="#5a4fcf" stroke-width="3"/>
 </g>
 </svg>

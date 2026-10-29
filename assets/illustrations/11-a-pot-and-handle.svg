@@ -11,9 +11,8 @@
 <circle cx="600.0" cy="420.0" r="135" fill="url(#grel11a-1)"/>
 <text x="600.0" y="415.0" fill="#5a4fcf" font-size="28" text-anchor="middle" font-weight="700">意味</text>
 <text x="600.0" y="444.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">ぼやけた縁を持つ分布</text>
-<rect x="440" y="245" width="320" height="38" rx="19" fill="#ffffff" stroke="#d0693a" stroke-width="3"/>
-<text x="600.0" y="271.0" fill="#d0693a" font-size="20" text-anchor="middle" font-weight="700">言葉（取っ手）</text>
-<line x1="600.0" y1="283.0" x2="600.0" y2="300.0" stroke="#d0693a" stroke-width="3"/>
+<path d="M 505 300 C 505 232 695 232 695 300" fill="none" stroke="#d0693a" stroke-width="6"/>
+<text x="600.0" y="238.0" fill="#d0693a" font-size="20" text-anchor="middle" font-weight="700">言葉（取っ手）</text>
 <text x="300.0" y="420.0" fill="#232a33" font-size="18" text-anchor="end" font-weight="400">「鳥」と握れば</text>
 <text x="300.0" y="446.0" fill="#5d6873" font-size="15" text-anchor="end" font-weight="400">スズメからペンギンまでが</text>
 <text x="300.0" y="468.0" fill="#5d6873" font-size="15" text-anchor="end" font-weight="400">まるごと持ち上がる</text>
