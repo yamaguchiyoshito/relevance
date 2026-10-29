@@ -514,7 +514,7 @@ def main() -> None:
     made.add(f.save('08-c-copy-vs-select.svg'))
 
     # 09-a A, B or C
-    f = Figure(9, 'A か B か、ではなく「A、B or C」', 'せめぎ合いの間隙からふいに現れる第三のものが、AとBの関係を読み替える', 640, 'a')
+    f = Figure(9, 'A か B か、ではなく「A、B or C」', 'せめぎ合いの間隙からふいに現れる第三のものが、AとBの関係を読み替える', 640, '2')
     f.blob(470, 440, 150, INDIGO); f.blob(730, 440, 150, TEAL)
     f.text(400, 445, '紙', 32, INDIGO, anchor='middle', weight=700); f.text(800, 445, '画面', 32, TEAL, anchor='middle', weight=700)
     f.text(400, 480, '目に優しい・手触り', 14, MUTED, anchor='middle'); f.text(800, 480, '何千冊・検索', 14, MUTED, anchor='middle')
@@ -528,7 +528,7 @@ def main() -> None:
     made.add(f.save('09-a-a-b-or-c.svg'))
 
     # 09-b metaphor overlay
-    f = Figure(9, '比喩は、二つの分布を強制的に重ねる装置', '直喩は距離を残し、隠喩はゼロにし、擬人法は人間という分布を重ねる', 600, 'b')
+    f = Figure(9, '比喩は、二つの分布を強制的に重ねる装置', '直喩は距離を残し、隠喩はゼロにし、擬人法は人間という分布を重ねる', 600, '3')
     f.panel(60, 205, 340, 340, '直喩：距離を残す')
     f.blob(160, 390, 70, INDIGO); f.blob(300, 390, 70, TERRA)
     f.text(160, 395, '市場', 18, INDIGO, anchor='middle', weight=700); f.text(300, 395, '熊', 18, TERRA, anchor='middle', weight=700)
@@ -651,6 +651,7 @@ def main() -> None:
     draw_relation(made)
     draw_openers(made)
     draw_extras(made)
+    draw_stage3(made)
     missing, extra = expected - made, made - expected
     if missing or extra:
         raise SystemExit(f'series.json mismatch. missing={sorted(missing)} extra={sorted(extra)}')
@@ -1367,6 +1368,119 @@ def draw_extras(made: set[str]) -> None:
         f.text(x + 80, y + 6, label, 16, INK)
     f.footer('矢印は必ずしも因果を表さない。キャプションに示す前提を併せて読む。')
     made.add(f.save('legend.svg'))
+
+
+# ---------------------------------------------------------------------------
+# Stage 3: three more first-series figures and three running-example figures for the second series
+# ---------------------------------------------------------------------------
+def draw_stage3(made: set[str]) -> None:
+    # 6-3 question forms (series 1)
+    f = Figure(6, '問いの形を変えると、判定が生成に変わる', '「ありますか」から「間には何がありますか」へ', 600, '3')
+    rows = [('AとBには関係がありますか？', 'ある／ない', '判定', MUTED), ('AとBには関係がありそうですか？', '仮説として', '', MUTED), ('AとBはどういう関係ですか？', '関係の中身', '', TEAL), ('AとBの間には何がありますか？', '言葉で埋める', '生成', INDIGO)]
+    for i, (q, note, tag, c) in enumerate(rows):
+        y = 220 + i * 80
+        f.body.append(f'<rect x="120" y="{y}" width="560" height="56" rx="12" fill="#ffffff" stroke="{c}" stroke-width="2"/>')
+        f.text(400, y + 35, q, 18, INK, anchor='middle', weight=700)
+        f.line(690, y + 28, 740, y + 28, color=c, width=2, arrow=True)
+        f.text(760, y + 34, note, 16, c)
+        if tag:
+            f.text(1080, y + 34, tag, 20, c, anchor='middle', weight=700)
+        if i < 3:
+            f.line(400, y + 60, 400, y + 76, color=LINE, width=2, arrow=True)
+    f.body.append(f'<rect x="1030" y="200" width="100" height="360" rx="12" fill="none" stroke="{LINE}" stroke-width="1.5" stroke-dasharray="7 6"/>')
+    f.line(1080, 265, 1080, 500, color=MUTED, width=1.5, arrow=True)
+    f.footer('最後の問いに答えるために必要なのは判定ではなく生成。それはアイデアを出すことそのもの。')
+    made.add(f.save('06-c-question-forms.svg'))
+
+    # 7-3 interest space (series 1)
+    f = Figure(7, '人も言葉も、同じ図の上に', '人がキーワードになり、キーワードが人を結ぶ', 620, '3')
+    people = {'人A': (300, 300), '人B': (620, 240), '人C': (900, 320)}
+    words = {'分布': (460, 430), '2ホップ': (760, 450), 'レビュー': (1040, 460), '「人A」': (620, 380)}
+    edges = [('人A', '分布'), ('人B', '分布'), ('人B', '2ホップ'), ('人C', '2ホップ'), ('人C', 'レビュー'), ('人B', '「人A」'), ('人C', '「人A」')]
+    pos = {**people, **words}
+    for a, b in edges:
+        c = TERRA if '「人A」' in (a, b) else LINE
+        f.line(*pos[a], *pos[b], color=c, width=2 if c == TERRA else 1.5)
+    for nm, (x, y) in people.items():
+        person(f, x, y, INDIGO, nm)
+    for nm, (x, y) in words.items():
+        c = TERRA if nm == '「人A」' else TEAL
+        f.body.append(f'<rect x="{x-60}" y="{y-18}" width="120" height="36" rx="10" fill="#ffffff" stroke="{c}" stroke-width="2"/>')
+        f.text(x, y + 6, nm, 15, c, anchor='middle', weight=700)
+    f.path('M 300 322 C 340 400 540 400 560 384', color=TERRA, width=1.5, dash=True, arrow=True)
+    f.text(385, 418, '人Aが、人Bと人Cの関心のキーワードになる', 13, TERRA, anchor='end')
+    f.text(600, 560, '人とキーワードを分けて扱う必要はない。どちらも同じ図の上のノード', 15, INK, anchor='middle', weight=700)
+    f.footer('2ホップ：人Aと人Bは「分布」を介して、人Bと人Cは「2ホップ」と「人A」を介して結ばれる。')
+    made.add(f.save('07-c-interest-space.svg'))
+
+    # 9-1 retrieval speed (series 1)
+    f = Figure(9, '取り出しの速さ', '思いついてから取り出すまでの時間が長いと、関連は消える', 560, '1')
+    f.line(120, 480, 1100, 480, color=MUTED, width=2, arrow=True); f.text(610, 508, '時間 →', 14, MUTED, anchor='middle')
+    f.text(110, 300, '遅い', 16, TERRA, anchor='end', weight=700); f.text(110, 400, '速い', 16, TEAL, anchor='end', weight=700)
+    f.circ(170, 300, 9, TERRA); f.text(170, 272, '「あったな」', 14, INK, anchor='middle')
+    f.line(180, 300, 760, 300, color=TERRA, width=2, dash=True); f.text(470, 290, '整った言葉を待つ', 13, TERRA, anchor='middle')
+    f.circ(760, 300, 9, TERRA, fill=False); f.text(760, 272, '取り出せた頃には', 13, MUTED, anchor='middle')
+    for i in range(4):
+        f.circ(800 + i * 24, 300, 4 - i, TERRA)
+    f.text(900, 305, '消える', 14, TERRA)
+    f.circ(170, 400, 9, TEAL)
+    xs = [260, 350, 440, 530]
+    for i, x in enumerate(xs):
+        f.body.append(f'<rect x="{x-32}" y="384" width="64" height="32" rx="8" fill="#ffffff" stroke="{TEAL}" stroke-width="2"/>')
+        f.text(x, 405, '断片', 13, TEAL, anchor='middle')
+        f.line((180 if i == 0 else xs[i-1] + 32), 400, x - 34, 400, color=TEAL, width=2, arrow=True)
+    f.path('M 562 400 C 620 400 650 360 700 352', color=TEAL, width=2, arrow=True); f.text(760, 356, '次の関連を呼ぶ', 14, TEAL, weight=700)
+    f.text(610, 450, '言葉を先に置く：断片でよいから書き出す', 15, INK, anchor='middle', weight=700)
+    f.footer('整った言葉を待つから遅くなる。周囲に断片を散らせば、輪郭は周囲から決まる（第7回）。')
+    made.add(f.save('09-c-retrieval-speed.svg'))
+
+    # 2-3 example with the four axes (series 2)
+    f = rfig(2, 'AIの生成 × 人間のレビュー、四つの軸', '方向・対称性・強度・時間変化の札を貼る', 600, '3')
+    running_example(f, 1)
+    tags = [(140, 230, '方向：双方向', '指摘が生成へ戻る', P), (470, 230, '対称性：非対称', 'レビューだけが生成を必要とする', TERRA), (140, 540, '強度：欠陥率に連動', '質が低いほど強く依存', P), (470, 540, '時間変化：量とともに動く', '生成量で負荷が変わる', TERRA)]
+    for x, y, title, sub, c in tags:
+        f.body.append(f'<rect x="{x}" y="{y-26}" width="300" height="52" rx="10" fill="{SOFT}" stroke="{c}" stroke-width="1.5"/>')
+        f.text(x + 150, y - 4, title, 14, c, anchor='middle', weight=700); f.text(x + 150, y + 15, sub, 12, MUTED, anchor='middle')
+    f.text(960, 230, '三つの意味が', 15, INK, anchor='middle'); f.text(960, 252, '一つの形を共有する', 15, INK, anchor='middle', weight=700)
+    f.footer('')
+    made.add(f.save('02-c-example-axes.svg'))
+
+    # 3-3 correlation or causation in the example (series 2)
+    f = rfig(3, 'レビューが丁寧なチームは、欠陥が少ない', '相関か、因果か、第三の原因か', 580, '3')
+    f.circ(600, 250, 36, TERRA, fill=False, width=3); f.text(600, 257, '丁寧なチーム', 15, TERRA, anchor='middle', weight=700); f.text(600, 200, '第三の原因？', 14, TERRA, anchor='middle')
+    f.circ(300, 460, 34, P); f.text(300, 466, 'レビュー', 15, '#ffffff', anchor='middle', weight=700)
+    f.circ(900, 460, 34, P); f.text(900, 466, '少ない欠陥', 14, '#ffffff', anchor='middle', weight=700)
+    f.line(572, 278, 330, 438, color=TERRA, width=2, dash=True, arrow=True); f.line(628, 278, 870, 438, color=TERRA, width=2, dash=True, arrow=True)
+    f.line(336, 448, 864, 448, color=P, width=2.5, arrow=True); f.text(600, 438, '因果？：レビューが欠陥を減らす', 14, P, anchor='middle')
+    f.line(864, 472, 336, 472, color=MUTED, width=2, arrow=True, dash=True); f.text(600, 500, '逆向きの因果？：欠陥の少ないコードはレビューが通りやすい', 13, MUTED, anchor='middle')
+    f.footer('観察は同じでも、三つの読み方がある。どれかは、向きと時間と仕組みを確かめるまで決まらない。')
+    made.add(f.save('03-c-example-correlation.svg'))
+
+    # 4-3 comparative relations in the example (series 2)
+    f = rfig(4, 'AIの生成 × 人間のレビュー、三つの比較', '反対、双対、相似', 640, '3')
+    rows = [('反対', '作る ／ 壊そうとする。可能性を広げる ／ 絞る', P), ('双対', '提案 ／ 検証。役割を入れ替えても構造は保たれる', TERRA), ('相似', 'どちらも 入力 → 処理 → 出力', INDIGO)]
+    for i, (nm, desc, c) in enumerate(rows):
+        y = 230 + i * 120
+        f.text(110, y + 30, nm, 22, c, weight=700)
+        f.text(110, y + 58, desc, 13, MUTED)
+        if i == 0:
+            f.box(560, y, 140, 56, '生成', '', P, 18); f.box(900, y, 140, 56, 'レビュー', '', TERRA, 18)
+            f.line(705, y + 28, 740, y + 28, color=P, width=2.5, arrow=True); f.line(895, y + 28, 860, y + 28, color=TERRA, width=2.5, arrow=True)
+            f.text(800, y + 34, '反対', 13, MUTED, anchor='middle')
+        elif i == 1:
+            f.box(560, y - 10, 140, 44, 'AIが提案', '', P, 15); f.box(900, y - 10, 140, 44, '人が検証', '', TERRA, 15)
+            f.box(560, y + 44, 140, 44, '人が提案', '', TERRA, 15); f.box(900, y + 44, 140, 44, 'AIが検証', '', P, 15)
+            f.line(705, y + 12, 895, y + 12, color=MUTED, width=1.5, arrow=True); f.line(705, y + 66, 895, y + 66, color=MUTED, width=1.5, arrow=True)
+            f.text(800, y + 110, '役割を入れ替えた構成も、すでに使われている', 12, MUTED, anchor='middle')
+        else:
+            for x0, c2 in [(540, P), (880, TERRA)]:
+                for j, s in enumerate(['入力', '処理', '出力']):
+                    f.body.append(f'<rect x="{x0 + j*60}" y="{y+6}" width="48" height="40" rx="8" fill="#ffffff" stroke="{c2}" stroke-width="2"/>'); f.text(x0 + j * 60 + 24, y + 31, s, 12, INK, anchor='middle')
+                    if j < 2:
+                        f.line(x0 + j * 60 + 50, y + 26, x0 + j * 60 + 58, y + 26, color=c2, width=1.5, arrow=True)
+            f.text(800, y + 75, '生成側で効いた工夫をレビュー側へ運べるかもしれない（仮説）', 12, MUTED, anchor='middle')
+    f.footer('')
+    made.add(f.save('04-c-example-comparisons.svg'))
 
 
 if __name__ == '__main__':

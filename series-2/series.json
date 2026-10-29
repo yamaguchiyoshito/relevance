@@ -72,7 +72,8 @@
       "path": "series-2/chapters/02-meaning-and-structure.md",
       "figures": [
         "assets/illustrations/relation/02-a-four-axes.svg",
-        "assets/illustrations/relation/02-b-transitivity.svg"
+        "assets/illustrations/relation/02-b-transitivity.svg",
+        "assets/illustrations/relation/02-c-example-axes.svg"
       ],
       "sources": []
     },
@@ -85,7 +86,8 @@
       "path": "series-2/chapters/03-five-distinctions.md",
       "figures": [
         "assets/illustrations/relation/03-a-summer-triangle.svg",
-        "assets/illustrations/relation/03-b-five-pairs.svg"
+        "assets/illustrations/relation/03-b-five-pairs.svg",
+        "assets/illustrations/relation/03-c-example-correlation.svg"
       ],
       "sources": []
     },
@@ -98,7 +100,8 @@
       "path": "series-2/chapters/04-comparative-relations.md",
       "figures": [
         "assets/illustrations/relation/04-a-opposite-and-dual.svg",
-        "assets/illustrations/relation/04-b-analogy-table.svg"
+        "assets/illustrations/relation/04-b-analogy-table.svg",
+        "assets/illustrations/relation/04-c-example-comparisons.svg"
       ],
       "sources": []
     },

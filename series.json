@@ -142,7 +142,8 @@
       ],
       "figures": [
         "assets/illustrations/06-a-three-stages.svg",
-        "assets/illustrations/06-b-hypothesis-and-verification.svg"
+        "assets/illustrations/06-b-hypothesis-and-verification.svg",
+        "assets/illustrations/06-c-question-forms.svg"
       ]
     },
     {
@@ -159,7 +160,8 @@
       ],
       "figures": [
         "assets/illustrations/07-a-two-hop.svg",
-        "assets/illustrations/07-b-surroundings.svg"
+        "assets/illustrations/07-b-surroundings.svg",
+        "assets/illustrations/07-c-interest-space.svg"
       ]
     },
     {
@@ -191,6 +193,7 @@
         "fauconnier-turner"
       ],
       "figures": [
+        "assets/illustrations/09-c-retrieval-speed.svg",
         "assets/illustrations/09-a-a-b-or-c.svg",
         "assets/illustrations/09-b-metaphor-overlay.svg"
       ]
