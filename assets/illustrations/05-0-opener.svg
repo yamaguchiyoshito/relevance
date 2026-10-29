@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">第II部 関係を見出す</title>
+<desc id="desc">二つの雲の重なりに、第三の小さな円が立ち上がる</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><radialGradient id="grel050-1"><stop offset="0" stop-color="#5a4fcf" stop-opacity="0.55"/><stop offset="0.55" stop-color="#5a4fcf" stop-opacity="0.25"/><stop offset="1" stop-color="#5a4fcf" stop-opacity="0"/></radialGradient><radialGradient id="grel050-2"><stop offset="0" stop-color="#2f8f83" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2f8f83" stop-opacity="0.25"/><stop offset="1" stop-color="#2f8f83" stop-opacity="0"/></radialGradient><radialGradient id="grel050-3"><stop offset="0" stop-color="#d0693a" stop-opacity="0.7"/><stop offset="0.55" stop-color="#d0693a" stop-opacity="0.32"/><stop offset="1" stop-color="#d0693a" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="360" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<circle cx="470.0" cy="200.0" r="130" fill="url(#grel050-1)"/>
+<circle cx="730.0" cy="200.0" r="130" fill="url(#grel050-2)"/>
+<circle cx="600.0" cy="200.0" r="55" fill="url(#grel050-3)"/>
+<circle cx="600.0" cy="70.0" r="8" fill="#d0693a"/>
+<path d="M 470 110 C 520 80 560 72 592 70" fill="none" stroke="#d0693a" stroke-width="1.5" stroke-dasharray="8 7"/>
+<path d="M 730 110 C 680 80 640 72 608 70" fill="none" stroke="#d0693a" stroke-width="1.5" stroke-dasharray="8 7"/>
+</g>
+</svg>

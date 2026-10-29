@@ -19,9 +19,13 @@ class RepositoryTests(unittest.TestCase):
         self.assertEqual(errors, [])
         self.assertEqual(result.chapters, 24)
         total = 0
+        openers = 0
         for sf in ['series.json', 'series-2/series.json']:
-            total += sum(len(c['figures']) for c in json.loads((ROOT / sf).read_text(encoding='utf-8'))['chapters'])
-        self.assertEqual(result.svg_files, 1 + total)
+            data = json.loads((ROOT / sf).read_text(encoding='utf-8'))
+            total += sum(len(c['figures']) for c in data['chapters'])
+            openers += sum(1 for p in data['parts'] if p.get('opener'))
+        self.assertEqual(openers, 8)
+        self.assertEqual(result.svg_files, 1 + total + openers)
         self.assertGreater(result.footnotes, 20)
 
     def test_footnotes_render_as_notes(self):
@@ -66,6 +70,21 @@ class RepositoryTests(unittest.TestCase):
             data = json.loads((ROOT / sf).read_text(encoding='utf-8'))
             covered = [n for p in data['parts'] for n in range(p['chapters'][0], p['chapters'][1] + 1)]
             self.assertEqual(covered, list(range(1, 13)), sf)
+
+    def test_opener_is_bare_image(self):
+        output = render('![扉絵](../assets/illustrations/01-0-opener.svg){.opener}\n\n本文\n')
+        self.assertIn('class="opener"', output)
+        self.assertNotIn('figure-scroll', output)
+        self.assertNotIn('figure-link', output)
+        self.assertEqual(output.count('<figcaption'), 0)
+
+    def test_alt_only_figure_keeps_following_content(self):
+        text = '![扉絵](../assets/illustrations/01-0-opener.svg){.opener}\n\n段落A[^n]。\n\n### 節\n\n![説明](../assets/illustrations/00-cover.svg)\n\n*図1-1：説明。*\n\n[^n]: 注。\n'
+        output = render(text)
+        self.assertIn('段落A', output)
+        self.assertIn('id="fnref1"', output)
+        self.assertIn('<h3', output)
+        self.assertEqual(output.count('<figure>'), 2)
 
     def test_dollar_signs_are_not_math(self):
         ast = parse_markdown('価格は $5 と $7 です。\n')

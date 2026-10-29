@@ -94,6 +94,15 @@ def validate(root: Path = ROOT) -> tuple[Result, list[str]]:
         covered = [n for part in s.get('parts', []) for n in range(part['chapters'][0], part['chapters'][1] + 1)]
         if covered != list(range(1, 13)):
             errors.append(f'{sf}: parts must cover chapters 1..12 exactly once, in order')
+        for part in s.get('parts', []):
+            opener = part.get('opener')
+            first = next((c for c in cs if c['number'] == part['chapters'][0]), None)
+            if not opener or not (root / opener).exists():
+                errors.append(f'{sf}: part {part["number"]} has no opener image')
+            elif first and (root / first['path']).exists():
+                head = (root / first['path']).read_text(encoding='utf-8').split('### ')[0]
+                if Path(opener).name not in head or '{.opener}' not in head:
+                    errors.append(f'{first["path"]}: opener image must be referenced with {{.opener}} before the first section')
         chapters += cs
     md_paths = [root / 'README.md', *sorted((root / 'guides').glob('*.md')), root / 'references/bibliography.md', root / 'CHANGELOG.md']
     for s in all_series:
@@ -138,7 +147,7 @@ def validate(root: Path = ROOT) -> tuple[Result, list[str]]:
         captions = re.findall(r'^\*図(\d+)-(\d+)：.+\*$', text, re.M)
         if [(int(a), int(b)) for a, b in captions] != [(c['number'], i) for i in range(1, len(c['figures']) + 1)]:
             errors.append(f'{c["path"]}: figure captions must be 図{c["number"]}-1 .. 図{c["number"]}-{len(c["figures"])} in order')
-        if len(re.findall(r'^!\[[^\]]*\]\([^)]*assets/illustrations/', text, re.M)) != len(c['figures']):
+        if len([m for m in re.findall(r'^!\[[^\]]*\]\(([^)]*assets/illustrations/[^)]*)\)', text, re.M) if '-0-opener' not in m]) != len(c['figures']):
             errors.append(f'{c["path"]}: number of figure references differs from series.json')
         references = set(re.findall(r'^\[\^([^\]]+)\]:', text, re.M))
         uses = set(re.findall(r'\[\^([^\]]+)\](?!:)', text))
@@ -184,7 +193,7 @@ def validate(root: Path = ROOT) -> tuple[Result, list[str]]:
     for svg in sorted((root / 'assets').rglob('*.svg')):
         result.svg_files += 1
         errors += svg_errors(svg)
-    expected_svgs = 1 + sum(len(c['figures']) for c in chapters)
+    expected_svgs = 1 + sum(len(c['figures']) for c in chapters) + sum(1 for s in all_series for part in s.get('parts', []) if part.get('opener'))
     if result.svg_files != expected_svgs:
         errors.append(f'expected exactly {expected_svgs} SVG illustrations (cover + chapter figures listed in series.json)')
     for c in chapters:

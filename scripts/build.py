@@ -99,15 +99,19 @@ def render(text: str, prefix: str = '', next_note: str = '') -> str:
 
 
 # Pandoc が alt から作る自動キャプションは aria-hidden 付きで出る。本文由来の figcaption と区別するため、その属性で限定する。
-FIGURE_WITH_CAPTION = re.compile(r'<figure>\s*(<img\b[^>]*>)\s*<figcaption aria-hidden="true">.*?</figcaption>\s*</figure>\s*<p><em>(図[^<]*)</em></p>', re.S)
-FIGURE_ALT_ONLY = re.compile(r'<figure>\s*(<img\b[^>]*>)\s*<figcaption aria-hidden="true">.*?</figcaption>\s*</figure>', re.S)
+# figcaption の中身は alt のテキストだけ（タグを含まない）。[^<]* で限定しないと、キャプション段落のない図から次の図までを飲み込んでしまう。
+FIGURE_WITH_CAPTION = re.compile(r'<figure>\s*(<img\b[^>]*>)\s*<figcaption aria-hidden="true">[^<]*</figcaption>\s*</figure>\s*<p><em>(図[^<]*)</em></p>')
+FIGURE_ALT_ONLY = re.compile(r'<figure>\s*(<img\b[^>]*>)\s*<figcaption aria-hidden="true">[^<]*</figcaption>\s*</figure>')
 
 
 IMG_SRC = re.compile(r'\bsrc="([^"]+)"')
 
 
 def figure_body(img: str) -> str:
-    """図を横スクロール容器と原寸SVGへのリンクで包む。電話幅では容器が横に流れ、タップで原寸を開ける。"""
+    """図を横スクロール容器と原寸SVGへのリンクで包む。電話幅では容器が横に流れ、タップで原寸を開ける。
+    扉絵（class="opener"）は文字を持たないので、容器にもリンクにも包まない。"""
+    if 'class="opener"' in img:
+        return img
     m = IMG_SRC.search(img)
     src = m.group(1) if m else ''
     link = f'<a class="figure-link" href="{src}" title="図を原寸で開く">{img}</a>' if src.endswith('.svg') else img

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">第II部 関係の種類をめぐる</title>
+<desc id="desc">比べる・役割・時間・意味の四つの小さなタイル</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><radialGradient id="grel040-1"><stop offset="0" stop-color="#2f8f83" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2f8f83" stop-opacity="0.25"/><stop offset="1" stop-color="#2f8f83" stop-opacity="0"/></radialGradient><radialGradient id="grel040-2"><stop offset="0" stop-color="#d0693a" stop-opacity="0.55"/><stop offset="0.55" stop-color="#d0693a" stop-opacity="0.25"/><stop offset="1" stop-color="#d0693a" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="360" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<rect x="105" y="60" width="210" height="240" rx="18" fill="none" stroke="#d8d4c8" stroke-width="2"/>
+<rect x="365" y="60" width="210" height="240" rx="18" fill="none" stroke="#d8d4c8" stroke-width="2"/>
+<rect x="625" y="60" width="210" height="240" rx="18" fill="none" stroke="#d8d4c8" stroke-width="2"/>
+<rect x="885" y="60" width="210" height="240" rx="18" fill="none" stroke="#d8d4c8" stroke-width="2"/>
+<circle cx="172.0" cy="180.0" r="30" fill="none" stroke="#2f8f83" stroke-width="3"/>
+<circle cx="248.0" cy="180.0" r="30" fill="none" stroke="#2f8f83" stroke-width="3"/>
+<line x1="210.0" y1="100.0" x2="210.0" y2="260.0" stroke="#d8d4c8" stroke-width="1.5" stroke-dasharray="8 7"/>
+<rect x="395" y="110" width="150" height="140" rx="12" fill="none" stroke="#d8d4c8" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="415" y="150" width="44" height="44" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="3"/><rect x="481" y="150" width="44" height="44" rx="8" fill="#ffffff" stroke="#d0693a" stroke-width="3"/>
+<path d="M 778 150 A 50 50 0 1 1 750 134" fill="none" stroke="#2f8f83" stroke-width="3" marker-end="url(#arrow)"/>
+<circle cx="965.0" cy="180.0" r="60" fill="url(#grel040-1)"/>
+<circle cx="1015.0" cy="180.0" r="60" fill="url(#grel040-2)"/>
+</g>
+</svg>

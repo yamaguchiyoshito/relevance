@@ -14,7 +14,7 @@ FONT = 'system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP
 
 
 class Figure:
-    def __init__(self, number: int, title: str, subtitle: str, height: int = 680, part: str = '', code: str = 'RELEVANCE', accent: str = INDIGO, subdir: str = ''):
+    def __init__(self, number: int, title: str, subtitle: str, height: int = 680, part: str = '', code: str = 'RELEVANCE', accent: str = INDIGO, subdir: str = '', header: bool = True):
         self.h = height
         self.n = number
         self.part = part
@@ -26,6 +26,8 @@ class Figure:
         self.title = title
         self.subtitle = subtitle
         self.gradients = 0
+        if not header:
+            return  # 扉絵：見出しも文字も描かない（title/desc は aria 用にのみ残る）
         shown = str(ord(part) - 96) if part.isalpha() and len(part) == 1 else part  # a→1, b→2 … or an explicit number
         label = code if number == 0 else f'{code}     {number:02d}' + (f'     図{number}-{shown}' if part else '')
         self.text(50, 52, label, 18, accent, weight=700)
@@ -157,6 +159,7 @@ def main() -> None:
     for sf in SERIES_FILES:
         s = json.loads((ROOT / sf).read_text(encoding='utf-8'))
         expected |= {str(Path(p).relative_to('assets/illustrations')) for c in s['chapters'] for p in c['figures']}
+        expected |= {str(Path(p['opener']).relative_to('assets/illustrations')) for p in s.get('parts', []) if p.get('opener')}
     made: set[str] = set()
 
     # 00 cover
@@ -645,6 +648,7 @@ def main() -> None:
     made.add(f.save('12-a-loop.svg'))
 
     draw_relation(made)
+    draw_openers(made)
     missing, extra = expected - made, made - expected
     if missing or extra:
         raise SystemExit(f'series.json mismatch. missing={sorted(missing)} extra={sorted(extra)}')
@@ -1181,6 +1185,90 @@ def draw_relation(made: set[str]) -> None:
     f = rfig(12, 'AIの生成 × 人間のレビュー（最終形）', '四つの階層と、あいだに置く五つの設計案', 720, 'a')
     running_example(f, 4); f.footer('')
     made.add(f.save('12-a-example-v4.svg'))
+
+
+# ---------------------------------------------------------------------------
+# Part openers: no text, no header, 1200x360, geometric signs only
+# ---------------------------------------------------------------------------
+def opener(number, title, desc, code='RELEVANCE', accent=INDIGO, subdir=''):
+    f = Figure(number, title, desc, 360, '0', code=code, accent=accent, subdir=subdir, header=False)
+    # the paper rectangle is drawn by save(); openers have no frame in CSS, so the paper itself is the only ground
+    return f
+
+
+def dial(f, x, y, knob, color):
+    f.line(x, y, x + 140, y, color=LINE, width=3)
+    for i in range(5):
+        f.line(x + i * 35, y - 6, x + i * 35, y + 6, color=LINE, width=1.5)
+    f.circ(x + 140 * knob, y, 9, color)
+
+
+def draw_openers(made: set[str]) -> None:
+    # 1-I  point → distribution
+    f = opener(1, '第I部 意味は分布である', '点が右へ向かってぼやけた円に変わっていく')
+    f.circ(170, 180, 6, INDIGO); f.line(170, 174, 170, 120, color=INDIGO, width=1.5); f.circ(170, 116, 3, INDIGO)
+    for i, (x, r, op) in enumerate([(330, 22, 0.9), (500, 48, 0.75), (690, 80, 0.6), (930, 120, 0.5)]):
+        f.blob(x, 180, r, INDIGO, op)
+    f.line(200, 180, 290, 180, color=LINE, width=1.5, dash=True)
+    made.add(f.save('01-0-opener.svg'))
+
+    # 1-II  two distributions, a third rises between them
+    f = opener(5, '第II部 関係を見出す', '二つの雲の重なりに、第三の小さな円が立ち上がる')
+    f.blob(470, 200, 130, INDIGO); f.blob(730, 200, 130, TEAL)
+    f.blob(600, 200, 55, TERRA, 0.7)
+    f.circ(600, 70, 8, TERRA); f.path('M 470 110 C 520 80 560 72 592 70', color=TERRA, width=1.5, dash=True); f.path('M 730 110 C 680 80 640 72 608 70', color=TERRA, width=1.5, dash=True)
+    made.add(f.save('05-0-opener.svg'))
+
+    # 1-III  a handle floating above a distribution
+    f = opener(9, '第III部 言葉という装置', 'ぼやけた円の上に、取っ手の形が一つ浮いている')
+    f.blob(600, 230, 115, INDIGO, 0.55)
+    f.body.append(f'<rect x="470" y="80" width="260" height="34" rx="17" fill="#ffffff" stroke="{TERRA}" stroke-width="3"/>')
+    f.line(600, 114, 600, 140, color=TERRA, width=3)
+    made.add(f.save('09-0-opener.svg'))
+
+    # 1-IV  the loop
+    f = opener(12, '第IV部 結', '四つの点を結ぶ薄い輪')
+    pts = [(600, 70), (900, 180), (600, 290), (300, 180)]
+    for i, (x, y) in enumerate(pts):
+        f.circ(x, y, 10, TERRA if i == 2 else INDIGO)
+    f.path('M 612 74 C 760 95 880 140 898 170', color=LINE, width=2, arrow=True); f.path('M 898 190 C 880 230 760 275 612 286', color=LINE, width=2, arrow=True)
+    f.path('M 588 286 C 440 275 320 230 302 190', color=LINE, width=2, arrow=True); f.path('M 302 170 C 320 140 440 95 588 74', color=LINE, width=2, arrow=True)
+    made.add(f.save('12-0-opener.svg'))
+
+    # 2-I  one thick line unbundles into several
+    f = opener(1, '第I部 関係を分ける', '一本の太い線が、右へ向かって色の違う数本の線にほどける', R_CODE, TEAL, R_SUB)
+    f.circ(170, 180, 14, TEAL); f.circ(1030, 180, 14, TEAL)
+    f.line(184, 180, 560, 180, color=INK, width=9)
+    for dy, c in [(-66, TEAL), (-22, TERRA), (22, MUTED), (66, INDIGO)]:
+        f.path(f'M 560 180 C 700 180 760 {180+dy} 880 {180+dy} L 1016 {180+dy*0.35:.0f}', color=c, width=3)
+    made.add(f.save('01-0-opener.svg'))
+
+    # 2-II  four tiles: compare, function, time, meaning
+    f = opener(4, '第II部 関係の種類をめぐる', '比べる・役割・時間・意味の四つの小さなタイル', R_CODE, TEAL, R_SUB)
+    xs = [210, 470, 730, 990]
+    for x in xs:
+        f.body.append(f'<rect x="{x-105}" y="60" width="210" height="240" rx="18" fill="none" stroke="{LINE}" stroke-width="2"/>')
+    f.circ(xs[0] - 38, 180, 30, TEAL, fill=False, width=3); f.circ(xs[0] + 38, 180, 30, TEAL, fill=False, width=3); f.line(xs[0], 100, xs[0], 260, color=LINE, width=1.5, dash=True)
+    f.body.append(f'<rect x="{xs[1]-75}" y="110" width="150" height="140" rx="12" fill="none" stroke="{LINE}" stroke-width="2" stroke-dasharray="7 6"/>')
+    f.body.append(f'<rect x="{xs[1]-55}" y="150" width="44" height="44" rx="8" fill="#ffffff" stroke="{TEAL}" stroke-width="3"/><rect x="{xs[1]+11}" y="150" width="44" height="44" rx="8" fill="#ffffff" stroke="{TERRA}" stroke-width="3"/>')
+    f.path(f'M {xs[2]+48} 150 A 50 50 0 1 1 {xs[2]+20} 134', color=TEAL, width=3, arrow=True)
+    f.blob(xs[3] - 25, 180, 60, TEAL); f.blob(xs[3] + 25, 180, 60, TERRA)
+    made.add(f.save('04-0-opener.svg'))
+
+    # 2-III  something grows between two boxes
+    f = opener(8, '第III部 関係は何を生むか', '二つの箱の間から上へ伸びる線と、プラスとマイナスの印', R_CODE, TEAL, R_SUB)
+    f.body.append(f'<rect x="200" y="150" width="220" height="80" rx="14" fill="#ffffff" stroke="{TEAL}" stroke-width="3"/><rect x="780" y="150" width="220" height="80" rx="14" fill="#ffffff" stroke="{TERRA}" stroke-width="3"/>')
+    f.line(420, 190, 780, 190, color=LINE, width=2)
+    f.path('M 600 190 C 600 150 590 110 600 70', color=TEAL, width=3); f.path('M 600 150 C 575 140 560 125 556 110', color=TEAL, width=2.5); f.path('M 600 110 C 625 100 640 85 644 72', color=TEAL, width=2.5)
+    f.line(515, 262, 545, 262, color=TEAL, width=4); f.line(530, 247, 530, 277, color=TEAL, width=4)
+    f.line(655, 262, 685, 262, color=TERRA, width=4)
+    made.add(f.save('08-0-opener.svg'))
+
+    # 2-IV  the boxes stay; the space between gets dials
+    f = opener(11, '第IV部 関係を設計する', '二つの箱は同じまま。あいだに、つまみが三つ並ぶ', R_CODE, TEAL, R_SUB)
+    f.body.append(f'<rect x="150" y="150" width="220" height="80" rx="14" fill="#ffffff" stroke="{TEAL}" stroke-width="3"/><rect x="830" y="150" width="220" height="80" rx="14" fill="#ffffff" stroke="{TERRA}" stroke-width="3"/>')
+    dial(f, 530, 110, 0.3, TEAL); dial(f, 530, 190, 0.7, TERRA); dial(f, 530, 270, 0.5, INK)
+    made.add(f.save('11-0-opener.svg'))
 
 
 if __name__ == '__main__':

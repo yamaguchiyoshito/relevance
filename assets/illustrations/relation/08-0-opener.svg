@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">第III部 関係は何を生むか</title>
+<desc id="desc">二つの箱の間から上へ伸びる線と、プラスとマイナスの印</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="360" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<rect x="200" y="150" width="220" height="80" rx="14" fill="#ffffff" stroke="#2f8f83" stroke-width="3"/><rect x="780" y="150" width="220" height="80" rx="14" fill="#ffffff" stroke="#d0693a" stroke-width="3"/>
+<line x1="420.0" y1="190.0" x2="780.0" y2="190.0" stroke="#d8d4c8" stroke-width="2"/>
+<path d="M 600 190 C 600 150 590 110 600 70" fill="none" stroke="#2f8f83" stroke-width="3"/>
+<path d="M 600 150 C 575 140 560 125 556 110" fill="none" stroke="#2f8f83" stroke-width="2.5"/>
+<path d="M 600 110 C 625 100 640 85 644 72" fill="none" stroke="#2f8f83" stroke-width="2.5"/>
+<line x1="515.0" y1="262.0" x2="545.0" y2="262.0" stroke="#2f8f83" stroke-width="4"/>
+<line x1="530.0" y1="247.0" x2="530.0" y2="277.0" stroke="#2f8f83" stroke-width="4"/>
+<line x1="655.0" y1="262.0" x2="685.0" y2="262.0" stroke="#d0693a" stroke-width="4"/>
+</g>
+</svg>

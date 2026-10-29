@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">第III部 言葉という装置</title>
+<desc id="desc">ぼやけた円の上に、取っ手の形が一つ浮いている</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><radialGradient id="grel090-1"><stop offset="0" stop-color="#5a4fcf" stop-opacity="0.55"/><stop offset="0.55" stop-color="#5a4fcf" stop-opacity="0.25"/><stop offset="1" stop-color="#5a4fcf" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="360" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<circle cx="600.0" cy="230.0" r="115" fill="url(#grel090-1)"/>
+<rect x="470" y="80" width="260" height="34" rx="17" fill="#ffffff" stroke="#d0693a" stroke-width="3"/>
+<line x1="600.0" y1="114.0" x2="600.0" y2="140.0" stroke="#d0693a" stroke-width="3"/>
+</g>
+</svg>

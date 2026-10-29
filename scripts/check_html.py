@@ -29,7 +29,10 @@ class Document(HTMLParser):
         if tag == 'script':
             self.scripts += 1
         if tag == 'img':
-            self.images += 1
+            if 'opener' in (attrs.get('class') or '').split():
+                self.openers = getattr(self, 'openers', 0) + 1
+            else:
+                self.images += 1
         if tag == 'figcaption':
             self.figcaptions += 1
         for attr in ['href', 'src']:

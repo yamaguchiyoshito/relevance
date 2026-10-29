@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">第IV部 結</title>
+<desc id="desc">四つの点を結ぶ薄い輪</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="360" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<circle cx="600.0" cy="70.0" r="10" fill="#5a4fcf"/>
+<circle cx="900.0" cy="180.0" r="10" fill="#5a4fcf"/>
+<circle cx="600.0" cy="290.0" r="10" fill="#d0693a"/>
+<circle cx="300.0" cy="180.0" r="10" fill="#5a4fcf"/>
+<path d="M 612 74 C 760 95 880 140 898 170" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 898 190 C 880 230 760 275 612 286" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 588 286 C 440 275 320 230 302 190" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 302 170 C 320 140 440 95 588 74" fill="none" stroke="#d8d4c8" stroke-width="2" marker-end="url(#arrow)"/>
+</g>
+</svg>
