@@ -193,9 +193,13 @@ def validate(root: Path = ROOT) -> tuple[Result, list[str]]:
     for svg in sorted((root / 'assets').rglob('*.svg')):
         result.svg_files += 1
         errors += svg_errors(svg)
-    expected_svgs = 1 + sum(len(c['figures']) for c in chapters) + sum(1 for s in all_series for part in s.get('parts', []) if part.get('opener'))
+    expected_svgs = sum(len(c['figures']) for c in chapters) + sum(1 for s in all_series for part in s.get('parts', []) if part.get('opener')) + sum(len(s.get('extras', [])) for s in all_series)
+    for s in all_series:
+        for extra in s.get('extras', []):
+            if not (root / extra).exists():
+                errors.append(f'missing extra illustration: {extra}')
     if result.svg_files != expected_svgs:
-        errors.append(f'expected exactly {expected_svgs} SVG illustrations (cover + chapter figures listed in series.json)')
+        errors.append(f'expected exactly {expected_svgs} SVG illustrations (chapter figures, openers and extras listed in the series files)')
     for c in chapters:
         for fig in c['figures']:
             if not (root / fig).exists():

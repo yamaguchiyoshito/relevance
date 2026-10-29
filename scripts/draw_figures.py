@@ -155,9 +155,10 @@ SERIES_FILES = ['series.json', 'series-2/series.json']
 
 def main() -> None:
     series = json.loads((ROOT / 'series.json').read_text(encoding='utf-8'))
-    expected = {'00-cover.svg'}
+    expected = set()
     for sf in SERIES_FILES:
         s = json.loads((ROOT / sf).read_text(encoding='utf-8'))
+        expected |= {str(Path(p).relative_to('assets/illustrations')) for p in s.get('extras', [])}
         expected |= {str(Path(p).relative_to('assets/illustrations')) for c in s['chapters'] for p in c['figures']}
         expected |= {str(Path(p['opener']).relative_to('assets/illustrations')) for p in s.get('parts', []) if p.get('opener')}
     made: set[str] = set()
@@ -649,6 +650,7 @@ def main() -> None:
 
     draw_relation(made)
     draw_openers(made)
+    draw_extras(made)
     missing, extra = expected - made, made - expected
     if missing or extra:
         raise SystemExit(f'series.json mismatch. missing={sorted(missing)} extra={sorted(extra)}')
@@ -1269,6 +1271,102 @@ def draw_openers(made: set[str]) -> None:
     f.body.append(f'<rect x="150" y="150" width="220" height="80" rx="14" fill="#ffffff" stroke="{TEAL}" stroke-width="3"/><rect x="830" y="150" width="220" height="80" rx="14" fill="#ffffff" stroke="{TERRA}" stroke-width="3"/>')
     dial(f, 530, 110, 0.3, TEAL); dial(f, 530, 190, 0.7, TERRA); dial(f, 530, 270, 0.5, INK)
     made.add(f.save('11-0-opener.svg'))
+
+
+# ---------------------------------------------------------------------------
+# Extras: series-2 cover, the series map on the top page, the legend in the reading guide,
+# and the series-1 roadmap (a numbered chapter figure, drawn here to sit next to its series-2 twin)
+# ---------------------------------------------------------------------------
+def draw_extras(made: set[str]) -> None:
+    # series-2 cover
+    f = Figure(0, 'RELATION ── 二者のあいだに関する考察', '関係を分け、何を生むかを問い、あいだを設計する、全12回', 660, code=R_CODE, accent=P, subdir=R_SUB)
+    f.box(330, 300, 200, 90, 'A', '', P, 30); f.box(770, 300, 200, 90, 'B', '', TERRA, 30)
+    for dy, c, nm in [(-48, P, '順序'), (-16, TERRA, '依存'), (16, MUTED, '補完・競合'), (48, INDIGO, 'フィードバック')]:
+        f.path(f'M 535 {345} C 600 {345} 640 {345+dy} 700 {345+dy} L 765 {345+dy*0.4:.0f}', color=c, width=2.5)
+        f.text(700, 345 + dy - 7, nm, 12, c, anchor='middle')
+    f.text(650, 250, 'あいだ', 20, INK, anchor='middle', weight=700)
+    for i, (nm, c) in enumerate([('価値', INDIGO), ('効能', TERRA), ('作用', P), ('構造', MUTED)]):
+        y = 232 + i * 60
+        f.body.append(f'<rect x="90" y="{y}" width="150" height="48" rx="8" fill="#ffffff" stroke="{c}" stroke-width="2"/>')
+        f.text(165, y + 31, nm, 18, c, anchor='middle', weight=700)
+    f.line(165, 480, 165, 228, color=LINE, width=2, arrow=True)
+    f.text(1060, 300, '関係は一つではない。', 19, INK, anchor='middle'); f.text(1060, 334, '種類と効能を混同しない。', 19, INK, anchor='middle'); f.text(1060, 368, '関係がなかったら。', 19, INK, anchor='middle')
+    f.text(600, 585, '個々の性能ではなく、あいだを設計する。', 30, P, anchor='middle', weight=700)
+    f.footer('第1クール「意味の関連性」の続編。関係を一つの塊から、性質の違う関係型の重なりへほどく。')
+    made.add(f.save('00-cover.svg'))
+
+    # series-1 roadmap: 図1-3 (twin of series-2's 01-b)
+    f = Figure(1, '四つの部と、それぞれの到達点', '意味の形から、関連性を見出す力の定義まで', 600, '3')
+    layers = [('第IV部', '結：関連を検証可能な仮説として言葉に固定する力', INDIGO, '第12回'), ('第III部', '言葉という装置：比喩、検証、意味の取っ手', TERRA, '第9〜11回'), ('第II部', '関係を見出す：関連は仮説、ボトルネックは評価', TEAL, '第5〜8回'), ('第I部', '意味は分布である：点でも集合でもなく、歪んだ分布', MUTED, '第1〜4回')]
+    for i, (nm, desc, c, rng) in enumerate(layers):
+        y = 215 + i * 78
+        f.body.append(f'<rect x="150" y="{y}" width="640" height="64" rx="10" fill="#ffffff" stroke="{c}" stroke-width="2"/>')
+        f.text(190, y + 40, nm, 20, c, weight=700); f.text(290, y + 40, desc, 16, INK)
+        f.text(840, y + 40, rng, 16, MUTED)
+    f.line(120, 520, 120, 215, color=MUTED, width=2, arrow=True); f.text(110, 370, '登る', 14, MUTED, anchor='end')
+    f.body.append(f'<rect x="930" y="300" width="210" height="140" rx="12" fill="#ffffff" stroke="{INDIGO}" stroke-width="2"/>')
+    f.text(1035, 340, '一本の問い', 15, MUTED, anchor='middle'); f.text(1035, 373, '「関係している」とは', 16, INDIGO, anchor='middle', weight=700); f.text(1035, 400, 'どういう事態か', 16, INDIGO, anchor='middle', weight=700)
+    f.footer('第2クールの見取り図（図1-2）と同じ構図。向こうは階層、こちらは部。')
+    made.add(f.save('01-c-roadmap.svg'))
+
+    # series map on the top page
+    f = Figure(0, '二つの連載と、次の問い', '関係を一つの雲として扱う → 雲をほどいて関係型の重なりにする → 三者へ', 520)
+    f.panel(60, 200, 330, 270, '第1クール RELEVANCE')
+    f.blob(180, 350, 70, INDIGO); f.blob(270, 350, 70, TEAL); f.text(225, 440, '関係は一つのぼやけた雲', 14, INK, anchor='middle')
+    f.line(395, 335, 455, 335, color=MUTED, width=2, arrow=True); f.text(425, 322, 'ほどく', 13, MUTED, anchor='middle')
+    f.panel(460, 200, 330, 270, '第2クール RELATION')
+    f.body.append(f'<rect x="490" y="320" width="80" height="44" rx="8" fill="#ffffff" stroke="{P}" stroke-width="2"/><rect x="680" y="320" width="80" height="44" rx="8" fill="#ffffff" stroke="{TERRA}" stroke-width="2"/>')
+    for dy, c in [(-24, P), (-8, TERRA), (8, MUTED), (24, INDIGO)]:
+        f.path(f'M 570 342 C 600 342 620 {342+dy} 650 {342+dy} L 680 {342+dy*0.5:.0f}', color=c, width=2)
+    f.text(625, 440, '性質の違う関係型の重なり', 14, INK, anchor='middle')
+    f.line(795, 335, 855, 335, color=MUTED, width=2, arrow=True, dash=True); f.text(825, 322, '次へ', 13, MUTED, anchor='middle')
+    f.body.append(f'<rect x="860" y="200" width="280" height="270" rx="16" fill="none" stroke="{LINE}" stroke-width="2" stroke-dasharray="7 7"/>')
+    f.text(1000, 234, '次の問い：三者', 20, MUTED, anchor='middle', weight=700)
+    for x, y in [(1000, 300), (940, 390), (1060, 390)]:
+        f.circ(x, y, 10, LINE)
+    f.line(1000, 300, 940, 390, color=LINE, width=1.5, dash=True); f.line(1000, 300, 1060, 390, color=LINE, width=1.5, dash=True); f.line(940, 390, 1060, 390, color=LINE, width=1.5, dash=True)
+    f.text(1000, 440, '媒介・外部性・観察者（未着手）', 13, MUTED, anchor='middle')
+    f.footer('')
+    made.add(f.save('series-map.svg'))
+
+    # legend
+    f = Figure(0, '図の読み方', 'この連載の図で使う記号と色', 600)
+    items = [
+        ('blob', 'ぼやけた円：境界のない分布'), ('solid', '実線：確定した関係・流れ'), ('dash', '破線：仮説・未決・予告'),
+        ('arrow', '矢印：向き'), ('thick', '太さ：強度'), ('box', '枠の箱：役割を持つ対象'),
+        ('orange', '橙：注目点・負の効能・第三のもの'), ('indigo', '藍：第1クールの要素・参照'), ('teal', '深緑：第2クールの要素'),
+        ('gray', '灰：補助・背景'), ('number', '「図N-k」：第N回のk番目の図'), ('opener', '扉絵：文字なし、部の始まり'),
+    ]
+    for i, (kind, label) in enumerate(items):
+        col, row = i % 3, i // 3
+        x, y = 90 + col * 370, 230 + row * 88
+        if kind == 'blob':
+            f.blob(x + 30, y, 26, INDIGO)
+        elif kind == 'solid':
+            f.line(x, y, x + 60, y, color=INK, width=2.5)
+        elif kind == 'dash':
+            f.line(x, y, x + 60, y, color=MUTED, width=2, dash=True)
+        elif kind == 'arrow':
+            f.line(x, y, x + 60, y, color=INK, width=2, arrow=True)
+        elif kind == 'thick':
+            f.line(x, y - 8, x + 60, y - 8, color=INK, width=5); f.line(x, y + 8, x + 60, y + 8, color=INK, width=1.2)
+        elif kind == 'box':
+            f.body.append(f'<rect x="{x}" y="{y-16}" width="60" height="32" rx="8" fill="#ffffff" stroke="{INK}" stroke-width="2"/>')
+        elif kind == 'orange':
+            f.circ(x + 30, y, 12, TERRA)
+        elif kind == 'indigo':
+            f.circ(x + 30, y, 12, INDIGO)
+        elif kind == 'teal':
+            f.circ(x + 30, y, 12, TEAL)
+        elif kind == 'gray':
+            f.circ(x + 30, y, 12, LINE)
+        elif kind == 'number':
+            f.text(x + 30, y + 6, '図5-2', 15, INDIGO, anchor='middle', weight=700)
+        elif kind == 'opener':
+            f.body.append(f'<rect x="{x}" y="{y-14}" width="60" height="28" rx="6" fill="{SOFT}" stroke="{LINE}" stroke-width="1.5"/>'); f.blob(x + 30, y, 10, INDIGO)
+        f.text(x + 80, y + 6, label, 16, INK)
+    f.footer('矢印は必ずしも因果を表さない。キャプションに示す前提を併せて読む。')
+    made.add(f.save('legend.svg'))
 
 
 if __name__ == '__main__':

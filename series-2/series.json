@@ -7,6 +7,9 @@
   "version": "0.3.0",
   "tagline": "個々の性能ではなく、あいだを設計する。",
   "index": "series-2/README.md",
+  "extras": [
+    "assets/illustrations/relation/00-cover.svg"
+  ],
   "parts": [
     {
       "number": "I",

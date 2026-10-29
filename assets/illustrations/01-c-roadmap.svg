@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+<title id="title">四つの部と、それぞれの到達点</title>
+<desc id="desc">意味の形から、関連性を見出す力の定義まで</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker></defs>
+<rect width="1200" height="600" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE     01     図1-3</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">四つの部と、それぞれの到達点</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">意味の形から、関連性を見出す力の定義まで</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="150" y="215" width="640" height="64" rx="10" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
+<text x="190.0" y="255.0" fill="#5a4fcf" font-size="20" text-anchor="start" font-weight="700">第IV部</text>
+<text x="290.0" y="255.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">結：関連を検証可能な仮説として言葉に固定する力</text>
+<text x="840.0" y="255.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">第12回</text>
+<rect x="150" y="293" width="640" height="64" rx="10" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<text x="190.0" y="333.0" fill="#d0693a" font-size="20" text-anchor="start" font-weight="700">第III部</text>
+<text x="290.0" y="333.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">言葉という装置：比喩、検証、意味の取っ手</text>
+<text x="840.0" y="333.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">第9〜11回</text>
+<rect x="150" y="371" width="640" height="64" rx="10" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/>
+<text x="190.0" y="411.0" fill="#2f8f83" font-size="20" text-anchor="start" font-weight="700">第II部</text>
+<text x="290.0" y="411.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">関係を見出す：関連は仮説、ボトルネックは評価</text>
+<text x="840.0" y="411.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">第5〜8回</text>
+<rect x="150" y="449" width="640" height="64" rx="10" fill="#ffffff" stroke="#5d6873" stroke-width="2"/>
+<text x="190.0" y="489.0" fill="#5d6873" font-size="20" text-anchor="start" font-weight="700">第I部</text>
+<text x="290.0" y="489.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">意味は分布である：点でも集合でもなく、歪んだ分布</text>
+<text x="840.0" y="489.0" fill="#5d6873" font-size="16" text-anchor="start" font-weight="400">第1〜4回</text>
+<line x1="120.0" y1="520.0" x2="120.0" y2="215.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="110.0" y="370.0" fill="#5d6873" font-size="14" text-anchor="end" font-weight="400">登る</text>
+<rect x="930" y="300" width="210" height="140" rx="12" fill="#ffffff" stroke="#5a4fcf" stroke-width="2"/>
+<text x="1035.0" y="340.0" fill="#5d6873" font-size="15" text-anchor="middle" font-weight="400">一本の問い</text>
+<text x="1035.0" y="373.0" fill="#5a4fcf" font-size="16" text-anchor="middle" font-weight="700">「関係している」とは</text>
+<text x="1035.0" y="400.0" fill="#5a4fcf" font-size="16" text-anchor="middle" font-weight="700">どういう事態か</text>
+<text x="50.0" y="572.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">第2クールの見取り図（図1-2）と同じ構図。向こうは階層、こちらは部。</text>
+</g>
+</svg>

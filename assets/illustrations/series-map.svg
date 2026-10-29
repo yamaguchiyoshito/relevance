@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">二つの連載と、次の問い</title>
+<desc id="desc">関係を一つの雲として扱う → 雲をほどいて関係型の重なりにする → 三者へ</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><radialGradient id="grel00-1"><stop offset="0" stop-color="#5a4fcf" stop-opacity="0.55"/><stop offset="0.55" stop-color="#5a4fcf" stop-opacity="0.25"/><stop offset="1" stop-color="#5a4fcf" stop-opacity="0"/></radialGradient><radialGradient id="grel00-2"><stop offset="0" stop-color="#2f8f83" stop-opacity="0.55"/><stop offset="0.55" stop-color="#2f8f83" stop-opacity="0.25"/><stop offset="1" stop-color="#2f8f83" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="520" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">二つの連載と、次の問い</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">関係を一つの雲として扱う → 雲をほどいて関係型の重なりにする → 三者へ</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<rect x="60" y="200" width="330" height="270" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
+<text x="225.0" y="234.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">第1クール RELEVANCE</text>
+<circle cx="180.0" cy="350.0" r="70" fill="url(#grel00-1)"/>
+<circle cx="270.0" cy="350.0" r="70" fill="url(#grel00-2)"/>
+<text x="225.0" y="440.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">関係は一つのぼやけた雲</text>
+<line x1="395.0" y1="335.0" x2="455.0" y2="335.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="425.0" y="322.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">ほどく</text>
+<rect x="460" y="200" width="330" height="270" rx="16" fill="none" stroke="#c9c4b6" stroke-width="2" stroke-dasharray="7 7"/>
+<text x="625.0" y="234.0" fill="#232a33" font-size="23" text-anchor="middle" font-weight="700">第2クール RELATION</text>
+<rect x="490" y="320" width="80" height="44" rx="8" fill="#ffffff" stroke="#2f8f83" stroke-width="2"/><rect x="680" y="320" width="80" height="44" rx="8" fill="#ffffff" stroke="#d0693a" stroke-width="2"/>
+<path d="M 570 342 C 600 342 620 318 650 318 L 680 330" fill="none" stroke="#2f8f83" stroke-width="2"/>
+<path d="M 570 342 C 600 342 620 334 650 334 L 680 338" fill="none" stroke="#d0693a" stroke-width="2"/>
+<path d="M 570 342 C 600 342 620 350 650 350 L 680 346" fill="none" stroke="#5d6873" stroke-width="2"/>
+<path d="M 570 342 C 600 342 620 366 650 366 L 680 354" fill="none" stroke="#5a4fcf" stroke-width="2"/>
+<text x="625.0" y="440.0" fill="#232a33" font-size="14" text-anchor="middle" font-weight="400">性質の違う関係型の重なり</text>
+<line x1="795.0" y1="335.0" x2="855.0" y2="335.0" stroke="#5d6873" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
+<text x="825.0" y="322.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">次へ</text>
+<rect x="860" y="200" width="280" height="270" rx="16" fill="none" stroke="#d8d4c8" stroke-width="2" stroke-dasharray="7 7"/>
+<text x="1000.0" y="234.0" fill="#5d6873" font-size="20" text-anchor="middle" font-weight="700">次の問い：三者</text>
+<circle cx="1000.0" cy="300.0" r="10" fill="#d8d4c8"/>
+<circle cx="940.0" cy="390.0" r="10" fill="#d8d4c8"/>
+<circle cx="1060.0" cy="390.0" r="10" fill="#d8d4c8"/>
+<line x1="1000.0" y1="300.0" x2="940.0" y2="390.0" stroke="#d8d4c8" stroke-width="1.5" stroke-dasharray="8 7"/>
+<line x1="1000.0" y1="300.0" x2="1060.0" y2="390.0" stroke="#d8d4c8" stroke-width="1.5" stroke-dasharray="8 7"/>
+<line x1="940.0" y1="390.0" x2="1060.0" y2="390.0" stroke="#d8d4c8" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="1000.0" y="440.0" fill="#5d6873" font-size="13" text-anchor="middle" font-weight="400">媒介・外部性・観察者（未着手）</text>
+</g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+<title id="title">図の読み方</title>
+<desc id="desc">この連載の図で使う記号と色</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#5d6873" stroke-width="1.4"/></marker><radialGradient id="grel00-1"><stop offset="0" stop-color="#5a4fcf" stop-opacity="0.55"/><stop offset="0.55" stop-color="#5a4fcf" stop-opacity="0.25"/><stop offset="1" stop-color="#5a4fcf" stop-opacity="0"/></radialGradient><radialGradient id="grel00-2"><stop offset="0" stop-color="#5a4fcf" stop-opacity="0.55"/><stop offset="0.55" stop-color="#5a4fcf" stop-opacity="0.25"/><stop offset="1" stop-color="#5a4fcf" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="600" rx="20" fill="#f7f5ef"/>
+<g font-family='system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", Meiryo, sans-serif'>
+<text x="50.0" y="52.0" fill="#5a4fcf" font-size="18" text-anchor="start" font-weight="700">RELEVANCE</text>
+<text x="50.0" y="103.0" fill="#232a33" font-size="34" text-anchor="start" font-weight="700">図の読み方</text>
+<text x="50.0" y="141.0" fill="#5d6873" font-size="21" text-anchor="start" font-weight="400">この連載の図で使う記号と色</text>
+<line x1="50.0" y1="166.0" x2="1150.0" y2="166.0" stroke="#d8d4c8" stroke-width="1"/>
+<circle cx="120.0" cy="230.0" r="26" fill="url(#grel00-1)"/>
+<text x="170.0" y="236.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">ぼやけた円：境界のない分布</text>
+<line x1="460.0" y1="230.0" x2="520.0" y2="230.0" stroke="#232a33" stroke-width="2.5"/>
+<text x="540.0" y="236.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">実線：確定した関係・流れ</text>
+<line x1="830.0" y1="230.0" x2="890.0" y2="230.0" stroke="#5d6873" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="910.0" y="236.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">破線：仮説・未決・予告</text>
+<line x1="90.0" y1="318.0" x2="150.0" y2="318.0" stroke="#232a33" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="170.0" y="324.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">矢印：向き</text>
+<line x1="460.0" y1="310.0" x2="520.0" y2="310.0" stroke="#232a33" stroke-width="5"/>
+<line x1="460.0" y1="326.0" x2="520.0" y2="326.0" stroke="#232a33" stroke-width="1.2"/>
+<text x="540.0" y="324.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">太さ：強度</text>
+<rect x="830" y="302" width="60" height="32" rx="8" fill="#ffffff" stroke="#232a33" stroke-width="2"/>
+<text x="910.0" y="324.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">枠の箱：役割を持つ対象</text>
+<circle cx="120.0" cy="406.0" r="12" fill="#d0693a"/>
+<text x="170.0" y="412.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">橙：注目点・負の効能・第三のもの</text>
+<circle cx="490.0" cy="406.0" r="12" fill="#5a4fcf"/>
+<text x="540.0" y="412.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">藍：第1クールの要素・参照</text>
+<circle cx="860.0" cy="406.0" r="12" fill="#2f8f83"/>
+<text x="910.0" y="412.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">深緑：第2クールの要素</text>
+<circle cx="120.0" cy="494.0" r="12" fill="#d8d4c8"/>
+<text x="170.0" y="500.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">灰：補助・背景</text>
+<text x="490.0" y="500.0" fill="#5a4fcf" font-size="15" text-anchor="middle" font-weight="700">図5-2</text>
+<text x="540.0" y="500.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">「図N-k」：第N回のk番目の図</text>
+<rect x="830" y="480" width="60" height="28" rx="6" fill="#ece9e0" stroke="#d8d4c8" stroke-width="1.5"/>
+<circle cx="860.0" cy="494.0" r="10" fill="url(#grel00-2)"/>
+<text x="910.0" y="500.0" fill="#232a33" font-size="16" text-anchor="start" font-weight="400">扉絵：文字なし、部の始まり</text>
+<text x="50.0" y="572.0" fill="#5d6873" font-size="19" text-anchor="start" font-weight="400">矢印は必ずしも因果を表さない。キャプションに示す前提を併せて読む。</text>
+</g>
+</svg>

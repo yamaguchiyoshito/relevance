@@ -20,12 +20,15 @@ class RepositoryTests(unittest.TestCase):
         self.assertEqual(result.chapters, 24)
         total = 0
         openers = 0
+        extras = 0
         for sf in ['series.json', 'series-2/series.json']:
             data = json.loads((ROOT / sf).read_text(encoding='utf-8'))
             total += sum(len(c['figures']) for c in data['chapters'])
             openers += sum(1 for p in data['parts'] if p.get('opener'))
+            extras += len(data.get('extras', []))
         self.assertEqual(openers, 8)
-        self.assertEqual(result.svg_files, 1 + total + openers)
+        self.assertEqual(extras, 4)
+        self.assertEqual(result.svg_files, total + openers + extras)
         self.assertGreater(result.footnotes, 20)
 
     def test_footnotes_render_as_notes(self):

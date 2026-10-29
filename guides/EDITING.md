@@ -54,6 +54,10 @@ SVGには `viewBox`、`role="img"`、`title`、`desc` を持たせる。`script`
 
 各部の最初の回には、副題と冒頭の前後ナビの直後に扉絵を一枚置く。扉絵は文字を持たない象徴図で、見出しラベルも図番号もキャプションも持たない。大きさは 1200×360、ファイル名は `NN-0-opener.svg`、各連載の `series.json` では章の `figures` ではなく `parts[].opener` に登録する。本文からは `![代替テキスト](../assets/illustrations/01-0-opener.svg){.opener}` のように `{.opener}` を付けて参照し、ビルドは枠・スクロール容器・原寸リンクを付けずに全幅で表示する。検査は、各部に扉絵が一枚あり、該当回の最初の節より前で参照されていることを確かめる。扉絵も `draw_figures.py` から生成する。
 
+## 連載単位の図
+
+表紙、見取り図、連載の関係図、凡例のように、章の図でも扉絵でもない図は、各連載の `series.json` の `extras` に登録する。検査は SVG の総数を「章の図＋扉絵＋extras」として数え、`extras` のファイルが存在することを確かめる。これらも `draw_figures.py` から生成する。
+
 ## 出典の管理
 
 文献は本文の脚注 `[^young]` と末尾の「参考文献・注記」の脚注定義でつなぐ。同じIDを `sources.json` と `series.json` の `sources` でも使う。検査は、脚注の使用と定義、`series.json` の一覧、`sources.json` の存在が一致することを確かめる。

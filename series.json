@@ -7,6 +7,11 @@
   "language": "ja",
   "version": "1.0.0",
   "tagline": "関連は仮説であり、評価がそれを検証する。",
+  "extras": [
+    "assets/illustrations/00-cover.svg",
+    "assets/illustrations/series-map.svg",
+    "assets/illustrations/legend.svg"
+  ],
   "parts": [
     {
       "number": "I",
@@ -56,7 +61,8 @@
       "sources": [],
       "figures": [
         "assets/illustrations/01-a-reverse-playback.svg",
-        "assets/illustrations/01-b-steam-engine.svg"
+        "assets/illustrations/01-b-steam-engine.svg",
+        "assets/illustrations/01-c-roadmap.svg"
       ]
     },
     {
