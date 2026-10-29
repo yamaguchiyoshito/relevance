@@ -14,7 +14,7 @@ FONT = 'system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP
 
 
 class Figure:
-    def __init__(self, number: int, title: str, subtitle: str, height: int = 680, part: str = '', code: str = 'RELEVANCE', accent: str = INDIGO, subdir: str = '', header: bool = True):
+    def __init__(self, number: int, title: str, subtitle: str, height: int = 680, part: str = '', code: str = 'RELEVANCE', accent: str = INDIGO, subdir: str = '', header: bool = True, label: str = ''):
         self.h = height
         self.n = number
         self.part = part
@@ -29,7 +29,7 @@ class Figure:
         if not header:
             return  # 扉絵：見出しも文字も描かない（title/desc は aria 用にのみ残る）
         shown = str(ord(part) - 96) if part.isalpha() and len(part) == 1 else part  # a→1, b→2 … or an explicit number
-        label = code if number == 0 else f'{code}     {number:02d}' + (f'     図{number}-{shown}' if part else '')
+        label = f'{code}     {label}' if label else code if number == 0 else f'{code}     {number:02d}' + (f'     図{number}-{shown}' if part else '')
         self.text(50, 52, label, 18, accent, weight=700)
         self.text(50, 103, title, 34, weight=700)
         self.text(50, 141, subtitle, 21, MUTED)
@@ -652,6 +652,7 @@ def main() -> None:
     draw_openers(made)
     draw_extras(made)
     draw_stage3(made)
+    draw_stage4(made)
     missing, extra = expected - made, made - expected
     if missing or extra:
         raise SystemExit(f'series.json mismatch. missing={sorted(missing)} extra={sorted(extra)}')
@@ -1481,6 +1482,84 @@ def draw_stage3(made: set[str]) -> None:
             f.text(800, y + 75, '生成側で効いた工夫をレビュー側へ運べるかもしれない（仮説）', 12, MUTED, anchor='middle')
     f.footer('')
     made.add(f.save('04-c-example-comparisons.svg'))
+
+
+# ---------------------------------------------------------------------------
+# Stage 4: two figures for the second series' appendix (registered as extras)
+# ---------------------------------------------------------------------------
+def draw_stage4(made: set[str]) -> None:
+    # A-1 map of the seven groups of relation types
+    f = Figure(0, '関係型の七群の地図', '46種を七つの群に分け、本文のどの回が扱うかを添える', 640, code=R_CODE, accent=P, subdir=R_SUB, label='付録A')
+    groups = [
+        ('存在論', 'A-1', 'REL-001〜006', ('同一・包含・全体部分', '上位下位・所属・実体属性'), '第1回・第3回', MUTED),
+        ('比較', 'A-2', 'REL-007〜015', ('相似・反対・逆転', '双対・同型・類比 ほか'), '第4回', P),
+        ('機能', 'A-3', 'REL-016〜022', ('補完・代替・競合・依存', '協調・分業・制約'), '第5回', P),
+        ('因果', 'A-4', 'REL-023〜028', ('原因結果・促進・抑制', '相互作用・フィードバック・相関'), '第6回', TERRA),
+        ('時間', 'A-5', 'REL-029〜034', ('先行後続・同時・重複', '反復・循環・継承'), '第6回', TERRA),
+        ('変換', 'A-6', 'REL-035〜040', ('変形・反転変換・拡張', '縮小・抽象化・具体化'), '第4回末尾', INDIGO),
+        ('意味', 'A-7', 'REL-041〜046', ('類義・対義・比喩', '象徴・類比・換喩'), '第7回', INDIGO),
+    ]
+    f.text(70, 205, '第I部　関係を分ける（第1〜3回）', 13, MUTED, weight=700)
+    f.text(70, 232, '第II部　関係の型（第4〜7回）', 13, MUTED, weight=700)
+    f.line(70, 240, 1130, 240, color=LINE, width=1)
+    for i, (nm, sec, ids, members, chap, c) in enumerate(groups):
+        col, row = i % 4, i // 4
+        x, y = 70 + col * 268, 262 + row * 150
+        w = 248
+        f.body.append(f'<rect x="{x}" y="{y}" width="{w}" height="134" rx="12" fill="#ffffff" stroke="{c}" stroke-width="2"/>')
+        f.text(x + 16, y + 32, nm, 20, c, weight=700)
+        f.text(x + w - 14, y + 30, sec, 13, MUTED, anchor='end')
+        f.text(x + 16, y + 54, ids, 12, MUTED)
+        f.text(x + 16, y + 80, members[0], 12, INK); f.text(x + 16, y + 99, members[1], 12, INK)
+        f.text(x + 16, y + 122, chap, 13, c, weight=700)
+    # the eighth cell: one pair carries several types at once
+    x, y = 70 + 3 * 268, 262 + 150
+    f.body.append(f'<rect x="{x}" y="{y}" width="248" height="134" rx="12" fill="{SOFT}" stroke="{LINE}" stroke-width="1.5" stroke-dasharray="7 6"/>')
+    f.box(x + 30, y + 42, 60, 36, 'A', '', P, 15); f.box(x + 158, y + 42, 60, 36, 'B', '', TERRA, 15)
+    for dy, c in [(-12, P), (0, TERRA), (12, MUTED)]:
+        f.line(x + 95, y + 60 + dy, x + 153, y + 60 + dy, color=c, width=2)
+    f.text(x + 124, y + 114, '一組の二者に、複数の群が同時に当てはまる', 11, MUTED, anchor='middle')
+    f.footer('群は排他的な分類ではない。意味的関係の細分は付録B、効能との対応は付録Cにある。')
+    made.add(f.save('appendix-a-seven-groups.svg'))
+
+    # A-2 the entity system (図11-1 の構図を、体系名で描き直す)
+    f = Figure(0, 'Entity体系の見取り図', '型と実例、関係の束と効能の束、二つをつなぐ規則、根拠', 700, code=R_CODE, accent=P, subdir=R_SUB, label='付録E')
+    def ent(x, y, w, h, name, note, c, dash=False):
+        da = ' stroke-dasharray="7 6"' if dash else ''
+        f.body.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="#ffffff" stroke="{c}" stroke-width="2.5"{da}/>')
+        f.text(x + w / 2, y + 30, name, 16, c, anchor='middle', weight=700)
+        f.text(x + w / 2, y + 52, note, 11.5, MUTED, anchor='middle')
+    # relation side (left)
+    ent(70, 200, 250, 66, 'RelationCategory', '七群（付録A）', P)
+    ent(70, 300, 250, 66, 'RelationType', '相似・反対などの概念（型カード）', P)
+    ent(70, 400, 250, 66, 'RelationInstance', '具体的な対象間の関係（実例カード）', P, dash=True)
+    ent(70, 500, 190, 66, 'Target', '対象（対象のカード）', INK)
+    ent(350, 200, 170, 66, 'RelationProperty', '対称・推移・方向', P)
+    f.line(195, 300, 195, 270, color=P, width=2, arrow=True); f.text(205, 288, 'category', 11, MUTED)
+    f.line(195, 400, 195, 370, color=P, width=2, arrow=True); f.text(205, 388, 'relation_type', 11, MUTED)
+    f.line(165, 500, 165, 470, color=INK, width=2, arrow=True); f.text(175, 488, 'subject / object', 11, MUTED)
+    f.line(325, 318, 430, 270, color=P, width=2, arrow=True); f.text(400, 306, 'properties', 11, MUTED)
+    # effect side (right)
+    ent(880, 200, 250, 66, 'EffectCategory', '効能の上位分類（付録C-1）', TERRA)
+    ent(880, 300, 250, 66, 'EffectType', '発見・創発などの概念（効能の型カード）', TERRA)
+    ent(880, 400, 250, 66, 'EffectInstance', '具体的に発生した効能（効能の実例カード）', TERRA, dash=True)
+    f.line(1005, 300, 1005, 270, color=TERRA, width=2, arrow=True); f.text(1015, 288, 'category', 11, MUTED)
+    f.line(1005, 400, 1005, 370, color=TERRA, width=2, arrow=True); f.text(1015, 388, 'effect_type', 11, MUTED)
+    # the rule in the middle
+    ent(560, 280, 280, 106, 'RelationEffectRule', '', INK)
+    f.text(700, 332, '仕組み・前提条件・限界・状態', 12, INK, anchor='middle')
+    f.text(700, 352, '型と型をつなぐ。実例どうしは直接つながない', 11, MUTED, anchor='middle')
+    f.line(325, 333, 555, 333, color=MUTED, width=2, arrow=True); f.text(440, 322, 'relation_type', 11, MUTED, anchor='middle')
+    f.line(845, 333, 875, 333, color=MUTED, width=2, arrow=True); f.text(860, 270, 'effect_type', 11, MUTED, anchor='middle')
+    f.path('M 325 433 C 500 433 700 433 875 433', color=LINE, width=2, dash=True, arrow=True)
+    f.text(600, 422, '規則が成り立てば、実例から効能の実例が生じる（仮説として）', 11, MUTED, anchor='middle')
+    # evidence at the bottom, attached to both instances
+    ent(430, 540, 340, 66, 'Evidence', '根拠と状態：誰が、何を見て、仮説か検証済みか', INDIGO)
+    f.path('M 300 470 C 300 573 340 573 425 573', color=INDIGO, width=1.5, dash=True)
+    f.path('M 900 470 C 900 573 860 573 775 573', color=INDIGO, width=1.5, dash=True)
+    f.text(195, 610, '関係の束', 15, P, anchor='middle', weight=700); f.text(1005, 610, '効能の束', 15, TERRA, anchor='middle', weight=700)
+    f.footer('第11回の図11-1（カードの仕組み）と同じ構図。カードの呼び名を Entity 名に置き換えたもの。')
+    made.add(f.save('appendix-e-entity-system.svg'))
 
 
 if __name__ == '__main__':

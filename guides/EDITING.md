@@ -56,7 +56,7 @@ SVGには `viewBox`、`role="img"`、`title`、`desc` を持たせる。`script`
 
 ## 連載単位の図
 
-表紙、見取り図、連載の関係図、凡例のように、章の図でも扉絵でもない図は、各連載の `series.json` の `extras` に登録する。検査は SVG の総数を「章の図＋扉絵＋extras」として数え、`extras` のファイルが存在することを確かめる。これらも `draw_figures.py` から生成する。
+表紙、見取り図、連載の関係図、凡例、付録の図のように、章の図でも扉絵でもない図は、各連載の `series.json` の `extras` に登録する。検査は SVG の総数を「章の図＋扉絵＋extras」として数え、`extras` のファイルが存在することを確かめる。これらも `draw_figures.py` から生成する。
 
 ## 出典の管理
 

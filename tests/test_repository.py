@@ -27,7 +27,7 @@ class RepositoryTests(unittest.TestCase):
             openers += sum(1 for p in data['parts'] if p.get('opener'))
             extras += len(data.get('extras', []))
         self.assertEqual(openers, 8)
-        self.assertEqual(extras, 4)
+        self.assertEqual(extras, 6)
         self.assertEqual(result.svg_files, total + openers + extras)
         self.assertGreater(result.footnotes, 20)
 

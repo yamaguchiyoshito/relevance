@@ -10,6 +10,10 @@
 
 二者の関係の型を七つの群に分ける。一組の二者に複数の型が同時に当てはまる（第1回「関係は一つではない」）。
 
+![関係型の七群の地図。存在論・比較・機能・因果・時間・変換・意味の七つの群を、扱う回とともに並べ、一組の二者に複数の群が同時に当てはまることを示す](../assets/illustrations/relation/appendix-a-seven-groups.svg)
+
+*図A：七つの群と、本文で扱う回。群は排他的な分類ではない*
+
 ### A-1　存在論的関係
 
 | ID | 型 | 定義 |
@@ -302,6 +306,10 @@
 | Evidence | 関係・効能の成立を裏付ける根拠 | 根拠の欄 |
 
 一つの対象ペアに複数の RelationInstance を重ねられる。排他的分類ではない。
+
+![Entity体系の見取り図。左に関係の束（RelationCategory、RelationType、RelationInstance、Target、RelationProperty）、右に効能の束（EffectCategory、EffectType、EffectInstance）、中央に二つをつなぐ RelationEffectRule、下に両方の実例が参照する Evidence](../assets/illustrations/relation/appendix-e-entity-system.svg)
+
+*図E：Entityの接続。第11回の図11-1（カードの仕組み）をEntity名で描き直したもの*
 
 ### E-2　共通属性
 
